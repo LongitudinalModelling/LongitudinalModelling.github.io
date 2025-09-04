@@ -1,0 +1,20 @@
+# Links listed below will be included in your site's navbar (navigation at the top)
+
+- text: Home # Note that users can also reach the homepage by clicking the site's title on the left in the navbar
+  href: /
+- text: Research
+  href: /research/
+- text: Publications
+  href: /publications/  
+- text: Software
+  href: /software/
+- text: Seminars
+  href: /seminars/
+- text: Learn
+  href: /training/
+- text: People
+  href: /people/
+- text: Join
+  href: /contact/
+- text: News
+  href: /blog/

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-09-03T18:26:43+01:00</updated><id>http://localhost:4000/feed.xml</id><author><name>Longitudinal Modelling Group 2025</name></author><entry><title type="html">SITAR User Advisory Group</title><link href="http://localhost:4000/blog/2025/sitar-uag/" rel="alternate" type="text/html" title="SITAR User Advisory Group" /><published>2025-08-23T00:00:00+01:00</published><updated>2025-08-23T00:00:00+01:00</updated><id>http://localhost:4000/blog/2025/sitar-uag</id><content type="html" xml:base="http://localhost:4000/blog/2025/sitar-uag/"><![CDATA[<p>We are establishing a User Advisory Group (UAG) to help maximise the impact and benefit of a new MRC-funded research project: <strong>SITAR enhancements to support state-of-the-art analysis of individual growth curves and their correlates</strong>.</p>
+
+<p>We are looking for researchers and stakeholders that are <strong>working or interested in longitudinal data analysis methods and applications</strong> to join the project’s UAG. Your feedback will be sought when developing our methods, tools, and disseminating results and resources to ensure that the project’s outputs are made widely accessible and impactful.</p>
+
+<div class="card p-4 my-5 bg-light">
+  <h3 class="card-title text-center">Join the UAG</h3>
+
+  <form action="https://formspree.io/f/xblapjyr" method="POST">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" name="name" required="" />
+    </div>
+    <div class="form-group">
+      <label for="affiliation">Affiliation</label>
+      <input type="text" class="form-control" id="affiliation" name="affiliation" />
+    </div>
+    <div class="form-group">
+      <label for="email">Email address</label>
+      <input type="email" class="form-control" id="email" name="email" required="" />
+    </div>
+    <button type="submit" class="btn btn-dark btn-lg mt-3">Sign up here</button>
+  </form>
+</div>]]></content><author><name>[&quot;Ahmed Elhakeem&quot;]</name></author><category term="SITAR" /><summary type="html"><![CDATA[Help us to improve SITAR by joining the User Advisory Group]]></summary></entry><entry><title type="html">Assisted Reproductive Technology Health Partnership</title><link href="http://localhost:4000/blog/2025/art-health/" rel="alternate" type="text/html" title="Assisted Reproductive Technology Health Partnership" /><published>2025-08-15T00:00:00+01:00</published><updated>2025-08-15T00:00:00+01:00</updated><id>http://localhost:4000/blog/2025/art-health</id><content type="html" xml:base="http://localhost:4000/blog/2025/art-health/"><![CDATA[<h3 id="does-your-study-have-data-on-fertility-treatment"><strong>Does your study have data on fertility treatment?</strong></h3>
+
+<h2 id="what-is-the-art-healthpartnership">What is the A.R.T-HEALTH<sub>Partnership</sub>?</h2>
+
+<div class="image-with-text">
+  <img src="/assets/images/blog/art_health_logo.jpg" alt="ART-HEALTH Partnership Logo" style="width: 260px; float: right; margin: 10px 10px 10px 10px;" />
+  <p>The <b>Assisted Reproductive Technology (ART) Health Partnership (A.R.T-HEALTH<sub>PARTNERSHIP</sub>)</b> is a global research collaboration dedicated to building robust evidence on the effects of pregnancy conception by ART compared to unassisted conception.</p>
+  <p>Our mission is to understand how fertility treatments impact the health of mothers and their children, from pregnancy through to early adulthood.</p>
+  <p>To achieve this, we bring together data from a wide range of study designs—including birth cohorts, ART clinical cohorts, and electronic health record linkage studies, and use different statistical approaches to build a comprehensive picture.</p>
+  <p>Our goal is to leverage the strengths of each study type to get the most accurate results possible.</p>
+</div>
+
+<p>You can view the list of our current partner studies on the <a href="https://arthealth.bristol.ac.uk/data-resources/">project website</a>.</p>
+
+<hr />
+
+<h2 id="why-your-study-should-join">Why Your Study Should Join</h2>
+
+<p>Over the last 30 years, the use of ART has grown significantly, and today, approximately <strong>1 in 6 couples</strong> experience infertility. Despite its widespread use, questions remain about the long-term health outcomes for mothers and their children. Research has suggested potential health issues during pregnancy, birth, and later in life.</p>
+
+<p>By joining the ART-HEALTH Partnership, your study can help us provide clear, definitive answers.</p>
+
+<ul>
+  <li><strong>Reassure couples:</strong> When our research shows no adverse effects of ART on maternal and child health, we can provide much-needed reassurance to couples undergoing treatment.</li>
+  <li><strong>Prevent adverse effects:</strong> When we do identify potential health risks, we can begin to research and develop strategies to prevent them.</li>
+</ul>
+
+<p>Joining the partnership is a unique opportunity to contribute to this critical and high-impact field of research.</p>
+
+<h3 id="benefits-of-joining">Benefits of Joining</h3>
+
+<ul>
+  <li><strong>Contribute to high-impact research:</strong> Your data will be part of powerful collaborative studies and meta-analyses.</li>
+  <li><strong>Opportunities for co-authorship:</strong> Partner studies are invited to co-author meta-analyses and other publications resulting from this collaboration.</li>
+  <li><strong>Propose your own projects:</strong> All cohort leaders can propose their own projects and lead collaborative studies.</li>
+  <li><strong>Collaborate with global experts:</strong> Connect and work with leading researchers from around the world.</li>
+</ul>
+
+<hr />
+
+<h2 id="how-to-get-involved">How to Get Involved</h2>
+
+<p>If your study has data on fertility treatment and you are interested in joining our mission, we’d love to hear from you.</p>
+
+<p>Simply email the project leads to express your interest. You can find their contact details on the <a href="https://arthealth.bristol.ac.uk/contacts/">project website</a>.</p>]]></content><author><name>[&quot;Ahmed Elhakeem&quot;]</name></author><category term="ART" /><category term="Infertility" /><summary type="html"><![CDATA[Contribute to a global research project into the health effects of fertility treatment.]]></summary></entry></feed>

@@ -1,0 +1,77 @@
+- title: "A framework for conducting GWAS using repeated measures data with an application to childhood BMI"
+  image: burrows_24.jpg
+  description: "This paper presents a framework for analysing age-varying genetic effects, using BMI as an example."
+  authors: Burrows K, Heiskala A, Bradfield JP, et al.
+  link:
+    url: "https://doi.org/10.1038/s41467-024-53687-3"
+    display: <i>Nature Communications (2024)</i>
+  category: methods
+
+- title: "Two sample Mendelian Randomisation using an outcome from a multilevel model of disease progression"
+  image: lawton_24.jpg
+  description: "This paper introduces a multivariate two-sample Mendelian Randomisation approach using a multilevel model to identify the causal effect of an exposure on both the initial severity and rate of change of a disease progression trajectory."
+  authors: Lawton M, Ben-Shlomo Y, Gkatzionis A, et al.
+  link:
+    url: "https://doi.org/10.1007/s10654-023-01093-2"
+    display: <i>European Journal of Epidemiology (2024)</i>
+  category: methods
+
+- title: "Using linear and natural cubic splines, SITAR, and latent trajectory models to characterise nonlinear longitudinal growth trajectories in cohort studies"
+  image: elhakeem_22.jpg
+  description: This paper provides a guide to summarising growth trajectories using different methods with demonstration modelling bone growth patterns.
+  authors: Elhakeem A, Hughes R, Tilling K, et al.
+  link:
+    url: "https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/s12874-022-01542-8"
+    display: <i>BMC Medical Research Methodology (2022)</i>
+  category: methods
+
+- title: "Combining longitudinal data from different cohorts to examine the life-course trajectory"
+  image: hughes_21.jpg
+  description: "This paper introduces a method for generating continuous life course trajectories by combining data from multiple studies, demonstrating how to handle challenges like data harmonisation and missing data by using an example that models children's weight."
+  authors: Hughes RA, Tilling K, Lawlor DA.
+  link:
+    url: "https://doi.org/10.1093/aje/kwab190"
+    display: <i>American Journal of Epidemiology (2021)</i>
+  category: methods
+
+- title: "Air and noise pollution exposure in early life and mental health from adolescence to young adulthood"
+  image: newbury_24.jpg
+  description: " In this longitudinal cohort study, early-life air and noise pollution exposure were prospectively associated with 3 common mental health problems from adolescence to young adulthood."
+  authors: Newbury JB, Heron J, Kirkbride J, et al.
+  link:
+    url: "https://doi.org/10.1001/jamanetworkopen.2024.12169"
+    display: <i>JAMA Network Open (2024)</i>
+  news: "https://www.bristol.ac.uk/news/2024/may/air-pollution.html"
+  category: applied
+
+- title: "Prenatal urban environment and blood pressure trajectories from childhood to early adulthood"
+  image: sores_24.jpg
+  description: "This study found that prenatal outdoor temperature and humidity potentially modulate blood pressure trajectories, particularly in childhood."
+  authors: Gonçalves Soares A, Santos S, Seyve E, et al.
+  link:
+    url: "https://doi.org/10.1016/j.jacadv.2023.100808"
+    display: <i>JACC Advances (2024)</i>
+  news: "https://www.bristol.ac.uk/alspac/news/2024/urban-environment-blood-pressure.html"
+  editorial: "https://pubmed.ncbi.nlm.nih.gov/38939401/"
+  category: applied
+
+- title: "Cross-cohort change in parent-reported emotional problem trajectories across childhood and adolescence in the UK"
+  image: armitage_23.jpg
+  description: "This study in two UK cohorts found that young people born in the early 2000s experienced an earlier onset and steeper trajectory of emotional problems compared to those born a decade earlier."
+  authors: Armitage JM, Kwong ASF, Tseliou F, et al.
+  link:
+    url: "https://doi.org/10.1016/S2215-0366(23)00175-X"
+    display: <i>Lancet Psychiatry (2023)</i>
+  news: "https://www.bristol.ac.uk/alspac/news/2023/emotional-problems.html"
+  category: applied
+
+- title: "Long-term cardiometabolic health in people born after assisted reproductive technology: a multi-cohort analysis"
+  image: elhakeem_23.jpg
+  description: "This meta-analysis and trajectory modelling study found similar blood pressure, heart rate, and glucose measures in individuals conceived after ART compared with those born after unassisted conception."
+  authors: Elhakeem A, Taylor AE, Inskip H, et al.
+  link:
+    url: "https://doi.org/10.1093/eurheartj/ehac726"
+    display: <i>European Heart Journal (2023)</i>
+  news: "https://www.bristol.ac.uk/news/2023/february/fertility-treatment-cardio-health.html"
+  editorial: "https://doi.org/10.1093/eurheartj/ehac827"
+  category: applied

@@ -1,0 +1,52 @@
+---
+layout: base
+description: Default template for pages and posts, with contained width.
+---
+
+<div class="row">
+  {% if page.toc %}
+  <div class="col-md-10 col-lg-3 mx-auto">
+    <div class="toc">
+      <h6>On this page</h6>
+      {% include toc.html
+        html=content
+        sanitize=true
+        h_min=2
+        h_max=3
+      %}
+      <h4 id="latest-publications">Latest Publications</h4>
+      <div class="latest-publications-box">
+          <ul>
+              {% assign latest_pubs = site.data.publications_latest | sort: 'date' | reverse %}
+              {% for publi in latest_pubs %}
+              <li>
+                  {{ publi.authors }} ({{ publi.date | date: "%Y" }}). <a href="{{ publi.link }}" target="_blank" rel="noopener noreferrer"><strong>{{ publi.title }}</strong></a>. <em>{{ publi.journal }}</em>.
+              </li>
+              {% endfor %}
+          </ul>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  <div class="col-md-10 col-lg-8 order-lg-first mx-auto">
+
+    {{ content }}
+
+    {% if page.comments %}
+      <div id="disqus_thread"></div>
+      <script>
+        // Configuration variables: https://disqus.com/admin/universalcode/#configuration-variables
+        var disqus_config = function () {
+          this.page.url = "{{ page.url | absolute_url }}";
+        };
+        (function() { // Don't edit below this line
+          var d = document, s = d.createElement("script");
+          s.src = "https://{{ site.social.disqus }}.disqus.com/embed.js";
+          s.setAttribute("data-timestamp", +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    {% endif %}
+  </div>
+</div>

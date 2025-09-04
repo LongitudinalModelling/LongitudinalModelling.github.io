@@ -1,0 +1,41 @@
+- name: "<strong>bsitar</strong>: Bayesian Super Imposition by Translation And Rotation Growth Curve Analysis"
+  image: bsitar.jpg
+  manual_link: https://cran.r-project.org/web/packages/bsitar/bsitar.pdf
+  method_link: https://cran.r-project.org/web/packages/bsitar/vignettes/Bayesian_SITAR_model_fit.html
+  tutorial_link: https://cran.r-project.org/web/packages/bsitar/vignettes/Bayesian_SITAR_model_fit.html
+
+- name: "<strong>GLU</strong>: A tool for analysing continuously measured glucose in epidemiology"
+  image: glu.jpg
+  manual_link: https://github.com/MRCIEU/GLU
+  method_link: https://pmc.ncbi.nlm.nih.gov/articles/PMC7394960/
+  tutorial_link: https://pmc.ncbi.nlm.nih.gov/articles/PMC7394960/
+
+- name: "<strong>midoc</strong>: A Decision-Making System for Multiple Imputation"
+  image: midoc.jpg
+  manual_link: https://cran.r-project.org/web/packages/midoc/midoc.pdf
+  tutorial_link: https://cran.r-project.org/web/packages/midoc/vignettes/midoc.html
+  method_link: https://cran.r-project.org/web/packages/midoc/vignettes/midoc.html
+
+- name: "<strong>psme</strong>: Penalized Splines Mixed Effects Models"
+  image: psme.jpg
+  manual_link: https://github.com/ZheyuanLi/psme
+  method_link: https://github.com/ZheyuanLi/psme
+  tutorial_link: https://github.com/ZheyuanLi/psme
+
+- name: "<strong>R2MLwiN</strong>: A Package to Run MLwiN from within R"
+  image: r2mlwin.jpg
+  manual_link: https://github.com/cran/R2MLwiN
+  tutorial_link: https://www.bristol.ac.uk/cmm/software/r2mlwin/
+  method_link: https://www.jstatsoft.org/article/view/v072i10
+
+- name: "<strong>sitar</strong>: Super Imposition by Translation And Rotation Growth Curve Analysis"
+  image: sitar.jpg
+  manual_link: https://cran.r-project.org/web/packages/sitar/sitar.pdf
+  tutorial_link: https://cran.r-project.org/web/packages/sitar/vignettes/Fitting_models_with_SITAR.html
+  method_link: https://pubmed.ncbi.nlm.nih.gov/20647267/
+
+- name: "<strong>tidal</strong>: Tool to Implement Developmental Analysis of Longitudinal data"
+  image: tidal.jpg
+  manual_link: https://github.com/TIDAL-modelling/TIDAL
+  tutorial_link: https://tidal-modelling.github.io/
+  method_link: https://pubmed.ncbi.nlm.nih.gov/40618225/

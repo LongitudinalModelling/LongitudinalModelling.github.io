@@ -1,0 +1,114 @@
+current_members:
+  - name: Ahmed Elhakeem
+    image: assets/images/people/ahmed_elhakeem.jpg 
+    profile_link: https://research-information.bris.ac.uk/en/persons/ahmed-elhakeem
+
+  - name: Alex Kwong
+    image: assets/images/people/alex_kwong.jpg 
+    profile_link: https://research-information.bris.ac.uk/en/persons/alex-siu-fung-kwong
+
+  - name: Ana Goncalves Soares
+    image: assets/images/people/ana_soares.jpg 
+    profile_link: https://research-information.bris.ac.uk/en/persons/ana-luiza-goncalves-soares
+
+  - name: Anahita Nodehi
+    image: assets/images/people/anahita_nodehi.jpg 
+    profile_link: https://research-information.bris.ac.uk/en/persons/anahita-nodehi
+
+  - name: Annie Herbert
+    image: assets/images/people/annie_herbert.jpg 
+    profile_link: https://research-information.bris.ac.uk/en/persons/annie-herbert
+
+  - name: Apostolos Gkatzionis
+    image: assets/images/people/apostolis_gkatzionis.jpg 
+    profile_link: https://research-information.bris.ac.uk/en/persons/apostolos-gkatzionis
+
+  - name: Becky Mars
+    image: assets/images/people/becky_mars.jpg 
+    profile_link: https://research-information.bris.ac.uk/en/persons/becky-mars
+
+  - name: Gareth Griffith
+    image: assets/images/people/gareth_griffith.jpg 
+    profile_link: https://research-information.bris.ac.uk/en/persons/gareth-j-griffith
+
+  - name: Gemma Clayton
+    image: assets/images/people/gemma_clayton.jpg 
+    profile_link: https://research-information.bris.ac.uk/en/persons/gemma-l-clayton
+
+  - name: Gemma Hammerton
+    image: assets/images/people/gemma_hammerton.jpg 
+    profile_link: https://research-information.bris.ac.uk/en/persons/gemma-l-hammerton
+
+  - name: Joanne Newbury
+    image: assets/images/people/joanne_newbury.jpg
+    profile_link: https://research-information.bris.ac.uk/en/persons/joanne-newbury
+
+  - name: Jon Heron
+    image: assets/images/people/jon_heron.jpg 
+    profile_link: https://research-information.bris.ac.uk/en/persons/jon-e-heron
+
+  - name: Kate Tilling
+    image: assets/images/people/kate_tilling.jpg 
+    profile_link: https://research-information.bris.ac.uk/en/persons/kate-m-tilling
+
+  - name: Kimberley Beaumont
+    image: assets/images/people/kimberley_beaumont.jpg 
+    profile_link: https://research-information.bris.ac.uk/en/persons/kimberley-g-beaumont-2
+
+  - name: Kimberley Burrows
+    image: assets/images/people/kimberley_burrows.jpg 
+    profile_link: https://research-information.bris.ac.uk/en/persons/kimberley-burrows
+
+  - name: Laura Howe
+    image: assets/images/people/laura_howe.jpg 
+    profile_link: https://research-information.bris.ac.uk/en/persons/laura-d-howe
+
+  - name: Marìa Alejandra Hernàndez
+    image: assets/images/people/alejandra_Hernandez.jpg
+    profile_link: https://research-information.bris.ac.uk/en/persons/
+
+  - name: Michael Lawton
+    image: assets/images/people/michael_lawton.jpg
+    profile_link: https://research-information.bris.ac.uk/en/persons/michael-a-lawton
+
+  - name: Rachael Hughes
+    image: assets/images/people/rachael_hughes.jpg
+    profile_link: https://research-information.bris.ac.uk/en/persons/rach-hughes
+
+  - name: Richard Parker
+    image: assets/images/people/richard_parker.jpg
+    profile_link: https://research-information.bris.ac.uk/en/persons/richard-m-a-parker
+
+  - name: Robyn Wootton
+    image: assets/images/people/robyn_wootton.jpg
+    profile_link: https://research-information.bris.ac.uk/en/persons/robyn-e-wootton
+
+  - name: Ruby Tsang
+    image: assets/images/people/ruby_tsang.jpg
+    profile_link: https://research-information.bris.ac.uk/en/persons/ruby-tsang
+
+  - name: Satpal Sandhu
+    image: assets/images/people/satpal_sandhu.jpg
+    profile_link: https://research-information.bris.ac.uk/en/persons/
+  
+  - name: Tanja Zerenner
+    image: assets/images/people/tanja_zerenner.jpg
+    profile_link: https://research-information.bris.ac.uk/en/persons/tanja-zerenner
+
+  - name: Tom Palmer
+    image: assets/images/people/tom_palmer.jpg
+    profile_link: https://research-information.bris.ac.uk/en/persons/tom-m-palmer
+
+  - name: Zoe Reed
+    image: assets/images/people/zoe_reed.jpg
+    profile_link: https://research-information.bris.ac.uk/en/persons/zoe-e-reed
+
+visitors:
+  - name: "Anna Dieberger"
+    image: "assets/images/people/anna_dieberger.jpg"
+
+  - name: Naixue Cui
+    image: "assets/images/people/naixue_cui.jpg"
+
+  - name: Zheyuan Li
+    image: assets/images/people/zheyuan_li.jpg

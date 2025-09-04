@@ -1,0 +1,103 @@
+---
+layout: publications-sidebar
+---
+
+<div class="container my-3">
+  <h2 id="featured-methods-papers">Featured Methods Papers</h2>
+  {% assign number_printed_methods = 0 %}
+  {% for publi in site.data.publications_featured %}
+    {% if publi.category == 'methods' %}
+      {% assign even_odd_methods = number_printed_methods | modulo: 2 %}
+
+      {% if even_odd_methods == 0 %}
+      <div class="row mb-4">
+      {% endif %}
+
+        <div class="col-md-6 mb-4">
+          <div class="card shadow-sm bg-light">
+            <div class="card-body pb-0">
+              <h5 class="card-title fw-bold mb-3">{{ publi.title }}</h5>
+            </div>
+
+            <div class="card-body pt-0">
+              {% if publi.image %}
+                <img src="{{ site.baseurl }}/assets/images/papers/{{ publi.image }}" class="img-fluid rounded float-start me-3 mb-2 publication-thumbnail shadow-sm" alt="{{ publi.title }}">
+              {% endif %}
+              <p class="card-text">{{ publi.description }}</p>
+              {% if publi.image %}
+                <div class="clearfix"></div>
+              {% endif %}
+
+              <p class="card-text mt-3"><small class="text-muted"><em>{{ publi.authors }}</em></small></p>
+              {% if publi.link %}
+                <p class="card-text"><strong><a href="{{ publi.link.url }}" target="_blank" rel="noopener noreferrer">{{ publi.link.display }} <i class="fas fa-external-link-alt fa-xs"></i></a></strong></p>
+              {% endif %}
+              {% if publi.editorial %}
+                <p class="card-text"><small class="text-muted"><strong><a href="{{ publi.editorial }}" target="_blank" rel="noopener noreferrer">Editorial <i class="fas fa-external-link-alt fa-xs"></i></a></strong></small></p>
+              {% endif %}
+              {% if publi.news %}
+                <p class="card-text"><small class="text-muted"><strong><a href="{{ publi.news }}" target="_blank" rel="noopener noreferrer">News Item <i class="fas fa-external-link-alt fa-xs"></i></a></strong></small></p>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+
+      {% assign number_printed_methods = number_printed_methods | plus: 1 %}
+
+      {% if even_odd_methods == 1 or forloop.last %}
+      </div>
+      {% endif %}
+
+    {% endif %}
+  {% endfor %}
+
+  <div class="my-3"></div>
+
+  <h2 id="featured-applied-papers">Featured Applied Papers</h2>
+  {% assign number_printed_applied = 0 %}
+  {% for publi in site.data.publications_featured %}
+    {% if publi.category == 'applied' %}
+      {% assign even_odd_applied = number_printed_applied | modulo: 2 %}
+
+      {% if even_odd_applied == 0 %}
+      <div class="row mb-4">
+      {% endif %}
+
+        <div class="col-md-6 mb-4">
+          <div class="card shadow-sm bg-light">
+            <div class="card-body pb-0">
+              <h5 class="card-title fw-bold mb-3">{{ publi.title }}</h5>
+            </div>
+
+            <div class="card-body pt-0">
+              {% if publi.image %}
+                <img src="{{ site.baseurl }}/assets/images/papers/{{ publi.image }}" class="img-fluid rounded float-start me-3 mb-2 publication-thumbnail shadow-sm" alt="{{ publi.title }}">
+              {% endif %}
+              <p class="card-text">{{ publi.description }}</p>
+              {% if publi.image %}
+                <div class="clearfix"></div>
+              {% endif %}
+
+              <p class="card-text mt-3"><small class="text-muted"><em>{{ publi.authors }}</em></small></p>
+              {% if publi.link %}
+                <p class="card-text"><strong><a href="{{ publi.link.url }}" target="_blank" rel="noopener noreferrer">{{ publi.link.display }} <i class="fas fa-external-link-alt fa-xs"></i></a></strong></p>
+              {% endif %}
+              {% if publi.editorial %}
+                <p class="card-text"><small class="text-muted"><strong><a href="{{ publi.editorial }}" target="_blank" rel="noopener noreferrer">Editorial <i class="fas fa-external-link-alt fa-xs"></i></a></strong></small></p>
+              {% endif %}
+              {% if publi.news %}
+                <p class="card-text"><small class="text-muted"><strong><a href="{{ publi.news }}" target="_blank" rel="noopener noreferrer">News Item <i class="fas fa-external-link-alt fa-xs"></i></a></strong></small></p>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+
+      {% assign number_printed_applied = number_printed_applied | plus: 1 %}
+
+      {% if even_odd_applied == 1 or forloop.last %}
+      </div>
+      {% endif %}
+
+    {% endif %}
+  {% endfor %}
+</div>

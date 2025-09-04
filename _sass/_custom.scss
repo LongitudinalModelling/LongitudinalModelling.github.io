@@ -1,0 +1,361 @@
+// Custom styling
+//
+// Include the file _sass/_custom.scss to your site to add custom styling
+
+/* Custom style for the "News and Updates" heading underline */
+.home-section-heading {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #8A2BE2;
+    }
+}
+
+.location-details {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.location-details img {
+    flex-shrink: 0;
+    margin-right: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.address-block {
+    line-height: 1.6;
+}
+
+.purple-line {
+    border: none;
+    border-top: 5px solid #670267;
+    margin: 30px 0;
+}
+
+/* --- Software Page Layout --- */
+
+.purple-line-small {
+    border: none;
+    border-top: 5px solid #5c005c;
+    width: 50%;
+    margin: 15px auto;
+}
+
+.software-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.software-item {
+    border: none;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.software-item:hover {
+    transform: translateY(-5px);
+}
+
+.software-image img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.software-name {
+    font-size: 1.4em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.software-description {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.software-links {
+    margin-top: 15px;
+}
+
+.software-links .btn {
+    margin: 5px;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+/* --- Custom GitHub button style --- */
+.btn-info {
+    color: white;
+    background-color: #5c005c;
+    border-color: #5c005c;
+}
+
+/* Change color on hover for a better user experience */
+.btn-info:hover {
+    color: white;
+    background-color: #4d004d;
+    border-color: #4d004d;
+}
+
+/* --- Optional: Responsive adjustments --- */
+@media (max-width: 992px) {
+    .software-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .software-grid {
+        grid-template-columns: 1fr;
+    }
+    .software-item {
+        margin: 0 auto;
+        max-width: 350px;
+    }
+}
+
+.call-to-action {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.call-to-action p {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.purple-tab-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #800080;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out, background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to bottom, #993399, #800080);
+}
+
+.purple-tab-button:hover {
+    background-color: #6a006a;
+    transform: translateY(-3px);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to bottom, #800080, #6a006a);
+}
+
+/* --- Styles for the new panel of 4 buttons (using the same purple-tab-button style) --- */
+.button-panel-section {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.panel-text {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.button-panel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+    .button-panel {
+        flex-direction: column;
+        align-items: center;
+    }
+    .button-panel .purple-tab-button {
+        width: 80%;
+        min-width: unset;
+    }
+}
+
+.center-text {
+    text-align: center;
+}
+
+/* --- Training Card Styles --- */
+
+.training-card {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-decoration: none;
+    color: inherit;
+}
+
+.training-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.training-card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    filter: blur(0px);
+    transition: filter 0.3s ease-in-out;
+}
+
+.training-card:hover .training-card-image {
+    filter: blur(3px);
+}
+
+.training-card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.training-card-title {
+    color: white;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin: 0;
+}
+
+/* Optional: Media queries for responsiveness */
+@media (max-width: 767.98px) {
+    .training-card-image {
+        height: 180px;
+    }
+    .training-card-title {
+        font-size: 1.4em;
+    }
+}
+
+/* --- Tutorial Link Styles --- */
+
+/* Ensure the list container itself is left-aligned */
+.list-group {
+    text-align: left;
+}
+
+.list-group-item {
+    border: none;
+    padding-left: 0;
+    text-align: left;
+}
+
+
+.tutorial-link {
+    font-size: 1.25em;
+    font-weight: 500;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+    display: block;
+    padding: 10px 0;
+    text-align: left;
+}
+
+.tutorial-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+    transform: translateX(5px);
+}
+
+.tutorial-link .fas {
+    color: #6c757d;
+    transition: color 0.2s ease-in-out;
+}
+
+.tutorial-link:hover .fas {
+    color: #0056b3;
+}
+
+.latest-publications-box {
+  height: 260px;
+  overflow-y: scroll;
+  padding: 15px 15px 15px 25px; /* Added left padding for the line */
+  border-left: 5px solid #2f0353; /* A thick, bold line on the left side */
+  border-radius: 5px; /* Keeps the rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); /* A subtle shadow */
+  transition: box-shadow 0.3s ease;
+}
+
+.latest-publications-box:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+.latest-publications-box ul {
+  list-style-type: none; /* Removed the default bullet points for a cleaner look */
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.latest-publications-box li {
+  margin-bottom: 10px; /* Add some space between publications */
+  line-height: 1.4;
+}
+
+.latest-publications-box a {
+    color: #007bff; /* A standard blue color for links */
+    text-decoration: none;
+}
+
+.latest-publications-box a:hover {
+    text-decoration: underline;
+}
+
+.latest-publications-box li:not(:last-child) {
+  border-bottom: 1px solid #2d034f;
+  padding-bottom: 10px; /* Space above the line */
+  margin-bottom: 10px;  /* Space below the line */
+}
+
+#latest-publications {
+  margin-top: 4rem;
+    color: #360353;
+
+}

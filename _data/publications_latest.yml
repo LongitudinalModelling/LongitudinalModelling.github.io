@@ -1,0 +1,113 @@
+- authors: "Goncalves Soares A, Tilling K, Makanvand M, et al." 
+  title: "Lifetime air pollution exposure from prenatal to 18 years and cardiovascular health in young adulthood: findings from a UK birth cohort" 
+  journal: "Environment International"
+  link: https://doi.org/10.1016/j.envint.2025.109754
+  date: 2025-09-01 # Used for sorting
+
+- authors: "Tarif D, Heron J, Fraser A, et al."
+  title: "Association of multiple indicators of pubertal timing with depressive symptoms and depression in adolescent girls"
+  journal: "British Journal of Psychiatry"
+  link: https://doi.org/10.1192/bjp.2025.88
+  date: 2025-08-12
+
+- authors: "Zheng Y, Baxter-Jones ADG, Elhakeem A, et al."
+  title: "Site and sex specific bone mineral content and density trajectories from adolescence through to 15 years post peak bone mass"
+  journal: "Annals of Human Biology"
+  link: https://doi.org/10.1080/03014460.2025.2540005
+  date: 2025-08-01
+
+- authors: "Bekiropoulou A, Eyre O, Heron J, et al."
+  title: "Measuring irritability across childhood, adolescence, and young adulthood: an investigation of measurement invariance by age, sex, and informant"
+  journal: "European Child & Adolescent Psychiatry"
+  link: https://doi.org/10.1093/ije/dyaf095
+  date: 2025-07-01
+
+- authors: "Kwong ASF, Edmondson-Stait A, Xu E, et al."
+  title: "Software Application Profile: TIDAL-Tool to Implement Developmental Analysis of Longitudinal data"
+  journal: "International Journal of Epidemiology"
+  link: https://doi.org/10.1093/ije/dyaf095
+  date: 2025-06-02
+
+- authors: "Warkentin S, Fossati S, Marquez S, et al."
+  title: "Ambient air pollution and childhood obesity from infancy to late childhood: An individual participant data meta-analysis of 10 European birth cohorts"
+  journal: "Environment International"
+  link: https://doi.org/10.1016/j.envint.2025.109527
+  date: 2025-06-01
+
+- authors: "Zhao JV, Goncalves Soares A, Avraam D, et al."
+  title: "Determinants of body mass index during early life: findings from an exposome-wide association study with follow-up replication and Mendelian randomization analyses"
+  journal: "Exposome"
+  link: https://doi.org/10.1093/exposome/osaf004
+  date: 2025-05-02
+
+- authors: "Hernández MA, Rodriguez O, Lee DJ"
+  title: "Deep-SITAR: A SITAR-Based Deep Learning Framework for Growth Curve Modeling via Autoencoders"
+  journal: "arXiv"
+  link: https://doi.org/10.48550/arXiv.2505.09506
+  date: 2025-05-01
+
+- authors: "Gonçalves R, Blaauwendraad S, Avraam D, et al."
+  title: "Early-life growth and emotional, behavior and cognitive outcomes in childhood and adolescence in the EU child cohort network: individual participant data meta-analysis of over 109,000 individuals"
+  journal: "Lancet Regional Health Europe"
+  link: https://doi.org/10.1016/j.lanepe.2025.101247
+  date: 2025-02-26
+
+- authors: "Tarif D, Heron J, Fraser A, et al."
+  title: "Pubertal timing, depressive symptoms, and depression in adolescent males: a prospective cohort study"
+  journal: "Psychological Medicine"
+  link: https://doi.org/10.1017/S0033291724003234
+  date: 2025-02-04
+
+- authors: "Clayton GL, Howe LD, O'Keeffe LM, et al."
+  title: "Preterm Birth and Cardiometabolic Health Trajectories From Birth to Adulthood: The Avon Longitudinal Study of Parents and Children"
+  journal: "Journal of the American Heart Association"
+  link: https://doi.org/10.1161/JAHA.123.030823
+  date: 2025-02-04
+
+- authors: "Birnie K, Howe LD, Jones T, et al."
+  title: "Life course trajectories of maternal cardiovascular disease risk factors by obstetric history: a UK cohort study using electronic health records"
+  journal: "BMC Medicine"
+  link: https://doi.org/10.1186/s12916-025-03937-y
+  date: 2025-02-01
+
+- authors: "Dieberger AM, van Poppel MNM, Desoye G, et al."
+  title: "Effect of a physical activity and healthy eating lifestyle intervention in pregnancy on fetal growth trajectories: The DALI randomised controlled trial"
+  journal: "Pediatric obesity"
+  link: https://doi.org/10.1111/ijpo.13199
+  date: 2025-01-01
+
+- authors: "Motoc I, Ginos BNR, Goncalves Soares A, et al."
+  title: "Examining associations of air pollution and green space with depressive symptoms in adults: A LongITools cross-cohort analysis"
+  journal: "Environmental Research"
+  link: https://doi.org/10.1016/j.envres.2024.120321
+  date: 2025-01-01
+
+- authors: "Leckie G, Parker R, Goldstein H, et al."
+  title: "Mixed-Effects Location Scale Models for Joint Modeling School Value-Added Effects on the Mean and Variance of Student Achievement"
+  journal: "Journal of Education and Behavioral Statistics"
+  link: https://doi.org/10.3102/10769986231210808
+  date: 2024-12-01
+  
+- authors: "Cadman T, Avraam D, Carson J, et al."
+  title: "Social inequalities in child mental health trajectories: a longitudinal study using birth cohort data in 12 countries"
+  journal: "BMC Public Health"
+  link: https://doi.org/10.1186/s12889-024-20291-5
+  date: 2024-10-01
+
+- authors: "Elhakeem A, Frysz M, Goncalves Soares A, et al."
+  title: "Evaluation and comparison of nine growth and development-based measures of pubertal timing"
+  journal: "Communications Medicine"
+  link: https://doi.org/10.1093/aje/kwad169
+  date: 2024-08-01
+  
+- authors: "Hernáez Á, Elhakeem A, Barros H, et al."
+  title: "Parental infertility and offspring cardiometabolic trajectories: a pooled analysis of three European cohorts"
+  journal: "Fertility & Sterility"
+  link: https://doi.org/10.1016/j.fertnstert.2024.01.017
+  date: 2024-05-01
+
+- authors: "Parker RMA, Tilling K, Terrera GM, et al."
+  title: "Modeling Risk Factors for Intraindividual Variability: A Mixed-Effects Beta-Binomial Model Applied to Cognitive Function in Older People in the English Longitudinal Study of Ageing"
+  journal: "American Journal of Epidemiology"
+  link: https://doi.org/10.1038/s43856-024-00580-1
+  date: 2024-01-01

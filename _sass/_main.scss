@@ -1,0 +1,176 @@
+// Main container
+
+body > main {
+  min-height: calc(100vh - 54px); // Viewport height minus medium screen navbar height, to push footer to bottom
+  padding-bottom: $grid-gutter-width; // Don't stick to footer
+}
+
+/* Card Deck Styles */
+.card-deck {
+  .card-link {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .card-link:hover .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary);
+  }
+
+  .card[class*="card-bg-"] {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+
+    &::before {
+      content: '';
+      position: absolute;
+      filter: blur(3px);
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: inherit;
+      z-index: -1;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    &:hover::before {
+            filter: blur(2px);
+            background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+/* Team and Partners Cards - Reusing card styles */
+.team-card, .partners-card {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  border: none;
+  overflow: hidden;
+
+  .card-link {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    flex-grow: 1;
+  }
+  
+  .card-link:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary);
+  }
+
+  /* Dark overlay to ensure text is readable */
+  &::before {
+    content: "";
+    position: absolute;
+    filter: blur(2px);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease;
+    border-radius: inherit;
+    z-index: -1;
+  }
+
+  &:hover::before {
+      filter: blur(2px);
+      background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .card-body {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+/* Define the image for each card */
+.card-bg-1 {
+  background-image: url('/assets/images/backgrounds/research_page.jpg');
+}
+.card-bg-2 {
+  background-image: url('/assets/images/backgrounds/publications_page.jpg');
+}
+.card-bg-3 {
+  background-image: url('/assets/images/backgrounds/software_page.jpg');
+}
+.card-bg-4 {
+  background-image: url('/assets/images/backgrounds/seminars_page.jpg');
+}
+.card-bg-5 {
+  background-image: url('/assets/images/backgrounds/training_page.jpg');
+}
+
+.team-card {
+  background-image: url('/assets/images/backgrounds/people_page.jpg');
+}
+
+.partners-card {
+  background-image: url('/assets/images/backgrounds/contact_page.jpg');
+}
+
+.tutorial-link {
+  text-decoration: none;
+  color: #343a40; /* Default text color */
+}
+
+.tutorial-link:hover {
+  text-decoration: none;
+  background-color: #f8f9fa; /* Light gray background on hover */
+}
+
+.tutorial-title {
+  color: #212529; /* Darker title color */
+}
+
+.tutorial-description {
+  font-size: 0.9rem; /* Smaller font size for description */
+  line-height: 1.4;
+}
+
+.tutorial-title code,
+.tutorial-description code {
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+/* Custom Purple Color Scheme for Seminars Page */
+.bg-purple {
+  background-color: #5c005c !important;
+  color: white; /* Ensures text is white on the purple background */
+}
+
+.border-purple {
+  border-color: #5c005c !important;
+}
+
+.text-purple {
+  color: #5c005c !important;
+}
+
+.btn-purple {
+  color: #fff;
+  background-color: #5c005c;
+  border-color: #5c005c;
+}
+
+.btn-purple:hover {
+  color: #fff;
+  background-color: #4d004d; /* Slightly darker purple on hover */
+  border-color: #4d004d;
+}
+
+.team-member-image {
+  width: 200px;  /* Adjust this value as needed */
+  height: 200px; /* Adjust this value as needed */
+  object-fit: cover;
+}

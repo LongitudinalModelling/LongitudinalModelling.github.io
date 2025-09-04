@@ -1,0 +1,92 @@
+<footer class="d-print-none">
+  <div class="container">
+    <div class="row align-items-start">
+      <div class="col-lg-3">
+        {% if site.social %}
+          <ul class="list-inline">
+            {% if site.social.email %}
+              <li class="list-inline-item me-1">
+                <a href="mailto:{{ site.social.email }}" title="Email">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa-solid fa-circle fa-stack-2x"></i>
+                    <i class="fa-regular fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            {% endif %}
+            {% if site.social.github %}
+              <li class="list-inline-item me-1">
+                <a href="https://github.com/{{ site.social.github }}" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa-solid fa-circle fa-stack-2x"></i>
+                    <i class="fa-brands fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            {% endif %}
+            {% if site.social.youtube %}
+              <li class="list-inline-item me-1">
+                <a href="{{ site.social.youtube }}" title="YouTube">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa-solid fa-circle fa-stack-2x"></i>
+                    <i class="fa-brands fa-youtube fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            {% endif %}
+          </ul>
+        {% endif %}
+      </div>
+
+      <div class="col-lg-7">
+        <h5 class="text-white mb-2">Quick Links</h5>
+        <ul class="list-inline">
+          <li class="list-inline-item me-3"><a href="{{ '/' | relative_url }}" class="text-white">Home</a></li>
+          <li class="list-inline-item me-3"><a href="{{ '/research/' | relative_url }}" class="text-white">Research</a></li>
+          <li class="list-inline-item me-3"><a href="{{ '/publications/' | relative_url }}" class="text-white">Publications</a></li>
+          <li class="list-inline-item me-3"><a href="{{ '/software/' | relative_url }}" class="text-white">Software</a></li>
+          <li class="list-inline-item me-3"><a href="{{ '/seminars/' | relative_url }}" class="text-white">Seminars</a></li>
+          <li class="list-inline-item me-3"><a href="{{ '/training/' | relative_url }}" class="text-white">Learn</a></li>
+          <li class="list-inline-item me-3"><a href="{{ '/team/' | relative_url }}" class="text-white">People</a></li>
+          <li class="list-inline-item me-3"><a href="{{ '/blog/' | relative_url }}" class="text-white">News</a></li>
+          <li class="list-inline-item me-3"><a href="{{ '/contact/' | relative_url }}" class="text-white">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 text-end">
+        {% for col in site.data.footer.columns %}
+          {% if col.links %}
+            {% for item in col.links %}
+              {% if item.image %}
+                <a href="{{ item.href | relative_url }}"{% if item.new_window %} target="_blank"{% endif %}>
+                  <img src="{{ item.image | relative_url }}" alt="{{ item.alt }}" style="height: 60px; max-width: 100%;">
+                </a>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="small mt-2">
+      {% if site.author %}
+        <p>&copy; {{ site.author }} (<a href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>)</p>
+      {% endif %}
+      {% if site.data.footer.license %}
+        {{ site.data.footer.license | markdownify }}
+      {% endif %}
+      {% if site.github_edit %}
+        {% if site.github_edit and site.github_edit != true %}
+          {% assign branch = site.github_edit %}
+        {% else %}
+          {% assign branch = 'master' %}
+        {% endif %}
+        <p>
+          <a href="{{ site.github.repository_url }}/edit/{{ branch }}/{{ page.path }}">
+            <i class="fa-solid fa-pen-to-square"></i> Edit this page
+          </a>
+        </p>
+      {% endif %}
+    </div>
+  </div>
+</footer>

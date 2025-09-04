@@ -1,0 +1,49 @@
+# SITE SETTINGS
+title: "" # Title in top navigation bar (navbar) and <head>
+author: Longitudinal Modelling Group 2025 # Used for copyright statement in footer
+baseurl: "" # Only required if your site is in a directory e.g. https://username.github.io/sitename
+repository: longitudinalmodelling/longitudinalmodelling.github.io
+
+# SOCIAL PROFILES
+social:
+  email: grp-lmod@groups.bristol.ac.uk
+  youtube: https://www.youtube.com/@LongModel
+  github: LongitudinalModelling             
+
+# THEME SETTINGS (ALL OPTIONAL)
+posts_on_home: 2 # Show x number of latest posts on homepage, can be 0
+github_edit: true                       # Show an "edit this page" link in the footer, can also be name of branch (default: main)
+colors:
+  links: "#007bff"                      # Color for links: use a readable color that contrasts well with dark text
+  banner: "#007bff"                     # Background color for page banners: use color that contrasts well with white
+  footer: "#6c757d"                     # Background color for footer: use color that contrasts well with white
+font_serif: true                        # Font type for page content: serif (default) or slightly smaller sans-serif
+rounded_corners: true                   # Enable (default) rounded corners on boxes and buttons
+logo: /assets/images/lmg_logo.jpg # Logo in navbar, will be displayed with 30px height
+
+# BUILD SETTINGS
+markdown: kramdown
+plugins:                                # If you build your site on gh-pages, only use these plugins: https://pages.github.com/versions/
+  - jekyll-feed
+  - jekyll-sitemap
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - LICENSE
+  - package-lock.json
+  - package.json
+  - jekyll-theme-petridish.gemspec
+  - CITATION.cff
+
+# FRONTMATTER DEFAULTS
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default                   # Use default.html layout by default for all files
+  - scope:
+      type: posts
+    values:
+      permalink: "/blog/:year/:slug/"   # Use /blog/yyyy/{filename}/ as permalink for all posts

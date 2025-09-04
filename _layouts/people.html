@@ -1,0 +1,44 @@
+---
+layout: default
+description: Template for group members page.
+---
+
+{{ content }}
+
+<div class="container my-3">
+  <h2>Current members</h2>
+</div>
+
+<div class="row">
+  {% for member in site.data.people.current_members %}
+  <div class="col-md-4 mb-4 text-center">
+    {% if member.image and member.profile_link %}
+      <a href="{{ member.profile_link }}" target="_blank" rel="noopener noreferrer">
+        <img src="{{ member.image | relative_url }}" alt="{{ member.name }}" class="img-fluid rounded-circle team-member-image">
+      </a>
+    {% endif %}
+    <h5 class="mt-2">{{ member.name }}</h5>
+  </div>
+  {% endfor %}
+</div>
+
+<div class="container my-3">
+  <h2>Current / past visitors</h2>
+</div>
+
+<div class="row">
+  {% for member in site.data.people.visitors %}
+  <div class="col-md-4 mb-4 text-center">
+    {% if member.image %}
+      <img src="{{ member.image | relative_url }}" alt="{{ member.name }}" class="img-fluid rounded-circle team-member-image">
+    {% endif %}
+    <h5 class="mt-2">{{ member.name }}</h5>
+  </div>
+  {% endfor %}
+</div>
+
+{% if page.post_content %}
+  <div class="container my-5">
+    {{ page.post_content | markdownify }}
+  </div>
+{% endif %}
