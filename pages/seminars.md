@@ -1,5 +1,5 @@
 ---
-title: "Seminars Series"
+title: "Seminar Series"
 background: /assets/images/backgrounds/seminars_page.jpg
 permalink: /seminars/
 ---
