@@ -91,6 +91,10 @@ current_members:
     image: assets/images/people/satpal_sandhu.jpg
     profile_link: https://research-information.bris.ac.uk/en/persons/
   
+  - name: Tafadzwa Madanhire
+    image: assets/images/people/tafadzwa_madanhire.jpg
+    profile_link: https://research-information.bris.ac.uk/en/persons/tafadzwa-madanhire
+    
   - name: Tanja Zerenner
     image: assets/images/people/tanja_zerenner.jpg
     profile_link: https://research-information.bris.ac.uk/en/persons/tanja-zerenner
