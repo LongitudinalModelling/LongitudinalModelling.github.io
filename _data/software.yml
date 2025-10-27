@@ -18,9 +18,9 @@
 
 - name: "<strong>psme</strong>: Penalized Splines Mixed Effects Models"
   image: psme.jpg
-  manual_link: https://github.com/ZheyuanLi/psme
-  method_link: https://github.com/ZheyuanLi/psme
-  tutorial_link: https://github.com/ZheyuanLi/psme
+  manual_link: https://cran.r-project.org/web/packages/psme/index.html
+  method_link: https://cran.r-project.org/web/packages/psme/index.html
+  tutorial_link: https://doi.org/10.1101/2025.10.22.25338570
 
 - name: "<strong>R2MLwiN</strong>: A Package to Run MLwiN from within R"
   image: r2mlwin.jpg
