@@ -38,14 +38,14 @@ permalink: /seminars/
           <h4 class="mb-0 text-center">Next Talk</h4>
         </div>
         <div class="card-body">
-          <h5 class="card-title text-purple">26 September, 2025</h5>
+          <h5 class="card-title text-purple">TBC</h5>
           <dl class="row mb-0">
             <dt class="col-sm-3"><strong>Title:</strong></dt>
-            <dd class="col-sm-9">Functional Principal Component Analysis (FPCA) to describe longitudinal data</dd>
+            <dd class="col-sm-9">TBC</dd>
             <dt class="col-sm-3"><strong>Speaker:</strong></dt>
-            <dd class="col-sm-9"><em>Corentin Segalas (Bordeaux Population Health)</em></dd>
+            <dd class="col-sm-9"><em>TBC</em></dd>
             <dt class="col-sm-3"><strong>Summary:</strong></dt>
-            <dd class="col-sm-9">In this talk, the functional data analysis framework will be introduced and we will see how FPCA - one of its central tool - may be used to describe biomedical longitudinal data. Finally, a simulation study that investigates FPCA robustness to various missing data scenarios will be discussed.</dd>
+            <dd class="col-sm-9">TBC</dd>
           </dl>
         </div>
       </div>
@@ -53,11 +53,33 @@ permalink: /seminars/
   </div>
 </div>
 
+
 <hr class="purple-line-small">
 
 ### Past Seminars
 
 <p class="mt-4 text-center">You can find the recordings of some of our past seminars <a href="https://www.youtube.com/@LongModel" target="_blank" rel="noopener noreferrer">here</a>.</p>
+
+**26 September 2025**
+
+**Title:** **Functional Principal Component Analysis (FPCA) to describe longitudinal data**
+
+**Speaker:** *Corentin Segalas (Bordeaux Population Health)*
+
+**Summary:** In this talk, the functional data analysis framework will be introduced and we will see how FPCA - one of its central tools - may be used to describe biomedical longitudinal data. Finally, a simulation study that investigates FPCA robustness to various missing data scenarios will be discussed
+
+<div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+  <iframe 
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+    src="https://www.youtube.com/embed/videoseries?list=PLSs04oY8Hg3Qq85SMwtAuxVIqz83CDCzm" 
+    title="Longitudinal Modelling Group Seminar Recordings Playlist" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+</div>
+
+---
 
 **06 February 2025 (2 speakers)**
 
