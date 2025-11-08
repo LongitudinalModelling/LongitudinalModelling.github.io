@@ -1,8 +1,14 @@
+- authors: "Winpenny EM, Stochl J, Hughes A, et al." 
+  title: "The socioeconomic trajectories followed during early adulthood contribute to inequalities in cardiometabolic health by age 24 years" 
+  journal: "Social Science & Medicine"
+  link: https://doi.org/10.1016/j.socscimed.2025.118634
+  date: 2025-11-01 # Used for sorting
+  
 - authors: "Hernandez MA, Li Z, Cole TJ, et al." 
   title: "Capturing infant and child growth dynamics with P-splines mixed effects models" 
   journal: "medRxiv"
   link: https://doi.org/10.1101/2025.10.22.25338570
-  date: 2025-10-24 # Used for sorting
+  date: 2025-10-24
   
 - authors: "Goncalves Soares A, Tilling K, Makanvand M, et al." 
   title: "Lifetime air pollution exposure from prenatal to 18 years and cardiovascular health in young adulthood: findings from a UK birth cohort" 
