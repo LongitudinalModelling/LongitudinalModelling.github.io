@@ -1,8 +1,14 @@
+- authors: "Sandhu SS, Leckie G, Tilling K, et al." 
+  title: "Studying the dynamics of mandibular growth spurts in individuals with Class I and Class II skeletal growth patterns using the Bayesian superimposition by translation and rotation (SITAR) model" 
+  journal: "European Journal of Orthodontics"
+  link: https://doi.org/10.1093/ejo/cjaf088
+  date: 2025-11-11 # Used for sorting
+  
 - authors: "Winpenny EM, Stochl J, Hughes A, et al." 
   title: "The socioeconomic trajectories followed during early adulthood contribute to inequalities in cardiometabolic health by age 24 years" 
   journal: "Social Science & Medicine"
   link: https://doi.org/10.1016/j.socscimed.2025.118634
-  date: 2025-11-01 # Used for sorting
+  date: 2025-11-01
   
 - authors: "Hernandez MA, Li Z, Cole TJ, et al." 
   title: "Capturing infant and child growth dynamics with P-splines mixed effects models" 
