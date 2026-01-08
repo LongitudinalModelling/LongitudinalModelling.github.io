@@ -40,7 +40,9 @@ permalink: /seminars/
         <div class="card-body">
           <h5 class="card-title text-purple">
           Thursday 22 January 2026 at 2pm 
-          <small>(<a href="{{ site.baseurl }}/assets/calendar/seminar-jan-22.ics" class="text-purple">Add to calendar</a>)</small>
+          <small style="font-weight: normal;">
+            (<a href="{{ site.baseurl }}/assets/calendar/seminar-jan-22.ics" class="text-purple">Add to calendar</a>)
+          </small>
           </h5>
           <dl class="row mb-0">
             <dt class="col-sm-3"><strong>Title:</strong></dt>
