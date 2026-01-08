@@ -38,7 +38,7 @@ permalink: /seminars/
           <h4 class="mb-0 text-center">Next Talk</h4>
         </div>
         <div class="card-body">
-          <h5 class="card-title text-purple">TBC</h5>
+          <h5 class="card-title text-purple">Thursday 22 January 2026 at 2pm</h5>
           <dl class="row mb-0">
             <dt class="col-sm-3"><strong>Title:</strong></dt>
             <dd class="col-sm-9">Synthetic cohorts for life course etiologic research</dd>
