@@ -39,16 +39,16 @@ permalink: /seminars/
         </div>
         <div class="card-body">
           <h5 class="card-title text-purple">
-          Thursday 22 January 2026 at 2pm 
-          <small style="font-weight: normal;">(<a href="{{ site.baseurl }}/assets/calendar/seminar-jan-22.ics">Add to calendar</a>)</small>
+          TBC 
+          <small style="font-weight: normal;">(<a href="{{ site.baseurl }}/assets/calendar/tbc.ics">Add to calendar</a>)</small>
           </h5>
           <dl class="row mb-0">
             <dt class="col-sm-3"><strong>Title:</strong></dt>
-            <dd class="col-sm-9">Synthetic cohorts for life course etiologic research</dd>
+            <dd class="col-sm-9">TBC</dd>
             <dt class="col-sm-3"><strong>Speaker:</strong></dt>
-            <dd class="col-sm-9"><em>Katrina Kezios (Boston University School of Public Health)</em></dd>
+            <dd class="col-sm-9"><em>TBC</em></dd>
             <dt class="col-sm-3"><strong>Summary:</strong></dt>
-            <dd class="col-sm-9">Because no single U.S. cohort spans the entire life course, researchers increasingly rely on data combination approaches (e.g., pooling, integration, fusion) that leverage multiple, age-overlapping cohorts covering different life stages to construct life course data. When the analytic goal in the combined cohort is exposure–disease effect estimation, such approaches require attention to causal assumptions, and principles from data fusion theory can guide cohort construction. This seminar reviews conditions under which such cohort fusion is possible (Kezios et al. 2024. Epidemiology) and presents an applied example that creates a longitudinal synthetic cohort by fusing the National Longitudinal Survey of Youth 1979 and Health and Retirement Study cohorts to estimate the effect of income volatility across adulthood on later memory decline.</dd>
+            <dd class="col-sm-9">TBC</dd>
           </dl>
         </div>
       </div>
@@ -62,6 +62,16 @@ permalink: /seminars/
 ### Past Seminars
 
 <p class="mt-4 text-center">You can find the recordings of some of our past seminars <a href="https://www.youtube.com/@LongModel" target="_blank" rel="noopener noreferrer">here</a>.</p>
+
+**22 January 2026**
+
+**Title:** **Synthetic cohorts for life course etiologic research**
+
+**Speaker:** *Katrina Kezios (Boston University School of Public Health)*
+
+**Summary:** Because no single U.S. cohort spans the entire life course, researchers increasingly rely on data combination approaches (e.g., pooling, integration, fusion) that leverage multiple, age-overlapping cohorts covering different life stages to construct life course data. When the analytic goal in the combined cohort is exposure–disease effect estimation, such approaches require attention to causal assumptions, and principles from data fusion theory can guide cohort construction. This seminar reviews conditions under which such cohort fusion is possible (Kezios et al. 2024. Epidemiology) and presents an applied example that creates a longitudinal synthetic cohort by fusing the National Longitudinal Survey of Youth 1979 and Health and Retirement Study cohorts to estimate the effect of income volatility across adulthood on later memory decline.
+
+---
 
 **26 September 2025**
 
