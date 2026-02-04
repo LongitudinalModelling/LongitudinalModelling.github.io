@@ -1,8 +1,14 @@
+- authors: "Da Silva M, Fritz J, Elhakeem A, et al." 
+  title: "Weight trajectories throughout adulthood and prostate cancer incidence, aggressiveness, and death in 258,494 men" 
+  journal: "Journal of the National Cancer Institute"
+  link: https://doi.org/10.1093/jnci/djag014
+  date: 2026-01-23 # Used for sorting
+  
 - authors: "Duckett K, McClellan A, Corbin LJ, et al." 
   title: "Cross-species studies implicate the melanocortin 3 receptor more strongly in the control of pubertal development than energy balance" 
   journal: "Molecular Metabolism"
   link: https://doi.org/10.1016/j.molmet.2025.102301
-  date: 2025-12-10 # Used for sorting
+  date: 2025-12-10
 
 - authors: "Culpin I, Pearson RM, Wright N, et al." 
   title: "Maternal and paternal depressive symptoms from pregnancy to late childhood in a UK-birth cohort: Reciprocal and bidirectional effects" 
