@@ -1,8 +1,20 @@
+- authors: "Le H, da Silva M, Bennet L, et al." 
+  title: "Weight trajectories and obesity onset between 17 and 60 years of age, and cause-specific mortality: the Obesity and Disease Development Sweden (ODDS) pooled cohort study" 
+  journal: "eClinicalMedicine"
+  link: https://doi.org/10.1016/j.eclinm.2026.103870
+  date: 2026-04-10 # Used for sorting
+
+- authors: "Cole TJ, Sandhu S, Elhakeem A" 
+  title: "Weight trajectories throughout adulthood and prostate cancer incidence, aggressiveness, and death in 258,494 men" 
+  journal: "Annals of Human Biology"
+  link: https://doi.org/10.1080/03014460.2026.2627918
+  date: 2026-03-26
+
 - authors: "da Silva M, Fritz J, Elhakeem A, et al." 
   title: "Weight trajectories throughout adulthood and prostate cancer incidence, aggressiveness, and death in 258,494 men" 
   journal: "Journal of the National Cancer Institute"
   link: https://doi.org/10.1093/jnci/djag014
-  date: 2026-01-23 # Used for sorting
+  date: 2026-01-23
   
 - authors: "Duckett K, McClellan A, Corbin LJ, et al." 
   title: "Cross-species studies implicate the melanocortin 3 receptor more strongly in the control of pubertal development than energy balance" 
