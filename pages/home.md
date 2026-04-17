@@ -94,4 +94,4 @@ permalink: /
   </div>
 {% endif %}
 
-<div style="height: 50px;"></div> <img src="{{ site.url }}{{ site.baseurl }}/assets/images/lmg_logo.jpg" alt="LML Group Logo" style="width: 400px; display: block; margin: 0 auto;">
+<div style="height: 50px;"></div> <img src="{{ site.baseurl }}/assets/images/lmg_logo.jpg" alt="LML Group Logo" style="width: 400px; display: block; margin: 0 auto;">

@@ -1,6 +1,7 @@
 # SITE SETTINGS
 title: "" # Title in top navigation bar (navbar) and <head>
 author: Longitudinal Modelling Group 2025 # Used for copyright statement in footer
+url: "https://longitudinalmodelling.github.io" # Full URL of the site (used for SEO, sitemap, feeds)
 baseurl: "" # Only required if your site is in a directory e.g. https://username.github.io/sitename
 repository: longitudinalmodelling/longitudinalmodelling.github.io
 

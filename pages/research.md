@@ -9,7 +9,7 @@ permalink: /research/
 <hr class="purple-line-small">
 
 <div class="image-with-text">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/research/repeated_measures.jpg" alt="A graph showing repeated measurements over time" style="width: 260px; float: right; margin: 10px 10px 10px 10px;">
+  <img src="{{ site.baseurl }}/assets/images/research/repeated_measures.jpg" alt="A graph showing repeated measurements over time" style="width: 260px; float: right; margin: 10px 10px 10px 10px;">
   <p>We develop, use, and promote innovative statistical methods to analyze <b>repeated measures data</b> in longitudinal studies to better understand how people grow and change throughout their lives.</p>
   <p>Our work with <b>trajectory modelling</b> helps us to pinpoint critical moments when trajectories might change for the worse and identify factors that shape these paths. We also explore more <b>dynamic features</b>, such as rate of change over time, to gain deeper insights into growth and development.</p>
 </div>
@@ -52,7 +52,7 @@ Some of our current research areas and interests include:
 
 The data we use come from various studies, including those shown below.
 
-![]({{ site.url }}{{ site.baseurl }}/assets/images/research/cohorts.jpg){: style="width: 100%; float: center; margin: 10px"}
+![]({{ site.baseurl }}/assets/images/research/cohorts.jpg){: style="width: 100%; float: center; margin: 10px"}
 
 <hr class="purple-line-small">
 

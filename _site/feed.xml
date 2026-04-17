@@ -1,4 +1,82 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-09-03T18:26:43+01:00</updated><id>http://localhost:4000/feed.xml</id><author><name>Longitudinal Modelling Group 2025</name></author><entry><title type="html">SITAR User Advisory Group</title><link href="http://localhost:4000/blog/2025/sitar-uag/" rel="alternate" type="text/html" title="SITAR User Advisory Group" /><published>2025-08-23T00:00:00+01:00</published><updated>2025-08-23T00:00:00+01:00</updated><id>http://localhost:4000/blog/2025/sitar-uag</id><content type="html" xml:base="http://localhost:4000/blog/2025/sitar-uag/"><![CDATA[<p>We are establishing a User Advisory Group (UAG) to help maximise the impact and benefit of a new MRC-funded research project: <strong>SITAR enhancements to support state-of-the-art analysis of individual growth curves and their correlates</strong>.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-04-17T16:33:35+01:00</updated><id>http://localhost:4000/feed.xml</id><author><name>Longitudinal Modelling Group 2025</name></author><entry><title type="html">SITAR at RSS 2026</title><link href="http://localhost:4000/blog/2026/rss/" rel="alternate" type="text/html" title="SITAR at RSS 2026" /><published>2026-04-14T00:00:00+01:00</published><updated>2026-04-14T00:00:00+01:00</updated><id>http://localhost:4000/blog/2026/rss</id><content type="html" xml:base="http://localhost:4000/blog/2026/rss/"><![CDATA[<div class="container my-5">
+  <img src="/assets/images/blog/rss_blog.jpg" alt="infographic" class="img-fluid" />
+</div>
+
+<p>We’re excited to share that we will be presenting an invited topic session on <strong>Bayesian SITAR growth curve analysis</strong> at the <a href="https://rss.org.uk/training-events/conference2026/">RSS International Conference 2026</a>.</p>
+
+<h4 id="about-the-session">About the session</h4>
+
+<p>The <a href="https://doi.org/10.1093/ije/dyq115">SITAR (SuperImposition by Translation And Rotation)</a> model, developed by Professor Tim Cole CBE, is a powerful tool for summarising human height growth during puberty, typically explaining up to 99% of population variance. The model estimates a mean growth curve and characterises individual growth patterns using three random effects (<em>size</em>, <em>timing</em>, and <em>intensity</em>) which can then be related to earlier exposures or later health outcomes, making SITAR particularly valuable for translational medicine and life course epidemiology.</p>
+
+<p>This session presents exciting new extensions to the classical SITAR model developed within a Bayesian framework, offering greater modelling flexibility. The session will run for approximately 90 minutes and inlcude a short introduction from the session chair, followed by three talks and time for questions and discussion.</p>
+
+<h4 id="speakers-and-provisional-titles">Speakers and provisional titles</h4>
+
+<p><strong>Tim Cole</strong>
+<em>A brief history of SITAR</em></p>
+
+<p><strong>Satpal Sandhu</strong>
+<em>Bayesian SITAR models and bsitar</em></p>
+
+<p><strong>Ahmed Elhakeem</strong>
+<em>Socioeconomic differences in pubertal growth</em></p>
+
+<p><strong>Alejandra Hernandez</strong>
+<em>Joint modelling of growth curve features and a later outcome: weight through puberty and early adulthood adiposity and blood pressure</em></p>
+
+<p>We hope to see you there!</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="https://rss.org.uk/training-events/conference2026/">RSS International Conference 2026</a>  </td>
+      <td>  <a href="https://rss.org.uk/training-events/conference2026/invited-topic-sessions/?viewmode=0">Invited topic sessions</a></td>
+    </tr>
+  </tbody>
+</table>]]></content><author><name>[&quot;Ahmed Elhakeem&quot;]</name></author><category term="SITAR" /><summary type="html"><![CDATA[Invited topic session on Bayesian SITAR growth curve analysis]]></summary></entry><entry><title type="html">Adulthood weight gain and prostate cancer</title><link href="http://localhost:4000/blog/2026/pca/" rel="alternate" type="text/html" title="Adulthood weight gain and prostate cancer" /><published>2026-03-23T00:00:00+00:00</published><updated>2026-03-23T00:00:00+00:00</updated><id>http://localhost:4000/blog/2026/pca</id><content type="html" xml:base="http://localhost:4000/blog/2026/pca/"><![CDATA[<p>Prostate cancer is the <a href="https://www.who.int/news/item/01-02-2024-global-cancer-burden-growing--amidst-mounting-need-for-services">second most diagnosed cancer in men globally</a>. It affects the prostate gland under the bladder and usually happens in men over 50 years old.</p>
+
+<p>Obesity is an <a href="https://pubmed.ncbi.nlm.nih.gov/30548482/">established risk factor for many cancers</a> but the evidence for its effect on prostate cancer is inconsistent. One reason for the inconsistency may be because previous studies have generally only examined weight at a single timepoint without considering weight changes across adulthood, which might influence cancer risk independently of starting (baseline) body weight.</p>
+
+<p>In a <a href="https://doi.org/10.1093/jnci/djag014">new study</a> in the Journal of the National Cancer Institute, Marisa da Silva and colleagues find that adulthood weight gain was associated with reduced survival among those with a prostate cancer diagnosis. The researchers also found that adulthood weight gain appeared to reduce the risk of a prostate cancer diagnosis but that this was likely due to detection bias.</p>
+
+<h4 id="what-the-researchers-did-and-found">What the researchers did and found</h4>
+
+<p>The researchers followed-up 258,494 men in Sweden for up to 25 years tracking new cases of prostate cancer, including disease aggressiveness, and death. Longitudinal modelling was used to estimate individual weight trajectories between age 17 and 60 years.</p>
+
+<div class="container my-5">
+  <img src="/assets/images/blog/pca_info.jpg" alt="infographic" class="img-fluid" />
+</div>
+
+<p>The study found that steep weight gain across adulthood was associated with lower risk of being diagnosed with non-aggressive prostate cancer. However, this was heavily concentrated in the modern era of prostate-specific antigen (PSA) testing and among asymptomatic cases, which suggests it is a result of detection bias because normal-weight men are more likely to undergo asymptomatic screening. Conversely, when looking specifically at men diagnosed with the disease, steep prediagnostic weight gain was associated with an increased risk of prostate cancer death. Moreover, this increased risk of death was primarily driven by weight gained in late midlife, between the ages of 45 and 60.</p>
+
+<p>While the study benefits from a large sample size and trajectory analysis, notable limitations include the lack of data on some potential confounding factors, and the use of a predominantly ethnic Swedish sample in the study which limits how well the findings can be generalised to other populations globally.</p>
+
+<h4 id="what-are-the-implications">What are the implications</h4>
+
+<p>This study shows that the timing of weight gain matters just as much as the amount, and points to weight gain during late middle adulthood as a distinct and actionable risk factor for disease survival, independent of how aggressive the tumour is at diagnosis.</p>
+
+<p>It also highlights how opportunistic PSA screening can mask the relationship between weight and prostate cancer risk.</p>
+
+<p>The life-course approach helps explain why previous studies using single-point weight measurements have produced conflicting results. Epidemiological research on adiposity and cancer must move beyond single exposure measurement and instead adopt life-course modelling to account for an individual’s adiposity trajectory.</p>
+
+<p>More research is needed to understand the biological mechanisms that make late-onset obesity particularly detrimental to prostate cancer survival.</p>
+
+<h4 id="key-takeaway">Key takeaway</h4>
+
+<p>While screening biases complicated the study of how weight gain might affect the chances of being diagnosed with prostate cancer, weight gain in late middle adulthood appears to increase the risk of dying from the disease. Clinical and public health guidelines should therefore explicitly acknowledge the importance of weight management and stability during the late midlife age window to help improve long-term prostate cancer outcomes.</p>
+
+<hr />
+
+<h5 id="resources">Resources</h5>
+
+<ul>
+  <li>
+    <p>Paper: <a href="https://doi.org/10.1093/jnci/djag014">da Silva et al. Weight trajectories throughout adulthood and prostate cancer incidence, aggressiveness, and death in 258 494 men. Journal of the National Cancer Institute. 2026</a></p>
+  </li>
+  <li>
+    <p>Check out our <a href="/training">training page</a> for <b>explanatory guides</b> on mixed effects models and splines and for <b>analysis tutorials</b></p>
+  </li>
+</ul>]]></content><author><name>[&quot;Ahmed Elhakeem&quot;, &quot;Marisa da Silva&quot;]</name></author><category term="cancer" /><category term="trajectories" /><category term="weight" /><summary type="html"><![CDATA[New study examines relationship between weight trajectories and prostate cancer]]></summary></entry><entry><title type="html">SITAR User Advisory Group</title><link href="http://localhost:4000/blog/2025/sitar-uag/" rel="alternate" type="text/html" title="SITAR User Advisory Group" /><published>2025-08-23T00:00:00+01:00</published><updated>2025-08-23T00:00:00+01:00</updated><id>http://localhost:4000/blog/2025/sitar-uag</id><content type="html" xml:base="http://localhost:4000/blog/2025/sitar-uag/"><![CDATA[<p>We are establishing a User Advisory Group (UAG) to help maximise the impact and benefit of a new MRC-funded research project: <strong>SITAR enhancements to support state-of-the-art analysis of individual growth curves and their correlates</strong>.</p>
 
 <p>We are looking for researchers and stakeholders that are <strong>working or interested in longitudinal data analysis methods and applications</strong> to join the project’s UAG. Your feedback will be sought when developing our methods, tools, and disseminating results and resources to ensure that the project’s outputs are made widely accessible and impactful.</p>
 
@@ -26,7 +104,7 @@
 
 <div class="image-with-text">
   <img src="/assets/images/blog/art_health_logo.jpg" alt="ART-HEALTH Partnership Logo" style="width: 260px; float: right; margin: 10px 10px 10px 10px;" />
-  <p>The <b>Assisted Reproductive Technology (ART) Health Partnership (A.R.T-HEALTH<sub>PARTNERSHIP</sub>)</b> is a global research collaboration dedicated to building robust evidence on the effects of pregnancy conception by ART compared to unassisted conception.</p>
+  <p>The <b>Assisted Reproductive Technology (ART) Health Partnership (A.R.T-HEALTH<sub>PARTNERSHIP</sub>)</b> is a global research collaboration led by the University of Bristol that is dedicated to building robust evidence on the effects of pregnancy conception by ART compared to unassisted conception.</p>
   <p>Our mission is to understand how fertility treatments impact the health of mothers and their children, from pregnancy through to early adulthood.</p>
   <p>To achieve this, we bring together data from a wide range of study designs—including birth cohorts, ART clinical cohorts, and electronic health record linkage studies, and use different statistical approaches to build a comprehensive picture.</p>
   <p>Our goal is to leverage the strengths of each study type to get the most accurate results possible.</p>
@@ -64,4 +142,4 @@
 
 <p>If your study has data on fertility treatment and you are interested in joining our mission, we’d love to hear from you.</p>
 
-<p>Simply email the project leads to express your interest. You can find their contact details on the <a href="https://arthealth.bristol.ac.uk/contacts/">project website</a>.</p>]]></content><author><name>[&quot;Ahmed Elhakeem&quot;]</name></author><category term="ART" /><category term="Infertility" /><summary type="html"><![CDATA[Contribute to a global research project into the health effects of fertility treatment.]]></summary></entry></feed>
+<p>Simply email the project leads to express your interest. You can find their contact details on the <a href="https://arthealth.bristol.ac.uk/contacts/">project website</a>.</p>]]></content><author><name>[&quot;Ahmed Elhakeem&quot;]</name></author><category term="ART" /><category term="Infertility" /><summary type="html"><![CDATA[Contribute to research projects into the health effects of fertility treatment]]></summary></entry></feed>

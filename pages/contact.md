@@ -37,7 +37,7 @@ For general inquiries, or if you are unsure who to contact, <a href="mailto:grp-
 Our research network extends from colleagues here at the University of Bristol to partners at leading academic institutions across the UK and internationally. Some of our collaborating institutions include:
 
 <div class="container my-5">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/contact/collabs.jpg" alt="Our Collaborators" class="img-fluid">
+  <img src="{{ site.baseurl }}/assets/images/contact/collabs.jpg" alt="Our Collaborators" class="img-fluid">
 </div>
 
 <hr class="purple-line">
@@ -47,7 +47,7 @@ Our research network extends from colleagues here at the University of Bristol t
 We are mostly based at the [MRC Integrative Epidemiology Unit (IEU) at the University of Bristol](https://www.bristol.ac.uk/integrative-epidemiology/). The IEU is part of the [Population Health Sciences](https://www.bristol.ac.uk/medical-school/research/population-health-sciences/) department in [Bristol Medical School](https://www.bristol.ac.uk/medical-school/), in the [Faculty of Health and Life Sciences](https://www.bristol.ac.uk/health-life-sciences/). The IEU is located at Augustine's Courtyard.
 
 <div class="location-details">
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/contact/location.jpg" alt="Location Map" style="width: 450px; margin-right: 20px;">
+    <img src="{{ site.baseurl }}/assets/images/contact/location.jpg" alt="Location Map" style="width: 450px; margin-right: 20px;">
     <div class="address-block">
         Longitudinal Modelling Group<br>
         MRC Integrative Epidemiology Unit<br>
@@ -60,4 +60,4 @@ We are mostly based at the [MRC Integrative Epidemiology Unit (IEU) at the Unive
     </div>
 </div>
 
-<div style="height: 50px;"></div> <img src="{{ site.url }}{{ site.baseurl }}/assets/images/lmg_logo.jpg" alt="LML Group Logo" style="width: 500px; display: block; margin: 0 auto;">
+<div style="height: 50px;"></div> <img src="{{ site.baseurl }}/assets/images/lmg_logo.jpg" alt="LML Group Logo" style="width: 500px; display: block; margin: 0 auto;">
