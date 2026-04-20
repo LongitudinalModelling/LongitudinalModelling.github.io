@@ -18,9 +18,9 @@ There are no Scholarships available at this moment.
 
 ##### Visiting scholars
 
-We regularly host visiting researchers. Please <a href="mailto:grp-lmod@groups.bristol.ac.uk">get in touch</a> to disucss opportunities. 
+We regularly host visiting researchers. Please <a href="mailto:grp-lmod@groups.bristol.ac.uk">get in touch</a> to discuss opportunities. 
 
-If you do not have your own funding, there are schemes available from the University of Bristol to support short and long-term visits, inlcuding:
+If you do not have your own funding, there are schemes available from the University of Bristol to support short and long-term visits, including:
 * [Benjamin Meaker Annual Awards](https://www.bristol.ac.uk/international-research-development/funding-opportunities/bmaa/)
 * [Research Development International Collaboration Awards](https://www.bristol.ac.uk/international-research-development/funding-opportunities/rdica/)
 

@@ -8,7 +8,7 @@ Here you can find details of our training courses and access free guides and tut
 
 <h2 class="text-center mb-3 home-section-heading">Courses</h2>
 
-We teach trajectory modelling and related research methods at [Bristol Medical School Short Courses](https://www.bristol.ac.uk/medical-school/study/short-courses/) and [MSc Programs](https://www.bristol.ac.uk/study/postgraduate/). These inlcude:
+We teach trajectory modelling and related research methods at [Bristol Medical School Short Courses](https://www.bristol.ac.uk/medical-school/study/short-courses/) and [MSc Programs](https://www.bristol.ac.uk/study/postgraduate/). These include:
 * [Analysis of Repeated Measures Short Course](https://www.bristol.ac.uk/medical-school/study/short-courses/courses/analysis-repeated-measures/)
 * [Statistical Methods for Mediation Analysis Short Course](https://www.bristol.ac.uk/medical-school/study/short-courses/courses/statistical-methods-mediation-analysis/)
 * [Introduction to R Short Course](https://www.bristol.ac.uk/medical-school/study/short-courses/courses/r/)

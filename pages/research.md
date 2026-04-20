@@ -52,10 +52,10 @@ Some of our current research areas and interests include:
 
 The data we use come from various studies, including those shown below.
 
-![]({{ site.baseurl }}/assets/images/research/cohorts.jpg){: style="width: 100%; float: center; margin: 10px"}
+![]({{ site.baseurl }}/assets/images/research/cohorts.jpg){: style="width: 100%; display: block; margin: 10px auto;"}
 
 <hr class="purple-line-small">
 
 #### Funding
 
-Our work is supported by funding from different sources, inlcuding the University of Bristol, MRC, Wellcome Trust, European Research Council, and Horizon Europe.
+Our work is supported by funding from different sources, including the University of Bristol, MRC, Wellcome Trust, European Research Council, and Horizon Europe.

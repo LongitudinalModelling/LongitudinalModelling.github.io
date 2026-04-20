@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Mixed effects models"
-permalink: /training//expl_guides/me_models/
+permalink: /training/expl_guides/me_models/
 background: /assets/images/backgrounds/training_page.jpg
 ---
 

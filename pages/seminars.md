@@ -22,7 +22,7 @@ permalink: /seminars/
     <div class="col-md-6 mb-4">
       <div class="card p-4 text-center bg-purple">
         <h4 class="text-white">Present your work to the group</h4>
-        <a href="mailto:grp-lmod@groups.bristol.ac.uk?subject=Seminar%20Presentation%20Proposal" class="btn btn-light btn-lg mt-2">Popose a talk</a>
+        <a href="mailto:grp-lmod@groups.bristol.ac.uk?subject=Seminar%20Presentation%20Proposal" class="btn btn-light btn-lg mt-2">Propose a talk</a>
       </div>
     </div>
   </div>
