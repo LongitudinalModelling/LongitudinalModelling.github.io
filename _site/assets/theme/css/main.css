@@ -3610,7 +3610,7 @@ body > footer .small.mt-2 p + p:before { content: " — "; }
 
 /* Custom style for the "News and Updates" heading underline */
 .home-section-heading { position: relative; display: inline-block; padding-bottom: 5px; }
-.home-section-heading::after { content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 3px; background-color: #8A2BE2; }
+.home-section-heading::after { content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 3px; background-color: #670267; }
 
 .location-details { display: flex; align-items: center; flex-wrap: wrap; margin-bottom: 20px; }
 
@@ -3621,7 +3621,7 @@ body > footer .small.mt-2 p + p:before { content: " — "; }
 .purple-line { border: none; border-top: 5px solid #670267; margin: 30px 0; }
 
 /* --- Software Page Layout --- */
-.purple-line-small { border: none; border-top: 5px solid #5c005c; width: 50%; margin: 15px auto; }
+.purple-line-small { border: none; border-top: 5px solid #670267; width: 50%; margin: 15px auto; }
 
 .software-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; padding: 20px 0; }
 
@@ -3640,10 +3640,10 @@ body > footer .small.mt-2 p + p:before { content: " — "; }
 .software-links .btn { margin: 5px; white-space: nowrap; font-weight: bold; }
 
 /* --- Custom GitHub button style --- */
-.btn-info { color: white; background-color: #5c005c; border-color: #5c005c; }
+.btn-info { color: white; background-color: #670267; border-color: #670267; }
 
 /* Change color on hover for a better user experience */
-.btn-info:hover { color: white; background-color: #4d004d; border-color: #4d004d; }
+.btn-info:hover { color: white; background-color: #3f013f; border-color: #3f013f; }
 
 /* --- Optional: Responsive adjustments --- */
 @media (max-width: 992px) { .software-grid { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); } }
@@ -3653,9 +3653,9 @@ body > footer .small.mt-2 p + p:before { content: " — "; }
 
 .call-to-action p { font-size: 1.4em; font-weight: bold; margin-bottom: 15px; color: #333; }
 
-.purple-tab-button { display: inline-block; padding: 12px 25px; background-color: #800080; color: #ffffff; text-decoration: none; border: none; font-size: 1.1em; font-weight: bold; transition: all 0.3s ease-in-out, background-color 0.3s ease, transform 0.2s ease; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); background: linear-gradient(to bottom, #993399, #800080); }
+.purple-tab-button { display: inline-block; padding: 12px 25px; background-color: #670267; color: #ffffff; text-decoration: none; border: none; font-size: 1.1em; font-weight: bold; transition: all 0.3s ease-in-out, background-color 0.3s ease, transform 0.2s ease; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); background: linear-gradient(to bottom, #990399, #670267); }
 
-.purple-tab-button:hover { background-color: #6a006a; transform: translateY(-3px); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); background: linear-gradient(to bottom, #800080, #6a006a); }
+.purple-tab-button:hover { background-color: #4e024e; transform: translateY(-3px); box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); background: linear-gradient(to bottom, #670267, #4e024e); }
 
 /* --- Styles for the new panel of 4 buttons (using the same purple-tab-button style) --- */
 .button-panel-section { text-align: center; margin-top: 40px; margin-bottom: 50px; }
@@ -3667,6 +3667,13 @@ body > footer .small.mt-2 p + p:before { content: " — "; }
 @media (max-width: 576px) { .button-panel { flex-direction: column; align-items: center; }
   .button-panel .purple-tab-button { width: 80%; min-width: unset; } }
 .center-text { text-align: center; }
+
+/* --- Inline style replacements --- */
+.img-float-right { width: 260px; float: right; margin: 10px; }
+
+.img-logo { display: block; margin: 0 auto; max-width: 500px; width: 100%; }
+
+.spacer-lg { height: 50px; }
 
 /* --- Training Card Styles --- */
 .training-card { position: relative; display: block; overflow: hidden; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; text-decoration: none; color: inherit; }
@@ -3698,19 +3705,19 @@ body > footer .small.mt-2 p + p:before { content: " — "; }
 
 .tutorial-link:hover .fas { color: #0056b3; }
 
-.latest-publications-box { height: 260px; overflow-y: scroll; padding: 15px 15px 15px 25px; /* Added left padding for the line */ border-left: 5px solid #2f0353; /* A thick, bold line on the left side */ border-radius: 5px; /* Keeps the rounded corners */ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); /* A subtle shadow */ transition: box-shadow 0.3s ease; }
+.latest-publications-box { height: 260px; overflow-y: scroll; padding: 15px 15px 15px 25px; border-left: 5px solid #360353; border-radius: 5px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); transition: box-shadow 0.3s ease; }
 
 .latest-publications-box:hover { box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12); }
 
-.latest-publications-box ul { list-style-type: none; /* Removed the default bullet points for a cleaner look */ margin-left: 0; padding-left: 0; }
+.latest-publications-box ul { list-style-type: none; margin-left: 0; padding-left: 0; }
 
-.latest-publications-box li { margin-bottom: 10px; /* Add some space between publications */ line-height: 1.4; }
+.latest-publications-box li { margin-bottom: 10px; line-height: 1.4; }
 
-.latest-publications-box a { color: #007bff; /* A standard blue color for links */ text-decoration: none; }
+.latest-publications-box a { color: #007bff; text-decoration: none; }
 
 .latest-publications-box a:hover { text-decoration: underline; }
 
-.latest-publications-box li:not(:last-child) { border-bottom: 1px solid #2d034f; padding-bottom: 10px; /* Space above the line */ margin-bottom: 10px; /* Space below the line */ }
+.latest-publications-box li:not(:last-child) { border-bottom: 1px solid #360353; padding-bottom: 10px; margin-bottom: 10px; }
 
 #latest-publications { margin-top: 4rem; color: #360353; }
 

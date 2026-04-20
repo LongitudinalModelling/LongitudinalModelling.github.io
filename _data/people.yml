@@ -108,6 +108,9 @@ current_members:
     profile_link: https://research-information.bris.ac.uk/en/persons/zoe-e-reed
 
 visitors:
+  - name: "Geng Chen"
+    image: "assets/images/people/geng_chen.jpg"
+
   - name: "Anna Dieberger"
     image: "assets/images/people/anna_dieberger.jpg"
 

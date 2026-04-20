@@ -60,4 +60,5 @@ We are mostly based at the [MRC Integrative Epidemiology Unit (IEU) at the Unive
     </div>
 </div>
 
-<div style="height: 50px;"></div> <img src="{{ site.baseurl }}/assets/images/lmg_logo.jpg" alt="LML Group Logo" style="width: 500px; display: block; margin: 0 auto;">
+<div class="spacer-lg"></div>
+<img src="{{ site.baseurl }}/assets/images/lmg_logo.jpg" alt="Longitudinal Modelling Group Logo" class="img-logo">

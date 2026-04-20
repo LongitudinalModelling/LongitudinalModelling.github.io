@@ -2,6 +2,10 @@
 //
 // Include the file _sass/_custom.scss to your site to add custom styling
 
+// Brand colours
+$purple: #670267;
+$purple-dark: #360353;
+
 /* Custom style for the "News and Updates" heading underline */
 .home-section-heading {
     position: relative;
@@ -15,7 +19,7 @@
         bottom: 0;
         width: 100%;
         height: 3px;
-        background-color: #8A2BE2;
+        background-color: $purple;
     }
 }
 
@@ -39,7 +43,7 @@
 
 .purple-line {
     border: none;
-    border-top: 5px solid #670267;
+    border-top: 5px solid $purple;
     margin: 30px 0;
 }
 
@@ -47,7 +51,7 @@
 
 .purple-line-small {
     border: none;
-    border-top: 5px solid #5c005c;
+    border-top: 5px solid $purple;
     width: 50%;
     margin: 15px auto;
 }
@@ -111,15 +115,15 @@
 /* --- Custom GitHub button style --- */
 .btn-info {
     color: white;
-    background-color: #5c005c;
-    border-color: #5c005c;
+    background-color: $purple;
+    border-color: $purple;
 }
 
 /* Change color on hover for a better user experience */
 .btn-info:hover {
     color: white;
-    background-color: #4d004d;
-    border-color: #4d004d;
+    background-color: darken($purple, 8%);
+    border-color: darken($purple, 8%);
 }
 
 /* --- Optional: Responsive adjustments --- */
@@ -155,7 +159,7 @@
 .purple-tab-button {
     display: inline-block;
     padding: 12px 25px;
-    background-color: #800080;
+    background-color: $purple;
     color: #ffffff;
     text-decoration: none;
     border: none;
@@ -163,14 +167,14 @@
     font-weight: bold;
     transition: all 0.3s ease-in-out, background-color 0.3s ease, transform 0.2s ease;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(to bottom, #993399, #800080);
+    background: linear-gradient(to bottom, lighten($purple, 10%), $purple);
 }
 
 .purple-tab-button:hover {
-    background-color: #6a006a;
+    background-color: darken($purple, 5%);
     transform: translateY(-3px);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    background: linear-gradient(to bottom, #800080, #6a006a);
+    background: linear-gradient(to bottom, $purple, darken($purple, 5%));
 }
 
 /* --- Styles for the new panel of 4 buttons (using the same purple-tab-button style) --- */
@@ -209,6 +213,25 @@
 
 .center-text {
     text-align: center;
+}
+
+/* --- Inline style replacements --- */
+
+.img-float-right {
+    width: 260px;
+    float: right;
+    margin: 10px;
+}
+
+.img-logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 500px;
+    width: 100%;
+}
+
+.spacer-lg {
+    height: 50px;
 }
 
 /* --- Training Card Styles --- */
@@ -318,10 +341,10 @@
 .latest-publications-box {
   height: 260px;
   overflow-y: scroll;
-  padding: 15px 15px 15px 25px; /* Added left padding for the line */
-  border-left: 5px solid #2f0353; /* A thick, bold line on the left side */
-  border-radius: 5px; /* Keeps the rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); /* A subtle shadow */
+  padding: 15px 15px 15px 25px;
+  border-left: 5px solid $purple-dark;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
   transition: box-shadow 0.3s ease;
 }
 
@@ -329,18 +352,18 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
 }
 .latest-publications-box ul {
-  list-style-type: none; /* Removed the default bullet points for a cleaner look */
+  list-style-type: none;
   margin-left: 0;
   padding-left: 0;
 }
 
 .latest-publications-box li {
-  margin-bottom: 10px; /* Add some space between publications */
+  margin-bottom: 10px;
   line-height: 1.4;
 }
 
 .latest-publications-box a {
-    color: #007bff; /* A standard blue color for links */
+    color: #007bff;
     text-decoration: none;
 }
 
@@ -349,13 +372,12 @@
 }
 
 .latest-publications-box li:not(:last-child) {
-  border-bottom: 1px solid #2d034f;
-  padding-bottom: 10px; /* Space above the line */
-  margin-bottom: 10px;  /* Space below the line */
+  border-bottom: 1px solid $purple-dark;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 #latest-publications {
   margin-top: 4rem;
-    color: #360353;
-
+  color: $purple-dark;
 }
