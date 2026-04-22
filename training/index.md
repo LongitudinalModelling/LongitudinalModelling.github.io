@@ -113,51 +113,58 @@ We also occasionally organise researcher workshops - these will be advertised in
       <ul>
 
         <li>
-          <a href="{{ site.baseurl }}/training/tutorials/linear_spline_lme_tutorial/" class="tutorial-link">
+          <a href="{{ site.baseurl }}/training/tutorials/ls_lme4/" class="tutorial-link">
             <h5 class="mb-1 tutorial-title">Linear spline LME models with <code>lme4</code></h5>
             <p class="mb-0 tutorial-description text-muted">Fitting linear spline linear mixed effects models in R.</p>
           </a>
         </li>
 
         <li>
-          <a href="{{ site.baseurl }}/training/tutorials/natural_spline_lme_tutorial/" class="tutorial-link">
+          <a href="{{ site.baseurl }}/training/tutorials/ns_lme4/" class="tutorial-link">
             <h5 class="mb-1 tutorial-title">Natural spline LME models with <code>lme4</code></h5>
             <p class="mb-0 tutorial-description text-muted">Fitting natural cubic spline linear mixed effects models in R</p>
           </a>
         </li>
 
         <li>
-          <a href="{{ site.baseurl }}/training/tutorials/pspline_lme_tutorial/" class="tutorial-link">
+          <a href="{{ site.baseurl }}/training/tutorials/ps_psme/" class="tutorial-link">
             <h5 class="mb-1 tutorial-title">P-spline LME models with <code>psme</code></h5>
             <p class="mb-0 tutorial-description text-muted">Fitting P-spline linear mixed effects models in R</p>
           </a>
         </li>
 
         <li>
-          <a href="{{ site.baseurl }}/training/tutorials/sitar_tutorial/" class="tutorial-link">
+          <a href="{{ site.baseurl }}/training/tutorials/sitar/" class="tutorial-link">
             <h5 class="mb-1 tutorial-title">SITAR models with <code>sitar</code></h5>
             <p class="mb-0 tutorial-description text-muted">Fitting SITAR models in R.</p>
           </a>
         </li>
 
         <li>
-          <a href="{{ site.baseurl }}/training/tutorials/bsitar_tutorial/" class="tutorial-link">
+          <a href="{{ site.baseurl }}/training/tutorials/bsitar/" class="tutorial-link">
             <h5 class="mb-1 tutorial-title">Bayesian SITAR models with <code>bsitar</code></h5>
             <p class="mb-0 tutorial-description text-muted">Fitting Bayesian SITAR models in R.</p>
           </a>
         </li>
 
         <li>
-          <a href="{{ site.baseurl }}/training/tutorials/group_based_trajectory__model_tutorial/" class="tutorial-link">
+          <a href="{{ site.baseurl }}/training/tutorials/gbtm_lcmm/" class="tutorial-link">
             <h5 class="mb-1 tutorial-title">Group-based trajectory models with <code>lcmm</code></h5>
             <p class="mb-0 tutorial-description text-muted">Fitting group-based trajectory models in R.</p>
           </a>
         </li>
 
         <li>
-          <a href="{{ site.baseurl }}/training/tutorials/growth_mixture_model_tutorial/" class="tutorial-link">
+          <a href="{{ site.baseurl }}/training/tutorials/gmm_lcmm/" class="tutorial-link">
             <h5 class="mb-1 tutorial-title">Growth mixture models with <code>lcmm</code></h5>
             <p class="mb-0 tutorial-description text-muted">Fitting growth mixture models in R.</p>
+          </a>
+        </li>
+
+        <li>
+          <a href="{{ site.baseurl }}/training/tutorials/fpca_face/" class="tutorial-link">
+            <h5 class="mb-1 tutorial-title">Functional principal component analysis with <code>face</code></h5>
+            <p class="mb-0 tutorial-description text-muted">Functional principal component analysis in R.</p>
           </a>
         </li>
 
