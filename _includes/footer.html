@@ -53,7 +53,7 @@
             {% for item in col.links %}
               {% if item.image %}
                 <a href="{{ item.href | relative_url }}"{% if item.new_window %} target="_blank"{% endif %}>
-                  <img src="{{ item.image | relative_url }}" alt="{{ item.alt }}" style="height: 60px; max-width: 100%;">
+                  <img src="{{ item.image | relative_url }}" alt="{{ item.alt }}" style="height: 60px; max-width: 100%;" loading="lazy" decoding="async">
                 </a>
               {% endif %}
             {% endfor %}

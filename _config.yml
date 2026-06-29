@@ -13,11 +13,12 @@ social:
 
 # THEME SETTINGS (ALL OPTIONAL)
 posts_on_home: 2 # Show x number of latest posts on homepage, can be 0
+archive_permalink: /blog/ # Tag badges on posts link here with ?tag=, filtered by script in pages/blog.md
 github_edit: true                       # Show an "edit this page" link in the footer, can also be name of branch (default: main)
 colors:
-  links: "#007bff"                      # Color for links: use a readable color that contrasts well with dark text
-  banner: "#007bff"                     # Background color for page banners: use color that contrasts well with white
-  footer: "#6c757d"                     # Background color for footer: use color that contrasts well with white
+  links: "#670267"                      # Color for links: use a readable color that contrasts well with dark text
+  banner: "#670267"                     # Background color for page banners: use color that contrasts well with white
+  footer: "#360353"                     # Background color for footer: use color that contrasts well with white
 font_serif: true                        # Font type for page content: serif (default) or slightly smaller sans-serif
 rounded_corners: true                   # Enable (default) rounded corners on boxes and buttons
 logo: /assets/images/lmg_logo.jpg # Logo in navbar, will be displayed with 30px height

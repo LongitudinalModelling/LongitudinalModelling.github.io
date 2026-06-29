@@ -84,8 +84,7 @@ body > main {
   }
 
   &:hover::before {
-      filter: blur(2px);
-      background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
   }
 
   .card-body {
@@ -94,21 +93,19 @@ body > main {
   }
 }
 
-/* Define the image for each card */
-.card-bg-1 {
-  background-image: url('/assets/images/backgrounds/research_page.jpg');
-}
-.card-bg-2 {
-  background-image: url('/assets/images/backgrounds/publications_page.jpg');
-}
-.card-bg-3 {
-  background-image: url('/assets/images/backgrounds/software_page.jpg');
-}
-.card-bg-4 {
-  background-image: url('/assets/images/backgrounds/seminars_page.jpg');
-}
-.card-bg-5 {
-  background-image: url('/assets/images/backgrounds/training_page.jpg');
+// Background image for each homepage card
+$card-backgrounds: (
+  1: 'research_page',
+  2: 'publications_page',
+  3: 'software_page',
+  4: 'seminars_page',
+  5: 'training_page',
+);
+
+@each $index, $image in $card-backgrounds {
+  .card-bg-#{$index} {
+    background-image: url('/assets/images/backgrounds/#{$image}.jpg');
+  }
 }
 
 .team-card {
@@ -119,54 +116,35 @@ body > main {
   background-image: url('/assets/images/backgrounds/contact_page.jpg');
 }
 
-.tutorial-link {
-  text-decoration: none;
-  color: #343a40; /* Default text color */
-}
+// Purple colour scheme for the seminars page cards
+// NOTE: intentionally a different shade than the brand $purple (#670267)
+// defined in _custom.scss; unifying them would visibly change the page.
+$seminar-purple: #5c005c;
+$seminar-purple-hover: #4d004d;
 
-.tutorial-link:hover {
-  text-decoration: none;
-  background-color: #f8f9fa; /* Light gray background on hover */
-}
-
-.tutorial-title {
-  color: #212529; /* Darker title color */
-}
-
-.tutorial-description {
-  font-size: 0.9rem; /* Smaller font size for description */
-  line-height: 1.4;
-}
-
-.tutorial-title code,
-.tutorial-description code {
-  font-family: Consolas, "Liberation Mono", Courier, monospace;
-}
-
-/* Custom Purple Color Scheme for Seminars Page */
 .bg-purple {
-  background-color: #5c005c !important;
-  color: white; /* Ensures text is white on the purple background */
+  background-color: $seminar-purple !important;
+  color: white; // Ensures text is white on the purple background
 }
 
 .border-purple {
-  border-color: #5c005c !important;
+  border-color: $seminar-purple !important;
 }
 
 .text-purple {
-  color: #5c005c !important;
+  color: $seminar-purple !important;
 }
 
 .btn-purple {
   color: #fff;
-  background-color: #5c005c;
-  border-color: #5c005c;
+  background-color: $seminar-purple;
+  border-color: $seminar-purple;
 }
 
 .btn-purple:hover {
   color: #fff;
-  background-color: #4d004d; /* Slightly darker purple on hover */
-  border-color: #4d004d;
+  background-color: $seminar-purple-hover;
+  border-color: $seminar-purple-hover;
 }
 
 .team-member-image {

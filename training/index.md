@@ -113,14 +113,14 @@ We also occasionally organise researcher workshops - these will be advertised in
       <ul>
 
         <li>
-          <a href="{{ site.baseurl }}/training/tutorials/ls_lme4/" class="tutorial-link">
+          <a href="{{ site.baseurl }}/training/tutorials/linear_spline_lme_tutorial/" class="tutorial-link">
             <h5 class="mb-1 tutorial-title">Linear spline LME models with <code>lme4</code></h5>
             <p class="mb-0 tutorial-description text-muted">Fitting linear spline linear mixed effects models in R.</p>
           </a>
         </li>
 
         <li>
-          <a href="{{ site.baseurl }}/training/tutorials/ns_lme4/" class="tutorial-link">
+          <a href="{{ site.baseurl }}/training/tutorials/natural_spline_lme_tutorial/" class="tutorial-link">
             <h5 class="mb-1 tutorial-title">Natural spline LME models with <code>lme4</code></h5>
             <p class="mb-0 tutorial-description text-muted">Fitting natural cubic spline linear mixed effects models in R</p>
           </a>

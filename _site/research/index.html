@@ -39,12 +39,14 @@
   <!-- Fonts -->
   <link rel="stylesheet" href="/assets/theme/css/fontawesome-all.min.css">
   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
   
-  <!-- Javascript: loaded here so they are available in templates -->
-  <script src="/assets/theme/js/jquery.min.js"></script>
-  <script src="/assets/theme/js/popper.min.js"></script>
-  <script src="/assets/theme/js/bootstrap.min.js"></script>
+  <!-- Javascript: deferred so it doesn't block first paint -->
+  <script defer src="/assets/theme/js/jquery.min.js"></script>
+  <script defer src="/assets/theme/js/popper.min.js"></script>
+  <script defer src="/assets/theme/js/bootstrap.min.js"></script>
   <script data-goatcounter="https://lmg.goatcounter.com/count"
           async src="//gc.zgo.at/count.js"></script>
 </head>
@@ -61,7 +63,7 @@
     </a>
     
     
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
         Menu <i class="fa-solid fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbar-menu">
@@ -131,6 +133,12 @@
             
           
         </ul>
+        <form class="d-flex navbar-search ms-lg-3 my-2 my-lg-0" action="/search/" method="get" role="search">
+          <input class="form-control form-control-sm navbar-search-input" type="search" name="q" placeholder="Search" aria-label="Search the site">
+          <button class="btn btn-sm navbar-search-button" type="submit" aria-label="Submit search">
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          </button>
+        </form>
       </div>
     
   </div>
@@ -173,8 +181,8 @@
 <hr class="purple-line-small" />
 
 <div class="image-with-text">
-  <img src="/assets/images/research/repeated_measures.jpg" alt="A graph showing repeated measurements over time" class="img-float-right" />
-  <p>We develop, use, and promote innovative statistical methods to analyze <b>repeated measures data</b> in longitudinal studies to better understand how people grow and change throughout their lives.</p>
+  <img src="/assets/images/research/repeated_measures.jpg" alt="A graph showing repeated measurements over time" class="img-float-right" loading="lazy" decoding="async" />
+  <p>We develop, use, and promote innovative statistical methods to analyse <b>repeated measures data</b> in longitudinal studies to better understand how people grow and change throughout their lives.</p>
   <p>Our work with <b>trajectory modelling</b> helps us to pinpoint critical moments when trajectories might change for the worse and identify factors that shape these paths. We also explore more <b>dynamic features</b>, such as rate of change over time, to gain deeper insights into growth and development.</p>
 </div>
 
@@ -209,7 +217,7 @@
 
 <h4 id="applied-research">Applied Research</h4>
 
-<p>Our ongoing applied research uses cutting-edge trajectory modeling and multinational cohort studies to understand how health evolves and to find answers that can improve life course health.</p>
+<p>Our ongoing applied research uses trajectory modelling and multinational cohort studies to understand how health evolves and to find answers that can improve life course health.</p>
 
 <p>Some of our current research areas and interests include:</p>
 
@@ -317,7 +325,7 @@
             
               
                 <a href="">
-                  <img src="/assets/images/uob.png" alt="UOB" style="height: 60px; max-width: 100%;">
+                  <img src="/assets/images/uob.png" alt="UOB" style="height: 60px; max-width: 100%;" loading="lazy" decoding="async">
                 </a>
               
             

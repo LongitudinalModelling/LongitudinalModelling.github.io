@@ -12,7 +12,7 @@
       {% assign navigation = site.data.navigation %}
     {% endif %}
     {% if navigation %}
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
         Menu <i class="fa-solid fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbar-menu">
@@ -20,7 +20,7 @@
           {% for item in navigation %}
             {% if item.menu %}
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   {{ item.text }}
                 </a>
                 <div class="dropdown-menu dropdown-menu-end">
@@ -52,6 +52,12 @@
             {% endif %}
           {% endfor %}
         </ul>
+        <form class="d-flex navbar-search ms-lg-3 my-2 my-lg-0" action="{{ '/search/' | relative_url }}" method="get" role="search">
+          <input class="form-control form-control-sm navbar-search-input" type="search" name="q" placeholder="Search" aria-label="Search the site">
+          <button class="btn btn-sm navbar-search-button" type="submit" aria-label="Submit search">
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          </button>
+        </form>
       </div>
     {% endif %}
   </div>

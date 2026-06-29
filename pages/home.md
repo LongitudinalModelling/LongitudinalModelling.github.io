@@ -1,11 +1,11 @@
 ---
 layout: home
 title: Welcome to the Longitudinal Modelling Group Website
-background: /assets/images/backgrounds/home_page.jpg
+animated_hero: true
 permalink: /
 ---
 
-<h2 class="text-center mt-2 mb-5">We develop, apply, and teach cutting-edge statistical methods for repeated measures analysis to advance science and improve life course health</h2>
+<h2 class="text-center mt-2 mb-5">We develop, apply, and teach statistical methods for repeated measures analysis to advance science and improve life course health</h2>
 
 <div class="card-deck">
   <div class="card text-white card-bg-1">
@@ -95,4 +95,4 @@ permalink: /
 {% endif %}
 
 <div class="spacer-lg"></div>
-<img src="{{ site.baseurl }}/assets/images/lmg_logo.jpg" alt="Longitudinal Modelling Group Logo" class="img-logo">
+<img src="{{ site.baseurl }}/assets/images/lmg_logo.jpg" alt="Longitudinal Modelling Group Logo" class="img-logo" loading="lazy" decoding="async">

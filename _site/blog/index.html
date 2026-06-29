@@ -39,12 +39,14 @@
   <!-- Fonts -->
   <link rel="stylesheet" href="/assets/theme/css/fontawesome-all.min.css">
   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
   
-  <!-- Javascript: loaded here so they are available in templates -->
-  <script src="/assets/theme/js/jquery.min.js"></script>
-  <script src="/assets/theme/js/popper.min.js"></script>
-  <script src="/assets/theme/js/bootstrap.min.js"></script>
+  <!-- Javascript: deferred so it doesn't block first paint -->
+  <script defer src="/assets/theme/js/jquery.min.js"></script>
+  <script defer src="/assets/theme/js/popper.min.js"></script>
+  <script defer src="/assets/theme/js/bootstrap.min.js"></script>
   <script data-goatcounter="https://lmg.goatcounter.com/count"
           async src="//gc.zgo.at/count.js"></script>
 </head>
@@ -61,7 +63,7 @@
     </a>
     
     
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
         Menu <i class="fa-solid fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbar-menu">
@@ -131,6 +133,12 @@
             
           
         </ul>
+        <form class="d-flex navbar-search ms-lg-3 my-2 my-lg-0" action="/search/" method="get" role="search">
+          <input class="form-control form-control-sm navbar-search-input" type="search" name="q" placeholder="Search" aria-label="Search the site">
+          <button class="btn btn-sm navbar-search-button" type="submit" aria-label="Submit search">
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          </button>
+        </form>
       </div>
     
   </div>
@@ -170,6 +178,8 @@
 
     <div class="container mt-5">
 
+  <div id="tag-filter-notice" class="alert text-center" hidden=""></div>
+
   
     <div class="row cards mt-4">
       
@@ -179,7 +189,7 @@
 <div class="card" data-tags="sitar|">
   <a href="/blog/2026/rss/">
     
-      <img class="card-img-top" src="/assets/images/blog/rss_banner.jpg" alt="Background image" />  
+      <img class="card-img-top" src="/assets/images/blog/rss_banner.jpg" alt="SITAR at RSS 2026" loading="lazy" decoding="async" />
     
   </a>
 
@@ -201,6 +211,12 @@
   </div>
 
   
+    <div class="card-footer">
+      
+        <a class="badge rounded-pill" href="/blog/?tag=SITAR">SITAR</a>
+      
+    </div>
+  
 </div>
 
         </div>
@@ -211,7 +227,7 @@
 <div class="card" data-tags="cancer|trajectories|weight|">
   <a href="/blog/2026/pca/">
     
-      <img class="card-img-top" src="/assets/images/blog/pca_banner.jpg" alt="Background image" />  
+      <img class="card-img-top" src="/assets/images/blog/pca_banner.jpg" alt="Adulthood weight gain and prostate cancer" loading="lazy" decoding="async" />
     
   </a>
 
@@ -233,6 +249,16 @@
   </div>
 
   
+    <div class="card-footer">
+      
+        <a class="badge rounded-pill" href="/blog/?tag=cancer">cancer</a>
+      
+        <a class="badge rounded-pill" href="/blog/?tag=trajectories">trajectories</a>
+      
+        <a class="badge rounded-pill" href="/blog/?tag=weight">weight</a>
+      
+    </div>
+  
 </div>
 
         </div>
@@ -243,7 +269,7 @@
 <div class="card" data-tags="sitar|">
   <a href="/blog/2025/sitar-uag/">
     
-      <img class="card-img-top" src="/assets/images/blog/sitar_post.jpg" alt="Background image" />  
+      <img class="card-img-top" src="/assets/images/blog/sitar_post.jpg" alt="SITAR User Advisory Group" loading="lazy" decoding="async" />
     
   </a>
 
@@ -265,6 +291,12 @@
   </div>
 
   
+    <div class="card-footer">
+      
+        <a class="badge rounded-pill" href="/blog/?tag=SITAR">SITAR</a>
+      
+    </div>
+  
 </div>
 
         </div>
@@ -275,7 +307,7 @@
 <div class="card" data-tags="art|infertility|">
   <a href="/blog/2025/art-health/">
     
-      <img class="card-img-top" src="/assets/images/blog/art_health_post.jpg" alt="Background image" />  
+      <img class="card-img-top" src="/assets/images/blog/art_health_post.jpg" alt="Assisted Reproductive Technology Health Partnership" loading="lazy" decoding="async" />
     
   </a>
 
@@ -297,6 +329,14 @@
   </div>
 
   
+    <div class="card-footer">
+      
+        <a class="badge rounded-pill" href="/blog/?tag=ART">ART</a>
+      
+        <a class="badge rounded-pill" href="/blog/?tag=Infertility">Infertility</a>
+      
+    </div>
+  
 </div>
 
         </div>
@@ -304,6 +344,33 @@
     </div>
   
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var tag = new URLSearchParams(window.location.search).get('tag');
+    if (!tag) return;
+    var wanted = tag.trim().toLowerCase();
+    var matches = 0;
+    document.querySelectorAll('.card[data-tags]').forEach(function (card) {
+      var tags = card.getAttribute('data-tags').toLowerCase().split('|').map(function (t) { return t.trim(); });
+      var column = card.closest('.col-md-6') || card;
+      if (tags.indexOf(wanted) === -1) {
+        column.hidden = true;
+      } else {
+        matches++;
+      }
+    });
+    var notice = document.getElementById('tag-filter-notice');
+    if (matches > 0) {
+      notice.innerHTML = 'Showing posts tagged “<strong></strong>” &mdash; <a href="/blog/">show all posts</a>';
+    } else {
+      notice.innerHTML = 'No posts tagged “<strong></strong>” &mdash; <a href="/blog/">show all posts</a>';
+    }
+    notice.querySelector('strong').textContent = tag;
+    notice.hidden = false;
+  });
+</script>
+
 
 
     
@@ -385,7 +452,7 @@
             
               
                 <a href="">
-                  <img src="/assets/images/uob.png" alt="UOB" style="height: 60px; max-width: 100%;">
+                  <img src="/assets/images/uob.png" alt="UOB" style="height: 60px; max-width: 100%;" loading="lazy" decoding="async">
                 </a>
               
             

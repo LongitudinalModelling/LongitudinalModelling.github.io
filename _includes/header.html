@@ -1,5 +1,9 @@
 {% comment %}background is defined in head.html{% endcomment %}
-{% if background %}
+{% if page.animated_hero %}
+  <header class="header header-animated {% if page.layout == 'home' %}header-homepage{% endif %}">
+  <canvas id="hero-trajectories" aria-hidden="true"></canvas>
+  <script defer src="{{ '/assets/theme/js/hero-trajectories.js' | relative_url }}"></script>
+{% elsif background %}
   <header class="header bg-image {% if page.layout == 'home' %}header-homepage{% endif %}" style="background-image: url('{{ background | relative_url }}')">
 {% else %}
   <header class="header bg-no-image {% if page.layout == 'home' %}header-homepage{% endif %}">

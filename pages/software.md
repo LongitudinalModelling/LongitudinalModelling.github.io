@@ -9,7 +9,7 @@ permalink: /software/
   <div class="software-item">
     <div class="software-image">
       {% if software.image %}
-      <img src="{{ site.baseurl }}/assets/images/software/{{ software.image }}" alt="{{ software.name }} Logo">
+      <img src="{{ site.baseurl }}/assets/images/software/{{ software.image }}" alt="{{ software.name | strip_html }} Logo" loading="lazy" decoding="async">
       {% endif %}
     </div>
     <hr class="purple-line-small">

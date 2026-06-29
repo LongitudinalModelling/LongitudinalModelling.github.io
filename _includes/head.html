@@ -60,12 +60,14 @@
   <!-- Fonts -->
   <link rel="stylesheet" href="{{ '/assets/theme/css/fontawesome-all.min.css' | relative_url }}">
   {% if site.font_serif != false %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
   {% endif %}
-  <!-- Javascript: loaded here so they are available in templates -->
-  <script src="{{ '/assets/theme/js/jquery.min.js' | relative_url }}"></script>
-  <script src="{{ '/assets/theme/js/popper.min.js' | relative_url }}"></script>
-  <script src="{{ '/assets/theme/js/bootstrap.min.js' | relative_url }}"></script>
+  <!-- Javascript: deferred so it doesn't block first paint -->
+  <script defer src="{{ '/assets/theme/js/jquery.min.js' | relative_url }}"></script>
+  <script defer src="{{ '/assets/theme/js/popper.min.js' | relative_url }}"></script>
+  <script defer src="{{ '/assets/theme/js/bootstrap.min.js' | relative_url }}"></script>
   <script data-goatcounter="https://lmg.goatcounter.com/count"
           async src="//gc.zgo.at/count.js"></script>
 </head>

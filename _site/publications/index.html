@@ -39,12 +39,14 @@
   <!-- Fonts -->
   <link rel="stylesheet" href="/assets/theme/css/fontawesome-all.min.css">
   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
   
-  <!-- Javascript: loaded here so they are available in templates -->
-  <script src="/assets/theme/js/jquery.min.js"></script>
-  <script src="/assets/theme/js/popper.min.js"></script>
-  <script src="/assets/theme/js/bootstrap.min.js"></script>
+  <!-- Javascript: deferred so it doesn't block first paint -->
+  <script defer src="/assets/theme/js/jquery.min.js"></script>
+  <script defer src="/assets/theme/js/popper.min.js"></script>
+  <script defer src="/assets/theme/js/bootstrap.min.js"></script>
   <script data-goatcounter="https://lmg.goatcounter.com/count"
           async src="//gc.zgo.at/count.js"></script>
 </head>
@@ -61,7 +63,7 @@
     </a>
     
     
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
         Menu <i class="fa-solid fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbar-menu">
@@ -131,6 +133,12 @@
             
           
         </ul>
+        <form class="d-flex navbar-search ms-lg-3 my-2 my-lg-0" action="/search/" method="get" role="search">
+          <input class="form-control form-control-sm navbar-search-input" type="search" name="q" placeholder="Search" aria-label="Search the site">
+          <button class="btn btn-sm navbar-search-button" type="submit" aria-label="Submit search">
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          </button>
+        </form>
       </div>
     
   </div>
@@ -327,7 +335,7 @@
             </div>
             <div class="card-body pt-0">
               
-                <img src="/assets/images/papers/burrows_24.jpg" class="img-fluid rounded float-start me-3 mb-2 publication-thumbnail shadow-sm" alt="A framework for conducting GWAS using repeated measures data with an application to childhood BMI">
+                <img src="/assets/images/papers/burrows_24.jpg" class="img-fluid rounded float-start me-3 mb-2 publication-thumbnail shadow-sm" alt="A framework for conducting GWAS using repeated measures data with an application to childhood BMI" loading="lazy" decoding="async">
               
               <p class="card-text">This paper presents a framework for analysing age-varying genetic effects, using BMI as an example.</p>
               
@@ -358,7 +366,7 @@
             </div>
             <div class="card-body pt-0">
               
-                <img src="/assets/images/papers/lawton_24.jpg" class="img-fluid rounded float-start me-3 mb-2 publication-thumbnail shadow-sm" alt="Two sample Mendelian Randomisation using an outcome from a multilevel model of disease progression">
+                <img src="/assets/images/papers/lawton_24.jpg" class="img-fluid rounded float-start me-3 mb-2 publication-thumbnail shadow-sm" alt="Two sample Mendelian Randomisation using an outcome from a multilevel model of disease progression" loading="lazy" decoding="async">
               
               <p class="card-text">This paper introduces a multivariate two-sample Mendelian Randomisation approach using a multilevel model to identify the causal effect of an exposure on both the initial severity and rate of change of a disease progression trajectory.</p>
               
@@ -393,7 +401,7 @@
             </div>
             <div class="card-body pt-0">
               
-                <img src="/assets/images/papers/elhakeem_22.jpg" class="img-fluid rounded float-start me-3 mb-2 publication-thumbnail shadow-sm" alt="Using linear and natural cubic splines, SITAR, and latent trajectory models to characterise nonlinear longitudinal growth trajectories in cohort studies">
+                <img src="/assets/images/papers/elhakeem_22.jpg" class="img-fluid rounded float-start me-3 mb-2 publication-thumbnail shadow-sm" alt="Using linear and natural cubic splines, SITAR, and latent trajectory models to characterise nonlinear longitudinal growth trajectories in cohort studies" loading="lazy" decoding="async">
               
               <p class="card-text">This paper provides a guide to summarising growth trajectories using different methods with demonstration modelling bone growth patterns.</p>
               
@@ -424,7 +432,7 @@
             </div>
             <div class="card-body pt-0">
               
-                <img src="/assets/images/papers/hughes_21.jpg" class="img-fluid rounded float-start me-3 mb-2 publication-thumbnail shadow-sm" alt="Combining longitudinal data from different cohorts to examine the life-course trajectory">
+                <img src="/assets/images/papers/hughes_21.jpg" class="img-fluid rounded float-start me-3 mb-2 publication-thumbnail shadow-sm" alt="Combining longitudinal data from different cohorts to examine the life-course trajectory" loading="lazy" decoding="async">
               
               <p class="card-text">This paper introduces a method for generating continuous life course trajectories by combining data from multiple studies, demonstrating how to handle challenges like data harmonisation and missing data by using an example that models children's weight.</p>
               
@@ -471,7 +479,7 @@
             </div>
             <div class="card-body pt-0">
               
-                <img src="/assets/images/papers/newbury_24.jpg" class="img-fluid rounded float-start me-3 mb-2 publication-thumbnail shadow-sm" alt="Air and noise pollution exposure in early life and mental health from adolescence to young adulthood">
+                <img src="/assets/images/papers/newbury_24.jpg" class="img-fluid rounded float-start me-3 mb-2 publication-thumbnail shadow-sm" alt="Air and noise pollution exposure in early life and mental health from adolescence to young adulthood" loading="lazy" decoding="async">
               
               <p class="card-text"> In this longitudinal cohort study, early-life air and noise pollution exposure were prospectively associated with 3 common mental health problems from adolescence to young adulthood.</p>
               
@@ -504,7 +512,7 @@
             </div>
             <div class="card-body pt-0">
               
-                <img src="/assets/images/papers/sores_24.jpg" class="img-fluid rounded float-start me-3 mb-2 publication-thumbnail shadow-sm" alt="Prenatal urban environment and blood pressure trajectories from childhood to early adulthood">
+                <img src="/assets/images/papers/sores_24.jpg" class="img-fluid rounded float-start me-3 mb-2 publication-thumbnail shadow-sm" alt="Prenatal urban environment and blood pressure trajectories from childhood to early adulthood" loading="lazy" decoding="async">
               
               <p class="card-text">This study found that prenatal outdoor temperature and humidity potentially modulate blood pressure trajectories, particularly in childhood.</p>
               
@@ -543,7 +551,7 @@
             </div>
             <div class="card-body pt-0">
               
-                <img src="/assets/images/papers/armitage_23.jpg" class="img-fluid rounded float-start me-3 mb-2 publication-thumbnail shadow-sm" alt="Cross-cohort change in parent-reported emotional problem trajectories across childhood and adolescence in the UK">
+                <img src="/assets/images/papers/armitage_23.jpg" class="img-fluid rounded float-start me-3 mb-2 publication-thumbnail shadow-sm" alt="Cross-cohort change in parent-reported emotional problem trajectories across childhood and adolescence in the UK" loading="lazy" decoding="async">
               
               <p class="card-text">This study in two UK cohorts found that young people born in the early 2000s experienced an earlier onset and steeper trajectory of emotional problems compared to those born a decade earlier.</p>
               
@@ -576,7 +584,7 @@
             </div>
             <div class="card-body pt-0">
               
-                <img src="/assets/images/papers/elhakeem_23.jpg" class="img-fluid rounded float-start me-3 mb-2 publication-thumbnail shadow-sm" alt="Long-term cardiometabolic health in people born after assisted reproductive technology: a multi-cohort analysis">
+                <img src="/assets/images/papers/elhakeem_23.jpg" class="img-fluid rounded float-start me-3 mb-2 publication-thumbnail shadow-sm" alt="Long-term cardiometabolic health in people born after assisted reproductive technology: a multi-cohort analysis" loading="lazy" decoding="async">
               
               <p class="card-text">This meta-analysis and trajectory modelling study found similar blood pressure, heart rate, and glucose measures in individuals conceived after ART compared with those born after unassisted conception.</p>
               
@@ -686,7 +694,7 @@
             
               
                 <a href="">
-                  <img src="/assets/images/uob.png" alt="UOB" style="height: 60px; max-width: 100%;">
+                  <img src="/assets/images/uob.png" alt="UOB" style="height: 60px; max-width: 100%;" loading="lazy" decoding="async">
                 </a>
               
             

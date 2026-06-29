@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   
-    <title>404 - </title>
+    <title>Page Not Found - </title>
   
 
    
@@ -26,7 +26,7 @@
 
   <meta property="og:url" content="http://localhost:4000/404.html">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="404">
+  <meta property="og:title" content="Page Not Found">
   
     <meta property="og:description" content="Page not found">
   
@@ -41,12 +41,14 @@
   <!-- Fonts -->
   <link rel="stylesheet" href="/assets/theme/css/fontawesome-all.min.css">
   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
   
-  <!-- Javascript: loaded here so they are available in templates -->
-  <script src="/assets/theme/js/jquery.min.js"></script>
-  <script src="/assets/theme/js/popper.min.js"></script>
-  <script src="/assets/theme/js/bootstrap.min.js"></script>
+  <!-- Javascript: deferred so it doesn't block first paint -->
+  <script defer src="/assets/theme/js/jquery.min.js"></script>
+  <script defer src="/assets/theme/js/popper.min.js"></script>
+  <script defer src="/assets/theme/js/bootstrap.min.js"></script>
   <script data-goatcounter="https://lmg.goatcounter.com/count"
           async src="//gc.zgo.at/count.js"></script>
 </head>
@@ -63,7 +65,7 @@
     </a>
     
     
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
         Menu <i class="fa-solid fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbar-menu">
@@ -133,6 +135,12 @@
             
           
         </ul>
+        <form class="d-flex navbar-search ms-lg-3 my-2 my-lg-0" action="/search/" method="get" role="search">
+          <input class="form-control form-control-sm navbar-search-input" type="search" name="q" placeholder="Search" aria-label="Search the site">
+          <button class="btn btn-sm navbar-search-button" type="submit" aria-label="Submit search">
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          </button>
+        </form>
       </div>
     
   </div>
@@ -147,7 +155,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-10 col-lg-8 position-relative mx-auto">
-        <h1>404</h1>
+        <h1>Page Not Found</h1>
         
         <div class="lead"><p>Page not found</p>
 </div>
@@ -170,7 +178,17 @@
   
   <div class="col-md-10 col-lg-8 order-lg-first mx-auto">
 
-    <p>The requested page could not be found.</p>
+    <p>Sorry, the page you were looking for doesn’t exist or may have moved.</p>
+
+<p>You could try:</p>
+
+<ul>
+  <li>Returning to the <a href="/">homepage</a></li>
+  <li>Browsing our <a href="/training/">training materials and resources</a></li>
+  <li>Checking our <a href="/blog/">latest news</a></li>
+</ul>
+
+<p>If you think something is broken, please let us know at <a href="mailto:grp-lmod@groups.bristol.ac.uk">grp-lmod@groups.bristol.ac.uk</a>.</p>
 
 
     
@@ -252,7 +270,7 @@
             
               
                 <a href="">
-                  <img src="/assets/images/uob.png" alt="UOB" style="height: 60px; max-width: 100%;">
+                  <img src="/assets/images/uob.png" alt="UOB" style="height: 60px; max-width: 100%;" loading="lazy" decoding="async">
                 </a>
               
             

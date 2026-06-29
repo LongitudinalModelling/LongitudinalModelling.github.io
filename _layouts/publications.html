@@ -27,7 +27,7 @@ layout: publications-sidebar
             </div>
             <div class="card-body pt-0">
               {% if publi.image %}
-                <img src="{{ site.baseurl }}/assets/images/papers/{{ publi.image }}" class="img-fluid rounded float-start me-3 mb-2 publication-thumbnail shadow-sm" alt="{{ publi.title }}">
+                <img src="{{ site.baseurl }}/assets/images/papers/{{ publi.image }}" class="img-fluid rounded float-start me-3 mb-2 publication-thumbnail shadow-sm" alt="{{ publi.title }}" loading="lazy" decoding="async">
               {% endif %}
               <p class="card-text">{{ publi.description }}</p>
               {% if publi.image %}

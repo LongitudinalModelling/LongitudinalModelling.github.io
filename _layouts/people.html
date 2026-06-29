@@ -14,7 +14,7 @@ description: Template for group members page.
   <div class="col-md-4 mb-4 text-center">
     {% if member.image and member.profile_link %}
       <a href="{{ member.profile_link }}" target="_blank" rel="noopener noreferrer">
-        <img src="{{ member.image | relative_url }}" alt="{{ member.name }}" class="img-fluid rounded-circle team-member-image">
+        <img src="{{ member.image | relative_url }}" alt="{{ member.name }}" class="img-fluid rounded-circle team-member-image" loading="lazy" decoding="async">
       </a>
     {% endif %}
     <h5 class="mt-2">{{ member.name }}</h5>
@@ -30,7 +30,7 @@ description: Template for group members page.
   {% for member in site.data.people.visitors %}
   <div class="col-md-4 mb-4 text-center">
     {% if member.image %}
-      <img src="{{ member.image | relative_url }}" alt="{{ member.name }}" class="img-fluid rounded-circle team-member-image">
+      <img src="{{ member.image | relative_url }}" alt="{{ member.name }}" class="img-fluid rounded-circle team-member-image" loading="lazy" decoding="async">
     {% endif %}
     <h5 class="mt-2">{{ member.name }}</h5>
   </div>

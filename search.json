@@ -1,0 +1,27 @@
+---
+layout: null
+permalink: /search.json
+sitemap: false
+---
+[
+{%- assign sep = false -%}
+{%- for p in site.pages -%}
+  {%- if p.title and p.exclude_from_search != true and p.permalink != "/404.html" -%}
+    {%- if sep -%},{%- endif -%}{%- assign sep = true -%}
+    {"title": {{ p.title | jsonify }}, "url": {{ p.url | relative_url | jsonify }}, "type": "Page", "text": {{ p.content | strip_html | normalize_whitespace | truncatewords: 80 | jsonify }}}
+  {%- endif -%}
+{%- endfor -%}
+{%- for post in site.posts -%}
+  {%- if sep -%},{%- endif -%}{%- assign sep = true -%}
+  {"title": {{ post.title | jsonify }}, "url": {{ post.url | relative_url | jsonify }}, "type": "News", "text": {{ post.content | strip_html | normalize_whitespace | truncatewords: 80 | jsonify }}}
+{%- endfor -%}
+{%- for pub in site.data.publications_latest -%}
+  {%- if sep -%},{%- endif -%}{%- assign sep = true -%}
+  {%- assign pub_text = pub.authors | append: ". " | append: pub.journal -%}
+  {"title": {{ pub.title | jsonify }}, "url": {{ pub.link | jsonify }}, "type": "Publication", "text": {{ pub_text | jsonify }}}
+{%- endfor -%}
+{%- for sw in site.data.software -%}
+  {%- if sep -%},{%- endif -%}{%- assign sep = true -%}
+  {"title": {{ sw.name | strip_html | jsonify }}, "url": {{ "/software/" | relative_url | jsonify }}, "type": "Software", "text": {{ sw.name | strip_html | jsonify }}}
+{%- endfor -%}
+]

@@ -39,12 +39,14 @@
   <!-- Fonts -->
   <link rel="stylesheet" href="/assets/theme/css/fontawesome-all.min.css">
   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
   
-  <!-- Javascript: loaded here so they are available in templates -->
-  <script src="/assets/theme/js/jquery.min.js"></script>
-  <script src="/assets/theme/js/popper.min.js"></script>
-  <script src="/assets/theme/js/bootstrap.min.js"></script>
+  <!-- Javascript: deferred so it doesn't block first paint -->
+  <script defer src="/assets/theme/js/jquery.min.js"></script>
+  <script defer src="/assets/theme/js/popper.min.js"></script>
+  <script defer src="/assets/theme/js/bootstrap.min.js"></script>
   <script data-goatcounter="https://lmg.goatcounter.com/count"
           async src="//gc.zgo.at/count.js"></script>
 </head>
@@ -61,7 +63,7 @@
     </a>
     
     
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
         Menu <i class="fa-solid fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbar-menu">
@@ -131,6 +133,12 @@
             
           
         </ul>
+        <form class="d-flex navbar-search ms-lg-3 my-2 my-lg-0" action="/search/" method="get" role="search">
+          <input class="form-control form-control-sm navbar-search-input" type="search" name="q" placeholder="Search" aria-label="Search the site">
+          <button class="btn btn-sm navbar-search-button" type="submit" aria-label="Submit search">
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          </button>
+        </form>
       </div>
     
   </div>
@@ -180,7 +188,7 @@
   <div class="col-md-4 mb-4 text-center">
     
       <a href="https://research-information.bris.ac.uk/en/persons/ahmed-elhakeem" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/images/people/ahmed_elhakeem.jpg" alt="Ahmed Elhakeem" class="img-fluid rounded-circle team-member-image">
+        <img src="/assets/images/people/ahmed_elhakeem.jpg" alt="Ahmed Elhakeem" class="img-fluid rounded-circle team-member-image" loading="lazy" decoding="async">
       </a>
     
     <h5 class="mt-2">Ahmed Elhakeem</h5>
@@ -189,7 +197,7 @@
   <div class="col-md-4 mb-4 text-center">
     
       <a href="https://research-information.bris.ac.uk/en/persons/alex-siu-fung-kwong" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/images/people/alex_kwong.jpg" alt="Alex Kwong" class="img-fluid rounded-circle team-member-image">
+        <img src="/assets/images/people/alex_kwong.jpg" alt="Alex Kwong" class="img-fluid rounded-circle team-member-image" loading="lazy" decoding="async">
       </a>
     
     <h5 class="mt-2">Alex Kwong</h5>
@@ -198,7 +206,7 @@
   <div class="col-md-4 mb-4 text-center">
     
       <a href="https://research-information.bris.ac.uk/en/persons/ana-luiza-goncalves-soares" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/images/people/ana_soares.jpg" alt="Ana Goncalves Soares" class="img-fluid rounded-circle team-member-image">
+        <img src="/assets/images/people/ana_soares.jpg" alt="Ana Goncalves Soares" class="img-fluid rounded-circle team-member-image" loading="lazy" decoding="async">
       </a>
     
     <h5 class="mt-2">Ana Goncalves Soares</h5>
@@ -207,7 +215,7 @@
   <div class="col-md-4 mb-4 text-center">
     
       <a href="https://research-information.bris.ac.uk/en/persons/anahita-nodehi" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/images/people/anahita_nodehi.jpg" alt="Anahita Nodehi" class="img-fluid rounded-circle team-member-image">
+        <img src="/assets/images/people/anahita_nodehi.jpg" alt="Anahita Nodehi" class="img-fluid rounded-circle team-member-image" loading="lazy" decoding="async">
       </a>
     
     <h5 class="mt-2">Anahita Nodehi</h5>
@@ -216,7 +224,7 @@
   <div class="col-md-4 mb-4 text-center">
     
       <a href="https://research-information.bris.ac.uk/en/persons/annie-herbert" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/images/people/annie_herbert.jpg" alt="Annie Herbert" class="img-fluid rounded-circle team-member-image">
+        <img src="/assets/images/people/annie_herbert.jpg" alt="Annie Herbert" class="img-fluid rounded-circle team-member-image" loading="lazy" decoding="async">
       </a>
     
     <h5 class="mt-2">Annie Herbert</h5>
@@ -225,7 +233,7 @@
   <div class="col-md-4 mb-4 text-center">
     
       <a href="https://research-information.bris.ac.uk/en/persons/apostolos-gkatzionis" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/images/people/apostolis_gkatzionis.jpg" alt="Apostolos Gkatzionis" class="img-fluid rounded-circle team-member-image">
+        <img src="/assets/images/people/apostolis_gkatzionis.jpg" alt="Apostolos Gkatzionis" class="img-fluid rounded-circle team-member-image" loading="lazy" decoding="async">
       </a>
     
     <h5 class="mt-2">Apostolos Gkatzionis</h5>
@@ -234,7 +242,7 @@
   <div class="col-md-4 mb-4 text-center">
     
       <a href="https://research-information.bris.ac.uk/en/persons/becky-mars" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/images/people/becky_mars.jpg" alt="Becky Mars" class="img-fluid rounded-circle team-member-image">
+        <img src="/assets/images/people/becky_mars.jpg" alt="Becky Mars" class="img-fluid rounded-circle team-member-image" loading="lazy" decoding="async">
       </a>
     
     <h5 class="mt-2">Becky Mars</h5>
@@ -243,7 +251,7 @@
   <div class="col-md-4 mb-4 text-center">
     
       <a href="https://research-information.bris.ac.uk/en/persons/gareth-j-griffith" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/images/people/gareth_griffith.jpg" alt="Gareth Griffith" class="img-fluid rounded-circle team-member-image">
+        <img src="/assets/images/people/gareth_griffith.jpg" alt="Gareth Griffith" class="img-fluid rounded-circle team-member-image" loading="lazy" decoding="async">
       </a>
     
     <h5 class="mt-2">Gareth Griffith</h5>
@@ -252,7 +260,7 @@
   <div class="col-md-4 mb-4 text-center">
     
       <a href="https://research-information.bris.ac.uk/en/persons/gemma-l-clayton" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/images/people/gemma_clayton.jpg" alt="Gemma Clayton" class="img-fluid rounded-circle team-member-image">
+        <img src="/assets/images/people/gemma_clayton.jpg" alt="Gemma Clayton" class="img-fluid rounded-circle team-member-image" loading="lazy" decoding="async">
       </a>
     
     <h5 class="mt-2">Gemma Clayton</h5>
@@ -261,7 +269,7 @@
   <div class="col-md-4 mb-4 text-center">
     
       <a href="https://research-information.bris.ac.uk/en/persons/gemma-l-hammerton" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/images/people/gemma_hammerton.jpg" alt="Gemma Hammerton" class="img-fluid rounded-circle team-member-image">
+        <img src="/assets/images/people/gemma_hammerton.jpg" alt="Gemma Hammerton" class="img-fluid rounded-circle team-member-image" loading="lazy" decoding="async">
       </a>
     
     <h5 class="mt-2">Gemma Hammerton</h5>
@@ -270,7 +278,7 @@
   <div class="col-md-4 mb-4 text-center">
     
       <a href="https://research-information.bris.ac.uk/en/persons/joanne-newbury" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/images/people/joanne_newbury.jpg" alt="Joanne Newbury" class="img-fluid rounded-circle team-member-image">
+        <img src="/assets/images/people/joanne_newbury.jpg" alt="Joanne Newbury" class="img-fluid rounded-circle team-member-image" loading="lazy" decoding="async">
       </a>
     
     <h5 class="mt-2">Joanne Newbury</h5>
@@ -279,7 +287,7 @@
   <div class="col-md-4 mb-4 text-center">
     
       <a href="https://research-information.bris.ac.uk/en/persons/jon-e-heron" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/images/people/jon_heron.jpg" alt="Jon Heron" class="img-fluid rounded-circle team-member-image">
+        <img src="/assets/images/people/jon_heron.jpg" alt="Jon Heron" class="img-fluid rounded-circle team-member-image" loading="lazy" decoding="async">
       </a>
     
     <h5 class="mt-2">Jon Heron</h5>
@@ -288,7 +296,7 @@
   <div class="col-md-4 mb-4 text-center">
     
       <a href="https://research-information.bris.ac.uk/en/persons/kate-m-tilling" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/images/people/kate_tilling.jpg" alt="Kate Tilling" class="img-fluid rounded-circle team-member-image">
+        <img src="/assets/images/people/kate_tilling.jpg" alt="Kate Tilling" class="img-fluid rounded-circle team-member-image" loading="lazy" decoding="async">
       </a>
     
     <h5 class="mt-2">Kate Tilling</h5>
@@ -297,7 +305,7 @@
   <div class="col-md-4 mb-4 text-center">
     
       <a href="https://research-information.bris.ac.uk/en/persons/kimberley-g-beaumont-2" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/images/people/kimberley_beaumont.jpg" alt="Kimberley Beaumont" class="img-fluid rounded-circle team-member-image">
+        <img src="/assets/images/people/kimberley_beaumont.jpg" alt="Kimberley Beaumont" class="img-fluid rounded-circle team-member-image" loading="lazy" decoding="async">
       </a>
     
     <h5 class="mt-2">Kimberley Beaumont</h5>
@@ -306,7 +314,7 @@
   <div class="col-md-4 mb-4 text-center">
     
       <a href="https://research-information.bris.ac.uk/en/persons/kimberley-burrows" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/images/people/kimberley_burrows.jpg" alt="Kimberley Burrows" class="img-fluid rounded-circle team-member-image">
+        <img src="/assets/images/people/kimberley_burrows.jpg" alt="Kimberley Burrows" class="img-fluid rounded-circle team-member-image" loading="lazy" decoding="async">
       </a>
     
     <h5 class="mt-2">Kimberley Burrows</h5>
@@ -315,7 +323,7 @@
   <div class="col-md-4 mb-4 text-center">
     
       <a href="https://research-information.bris.ac.uk/en/persons/laura-d-howe" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/images/people/laura_howe.jpg" alt="Laura Howe" class="img-fluid rounded-circle team-member-image">
+        <img src="/assets/images/people/laura_howe.jpg" alt="Laura Howe" class="img-fluid rounded-circle team-member-image" loading="lazy" decoding="async">
       </a>
     
     <h5 class="mt-2">Laura Howe</h5>
@@ -324,7 +332,7 @@
   <div class="col-md-4 mb-4 text-center">
     
       <a href="https://research-information.bris.ac.uk/en/persons/maria-a-hernandez-velandia/" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/images/people/alejandra_Hernandez.jpg" alt="Marìa Alejandra Hernàndez" class="img-fluid rounded-circle team-member-image">
+        <img src="/assets/images/people/alejandra_Hernandez.jpg" alt="Marìa Alejandra Hernàndez" class="img-fluid rounded-circle team-member-image" loading="lazy" decoding="async">
       </a>
     
     <h5 class="mt-2">Marìa Alejandra Hernàndez</h5>
@@ -333,7 +341,7 @@
   <div class="col-md-4 mb-4 text-center">
     
       <a href="https://research-information.bris.ac.uk/en/persons/michael-a-lawton" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/images/people/michael_lawton.jpg" alt="Michael Lawton" class="img-fluid rounded-circle team-member-image">
+        <img src="/assets/images/people/michael_lawton.jpg" alt="Michael Lawton" class="img-fluid rounded-circle team-member-image" loading="lazy" decoding="async">
       </a>
     
     <h5 class="mt-2">Michael Lawton</h5>
@@ -342,7 +350,7 @@
   <div class="col-md-4 mb-4 text-center">
     
       <a href="https://research-information.bris.ac.uk/en/persons/rach-hughes" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/images/people/rachael_hughes.jpg" alt="Rachael Hughes" class="img-fluid rounded-circle team-member-image">
+        <img src="/assets/images/people/rachael_hughes.jpg" alt="Rachael Hughes" class="img-fluid rounded-circle team-member-image" loading="lazy" decoding="async">
       </a>
     
     <h5 class="mt-2">Rachael Hughes</h5>
@@ -351,7 +359,7 @@
   <div class="col-md-4 mb-4 text-center">
     
       <a href="https://research-information.bris.ac.uk/en/persons/richard-m-a-parker" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/images/people/richard_parker.jpg" alt="Richard Parker" class="img-fluid rounded-circle team-member-image">
+        <img src="/assets/images/people/richard_parker.jpg" alt="Richard Parker" class="img-fluid rounded-circle team-member-image" loading="lazy" decoding="async">
       </a>
     
     <h5 class="mt-2">Richard Parker</h5>
@@ -360,7 +368,7 @@
   <div class="col-md-4 mb-4 text-center">
     
       <a href="https://research-information.bris.ac.uk/en/persons/robyn-e-wootton" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/images/people/robyn_wootton.jpg" alt="Robyn Wootton" class="img-fluid rounded-circle team-member-image">
+        <img src="/assets/images/people/robyn_wootton.jpg" alt="Robyn Wootton" class="img-fluid rounded-circle team-member-image" loading="lazy" decoding="async">
       </a>
     
     <h5 class="mt-2">Robyn Wootton</h5>
@@ -369,7 +377,7 @@
   <div class="col-md-4 mb-4 text-center">
     
       <a href="https://research-information.bris.ac.uk/en/persons/ruby-tsang" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/images/people/ruby_tsang.jpg" alt="Ruby Tsang" class="img-fluid rounded-circle team-member-image">
+        <img src="/assets/images/people/ruby_tsang.jpg" alt="Ruby Tsang" class="img-fluid rounded-circle team-member-image" loading="lazy" decoding="async">
       </a>
     
     <h5 class="mt-2">Ruby Tsang</h5>
@@ -378,7 +386,7 @@
   <div class="col-md-4 mb-4 text-center">
     
       <a href="https://research-information.bris.ac.uk/en/persons/" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/images/people/satpal_sandhu.jpg" alt="Satpal Sandhu" class="img-fluid rounded-circle team-member-image">
+        <img src="/assets/images/people/satpal_sandhu.jpg" alt="Satpal Sandhu" class="img-fluid rounded-circle team-member-image" loading="lazy" decoding="async">
       </a>
     
     <h5 class="mt-2">Satpal Sandhu</h5>
@@ -387,7 +395,7 @@
   <div class="col-md-4 mb-4 text-center">
     
       <a href="https://research-information.bris.ac.uk/en/persons/tafadzwa-madanhire" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/images/people/tafadzwa_madanhire.jpg" alt="Tafadzwa Madanhire" class="img-fluid rounded-circle team-member-image">
+        <img src="/assets/images/people/tafadzwa_madanhire.jpg" alt="Tafadzwa Madanhire" class="img-fluid rounded-circle team-member-image" loading="lazy" decoding="async">
       </a>
     
     <h5 class="mt-2">Tafadzwa Madanhire</h5>
@@ -396,7 +404,7 @@
   <div class="col-md-4 mb-4 text-center">
     
       <a href="https://research-information.bris.ac.uk/en/persons/tanja-zerenner" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/images/people/tanja_zerenner.jpg" alt="Tanja Zerenner" class="img-fluid rounded-circle team-member-image">
+        <img src="/assets/images/people/tanja_zerenner.jpg" alt="Tanja Zerenner" class="img-fluid rounded-circle team-member-image" loading="lazy" decoding="async">
       </a>
     
     <h5 class="mt-2">Tanja Zerenner</h5>
@@ -405,7 +413,7 @@
   <div class="col-md-4 mb-4 text-center">
     
       <a href="https://research-information.bris.ac.uk/en/persons/tom-m-palmer" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/images/people/tom_palmer.jpg" alt="Tom Palmer" class="img-fluid rounded-circle team-member-image">
+        <img src="/assets/images/people/tom_palmer.jpg" alt="Tom Palmer" class="img-fluid rounded-circle team-member-image" loading="lazy" decoding="async">
       </a>
     
     <h5 class="mt-2">Tom Palmer</h5>
@@ -414,7 +422,7 @@
   <div class="col-md-4 mb-4 text-center">
     
       <a href="https://research-information.bris.ac.uk/en/persons/zoe-e-reed" target="_blank" rel="noopener noreferrer">
-        <img src="/assets/images/people/zoe_reed.jpg" alt="Zoe Reed" class="img-fluid rounded-circle team-member-image">
+        <img src="/assets/images/people/zoe_reed.jpg" alt="Zoe Reed" class="img-fluid rounded-circle team-member-image" loading="lazy" decoding="async">
       </a>
     
     <h5 class="mt-2">Zoe Reed</h5>
@@ -430,28 +438,28 @@
   
   <div class="col-md-4 mb-4 text-center">
     
-      <img src="/assets/images/people/geng_chen.jpg" alt="Geng Chen" class="img-fluid rounded-circle team-member-image">
+      <img src="/assets/images/people/geng_chen.jpg" alt="Geng Chen" class="img-fluid rounded-circle team-member-image" loading="lazy" decoding="async">
     
     <h5 class="mt-2">Geng Chen</h5>
   </div>
   
   <div class="col-md-4 mb-4 text-center">
     
-      <img src="/assets/images/people/anna_dieberger.jpg" alt="Anna Dieberger" class="img-fluid rounded-circle team-member-image">
+      <img src="/assets/images/people/anna_dieberger.jpg" alt="Anna Dieberger" class="img-fluid rounded-circle team-member-image" loading="lazy" decoding="async">
     
     <h5 class="mt-2">Anna Dieberger</h5>
   </div>
   
   <div class="col-md-4 mb-4 text-center">
     
-      <img src="/assets/images/people/naixue_cui.jpg" alt="Naixue Cui" class="img-fluid rounded-circle team-member-image">
+      <img src="/assets/images/people/naixue_cui.jpg" alt="Naixue Cui" class="img-fluid rounded-circle team-member-image" loading="lazy" decoding="async">
     
     <h5 class="mt-2">Naixue Cui</h5>
   </div>
   
   <div class="col-md-4 mb-4 text-center">
     
-      <img src="/assets/images/people/zheyuan_li.jpg" alt="Zheyuan Li" class="img-fluid rounded-circle team-member-image">
+      <img src="/assets/images/people/zheyuan_li.jpg" alt="Zheyuan Li" class="img-fluid rounded-circle team-member-image" loading="lazy" decoding="async">
     
     <h5 class="mt-2">Zheyuan Li</h5>
   </div>
@@ -539,7 +547,7 @@
             
               
                 <a href="">
-                  <img src="/assets/images/uob.png" alt="UOB" style="height: 60px; max-width: 100%;">
+                  <img src="/assets/images/uob.png" alt="UOB" style="height: 60px; max-width: 100%;" loading="lazy" decoding="async">
                 </a>
               
             

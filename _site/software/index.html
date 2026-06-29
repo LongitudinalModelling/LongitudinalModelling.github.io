@@ -39,12 +39,14 @@
   <!-- Fonts -->
   <link rel="stylesheet" href="/assets/theme/css/fontawesome-all.min.css">
   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
   
-  <!-- Javascript: loaded here so they are available in templates -->
-  <script src="/assets/theme/js/jquery.min.js"></script>
-  <script src="/assets/theme/js/popper.min.js"></script>
-  <script src="/assets/theme/js/bootstrap.min.js"></script>
+  <!-- Javascript: deferred so it doesn't block first paint -->
+  <script defer src="/assets/theme/js/jquery.min.js"></script>
+  <script defer src="/assets/theme/js/popper.min.js"></script>
+  <script defer src="/assets/theme/js/bootstrap.min.js"></script>
   <script data-goatcounter="https://lmg.goatcounter.com/count"
           async src="//gc.zgo.at/count.js"></script>
 </head>
@@ -61,7 +63,7 @@
     </a>
     
     
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
         Menu <i class="fa-solid fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbar-menu">
@@ -131,6 +133,12 @@
             
           
         </ul>
+        <form class="d-flex navbar-search ms-lg-3 my-2 my-lg-0" action="/search/" method="get" role="search">
+          <input class="form-control form-control-sm navbar-search-input" type="search" name="q" placeholder="Search" aria-label="Search the site">
+          <button class="btn btn-sm navbar-search-button" type="submit" aria-label="Submit search">
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          </button>
+        </form>
       </div>
     
   </div>
@@ -173,7 +181,7 @@
   <div class="software-item">
     <div class="software-image">
       
-      <img src="/assets/images/software/bsitar.jpg" alt="&lt;strong&gt;bsitar&lt;/strong&gt;: Bayesian Super Imposition by Translation And Rotation Growth Curve Analysis Logo" />
+      <img src="/assets/images/software/bsitar.jpg" alt="bsitar: Bayesian Super Imposition by Translation And Rotation Growth Curve Analysis Logo" loading="lazy" decoding="async" />
       
     </div>
     <hr class="purple-line-small" />
@@ -195,7 +203,7 @@
   <div class="software-item">
     <div class="software-image">
       
-      <img src="/assets/images/software/glu.jpg" alt="&lt;strong&gt;GLU&lt;/strong&gt;: A tool for analysing continuously measured glucose in epidemiology Logo" />
+      <img src="/assets/images/software/glu.jpg" alt="GLU: A tool for analysing continuously measured glucose in epidemiology Logo" loading="lazy" decoding="async" />
       
     </div>
     <hr class="purple-line-small" />
@@ -217,7 +225,7 @@
   <div class="software-item">
     <div class="software-image">
       
-      <img src="/assets/images/software/midoc.jpg" alt="&lt;strong&gt;midoc&lt;/strong&gt;: A Decision-Making System for Multiple Imputation Logo" />
+      <img src="/assets/images/software/midoc.jpg" alt="midoc: A Decision-Making System for Multiple Imputation Logo" loading="lazy" decoding="async" />
       
     </div>
     <hr class="purple-line-small" />
@@ -239,7 +247,7 @@
   <div class="software-item">
     <div class="software-image">
       
-      <img src="/assets/images/software/psme.jpg" alt="&lt;strong&gt;psme&lt;/strong&gt;: Penalized Splines Mixed Effects Models Logo" />
+      <img src="/assets/images/software/psme.jpg" alt="psme: Penalized Splines Mixed Effects Models Logo" loading="lazy" decoding="async" />
       
     </div>
     <hr class="purple-line-small" />
@@ -261,7 +269,7 @@
   <div class="software-item">
     <div class="software-image">
       
-      <img src="/assets/images/software/r2mlwin.jpg" alt="&lt;strong&gt;R2MLwiN&lt;/strong&gt;: A Package to Run MLwiN from within R Logo" />
+      <img src="/assets/images/software/r2mlwin.jpg" alt="R2MLwiN: A Package to Run MLwiN from within R Logo" loading="lazy" decoding="async" />
       
     </div>
     <hr class="purple-line-small" />
@@ -283,7 +291,7 @@
   <div class="software-item">
     <div class="software-image">
       
-      <img src="/assets/images/software/sitar.jpg" alt="&lt;strong&gt;sitar&lt;/strong&gt;: Super Imposition by Translation And Rotation Growth Curve Analysis Logo" />
+      <img src="/assets/images/software/sitar.jpg" alt="sitar: Super Imposition by Translation And Rotation Growth Curve Analysis Logo" loading="lazy" decoding="async" />
       
     </div>
     <hr class="purple-line-small" />
@@ -305,7 +313,7 @@
   <div class="software-item">
     <div class="software-image">
       
-      <img src="/assets/images/software/tidal.jpg" alt="&lt;strong&gt;tidal&lt;/strong&gt;: Tool to Implement Developmental Analysis of Longitudinal data Logo" />
+      <img src="/assets/images/software/tidal.jpg" alt="tidal: Tool to Implement Developmental Analysis of Longitudinal data Logo" loading="lazy" decoding="async" />
       
     </div>
     <hr class="purple-line-small" />
@@ -406,7 +414,7 @@
             
               
                 <a href="">
-                  <img src="/assets/images/uob.png" alt="UOB" style="height: 60px; max-width: 100%;">
+                  <img src="/assets/images/uob.png" alt="UOB" style="height: 60px; max-width: 100%;" loading="lazy" decoding="async">
                 </a>
               
             
