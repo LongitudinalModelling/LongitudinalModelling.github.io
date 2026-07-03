@@ -37,7 +37,7 @@ For general inquiries, or if you are unsure who to contact, <a href="mailto:grp-
 Our research network extends from colleagues here at the University of Bristol to partners at leading academic institutions across the UK and internationally. Some of our collaborating institutions include:
 
 <div class="container my-5">
-  <img src="{{ site.baseurl }}/assets/images/contact/collabs.jpg" alt="Our Collaborators" class="img-fluid" loading="lazy" decoding="async">
+  {% include collab_map.html %}
 </div>
 
 <hr class="purple-line">
