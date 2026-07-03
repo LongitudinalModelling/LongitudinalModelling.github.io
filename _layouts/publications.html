@@ -9,53 +9,51 @@ layout: publications-sidebar
   {% for i in (0..1) %}
     {% assign cat = categories[i] %}
     {% assign label = category_labels[i] %}
-    {% assign pubs = site.data.publications_featured | where: "category", cat %}
+    {% assign pubs = site.data.publications | where_exp: "item", "item.featured" | where: "category", cat | sort: "date" | reverse %}
 
     <h2 id="featured-{{ cat }}-papers">Featured {{ label }} Papers</h2>
-    {% assign number_printed = 0 %}
-    {% for publi in pubs %}
-      {% assign even_odd = number_printed | modulo: 2 %}
 
-      {% if even_odd == 0 %}
-      <div class="row mb-4">
-      {% endif %}
-
-        <div class="col-md-6 mb-4">
-          <div class="card shadow-sm bg-light">
-            <div class="card-body pb-0">
-              <h5 class="card-title fw-bold mb-3">{{ publi.title }}</h5>
+    <div class="row row-cols-1 row-cols-md-2 g-4 mb-4">
+      {% for publi in pubs %}
+        <div class="col">
+          <div class="card publication-card h-100 shadow-sm">
+            <div class="publication-card-img-wrap">
+              <img src="{{ site.baseurl }}/assets/images/papers/{{ publi.image }}" class="card-img-top publication-card-img" alt="{{ publi.title }}" loading="lazy" decoding="async">
+              <span class="badge publication-badge publication-badge-{{ publi.category }}">{{ label }}</span>
             </div>
-            <div class="card-body pt-0">
-              {% if publi.image %}
-                <img src="{{ site.baseurl }}/assets/images/papers/{{ publi.image }}" class="img-fluid rounded float-start me-3 mb-2 publication-thumbnail shadow-sm" alt="{{ publi.title }}" loading="lazy" decoding="async">
-              {% endif %}
+            <div class="card-body">
+              <h5 class="card-title fw-bold">{{ publi.title }}</h5>
               <p class="card-text">{{ publi.description }}</p>
-              {% if publi.image %}
-                <div class="clearfix"></div>
-              {% endif %}
-              <p class="card-text mt-3"><small class="text-muted"><em>{{ publi.authors }}</em></small></p>
-              {% if publi.link %}
-                <p class="card-text"><strong><a href="{{ publi.link.url }}" target="_blank" rel="noopener noreferrer">{{ publi.link.display }} <i class="fas fa-external-link-alt fa-xs"></i></a></strong></p>
-              {% endif %}
+              <p class="card-text mb-0"><small class="text-muted"><em>{{ publi.authors }}</em></small></p>
+            </div>
+            <div class="card-footer publication-card-footer">
+              <a href="{{ publi.link }}" class="btn btn-sm btn-info" target="_blank" rel="noopener noreferrer"><em>{{ publi.journal }}</em> ({{ publi.date | date: "%Y" }}) <i class="fas fa-external-link-alt fa-xs"></i></a>
               {% if publi.editorial %}
-                <p class="card-text"><small class="text-muted"><strong><a href="{{ publi.editorial }}" target="_blank" rel="noopener noreferrer">Editorial <i class="fas fa-external-link-alt fa-xs"></i></a></strong></small></p>
+                <a href="{{ publi.editorial }}" class="btn btn-sm btn-outline-purple" target="_blank" rel="noopener noreferrer">Editorial <i class="fas fa-external-link-alt fa-xs"></i></a>
               {% endif %}
               {% if publi.news %}
-                <p class="card-text"><small class="text-muted"><strong><a href="{{ publi.news }}" target="_blank" rel="noopener noreferrer">News Item <i class="fas fa-external-link-alt fa-xs"></i></a></strong></small></p>
+                <a href="{{ publi.news }}" class="btn btn-sm btn-outline-purple" target="_blank" rel="noopener noreferrer">News <i class="fas fa-external-link-alt fa-xs"></i></a>
               {% endif %}
             </div>
           </div>
         </div>
-
-      {% assign number_printed = number_printed | plus: 1 %}
-
-      {% if even_odd == 1 or forloop.last %}
-      </div>
-      {% endif %}
-    {% endfor %}
+      {% endfor %}
+    </div>
 
     {% unless forloop.last %}
     <div class="my-3"></div>
     {% endunless %}
+  {% endfor %}
+
+  <h2 id="all-publications">All Publications</h2>
+  {% assign all_pubs = site.data.publications | sort: "date" | reverse %}
+  {% assign pubs_by_year = all_pubs | group_by_exp: "pub", "pub.date | date: '%Y'" %}
+  {% for year_group in pubs_by_year %}
+    <h3 id="pubs-{{ year_group.name }}" class="publication-year-heading">{{ year_group.name }}</h3>
+    <ul class="publication-list">
+      {% for pub in year_group.items %}
+        <li>{{ pub.authors }} ({{ pub.date | date: "%Y" }}). <a href="{{ pub.link }}" target="_blank" rel="noopener noreferrer"><strong>{{ pub.title }}</strong></a>. <em>{{ pub.journal }}</em>.</li>
+      {% endfor %}
+    </ul>
   {% endfor %}
 </div>

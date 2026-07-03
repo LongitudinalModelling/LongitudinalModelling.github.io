@@ -15,7 +15,7 @@ sitemap: false
   {%- if sep -%},{%- endif -%}{%- assign sep = true -%}
   {"title": {{ post.title | jsonify }}, "url": {{ post.url | relative_url | jsonify }}, "type": "News", "text": {{ post.content | strip_html | normalize_whitespace | truncatewords: 80 | jsonify }}}
 {%- endfor -%}
-{%- for pub in site.data.publications_latest -%}
+{%- for pub in site.data.publications -%}
   {%- if sep -%},{%- endif -%}{%- assign sep = true -%}
   {%- assign pub_text = pub.authors | append: ". " | append: pub.journal -%}
   {"title": {{ pub.title | jsonify }}, "url": {{ pub.link | jsonify }}, "type": "Publication", "text": {{ pub_text | jsonify }}}

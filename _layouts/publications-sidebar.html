@@ -14,17 +14,6 @@ description: Default template for pages and posts, with contained width.
         h_min=2
         h_max=3
       %}
-      <h4 id="latest-publications">Latest Publications</h4>
-      <div class="latest-publications-box">
-          <ul>
-              {% assign latest_pubs = site.data.publications_latest | sort: 'date' | reverse %}
-              {% for publi in latest_pubs %}
-              <li>
-                  {{ publi.authors }} ({{ publi.date | date: "%Y" }}). <a href="{{ publi.link }}" target="_blank" rel="noopener noreferrer"><strong>{{ publi.title }}</strong></a>. <em>{{ publi.journal }}</em>.
-              </li>
-              {% endfor %}
-          </ul>
-      </div>
     </div>
   </div>
   {% endif %}

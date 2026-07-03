@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+    <title>SITAR - </title>
+  
+
+   
+  
+  
+  
+
+  
+  
+  
+  
+    <meta name="author" content="Longitudinal Modelling Group 2025">
+  
+  
+
+  <meta property="og:url" content="http://localhost:4000/training/expl_guides/sitar/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SITAR">
+  
+  
+  
+    <meta property="og:image" content="http://localhost:4000/assets/images/backgrounds/training_page.jpg">
+  
+
+  <link rel="icon" type="image/x-icon" href="http://localhost:4000/favicon.ico">
+  <link rel="alternate" type="application/rss+xml" title=" - RSS feed" href="http://localhost:4000/feed.xml" >
+  <!-- CSS: Bootstrap CSS is included in main.css -->
+  <link rel="stylesheet" href="/assets/theme/css/main.css">
+  <link rel="stylesheet" href="/assets/theme/css/pygments.css">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="/assets/theme/css/fontawesome-all.min.css">
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+  
+  <!-- Javascript: deferred so it doesn't block first paint -->
+  <script defer src="/assets/theme/js/jquery.min.js"></script>
+  <script defer src="/assets/theme/js/popper.min.js"></script>
+  <script defer src="/assets/theme/js/bootstrap.min.js"></script>
+  <script defer src="/assets/theme/js/scroll-reveal.js"></script>
+  <script data-goatcounter="https://lmg.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+</head>
+
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light d-print-none" id="main-nav">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="/">
+      
+        <img class="me-3" src="/assets/images/lmg_logo.jpg" alt="">
+      
+      
+    </a>
+    
+    
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+        Menu <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-menu">
+        <ul class="navbar-nav ms-auto">
+          
+            
+              <li class="navbar-item">
+                
+                <a class="nav-link" href="/">Home</a>
+              </li>
+            
+          
+            
+              <li class="navbar-item">
+                
+                <a class="nav-link" href="/research/">Research</a>
+              </li>
+            
+          
+            
+              <li class="navbar-item">
+                
+                <a class="nav-link" href="/publications/">Publications</a>
+              </li>
+            
+          
+            
+              <li class="navbar-item">
+                
+                <a class="nav-link" href="/software/">Software</a>
+              </li>
+            
+          
+            
+              <li class="navbar-item">
+                
+                <a class="nav-link" href="/seminars/">Seminars</a>
+              </li>
+            
+          
+            
+              <li class="navbar-item">
+                
+                <a class="nav-link" href="/training/">Learn</a>
+              </li>
+            
+          
+            
+              <li class="navbar-item">
+                
+                <a class="nav-link" href="/people/">People</a>
+              </li>
+            
+          
+            
+              <li class="navbar-item">
+                
+                <a class="nav-link" href="/contact/">Join</a>
+              </li>
+            
+          
+            
+              <li class="navbar-item">
+                
+                <a class="nav-link" href="/blog/">News</a>
+              </li>
+            
+          
+        </ul>
+        <form class="d-flex navbar-search ms-lg-3 my-2 my-lg-0" action="/search/" method="get" role="search">
+          <input class="form-control form-control-sm navbar-search-input" type="search" name="q" placeholder="Search" aria-label="Search the site">
+          <button class="btn btn-sm navbar-search-button" type="submit" aria-label="Submit search">
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          </button>
+        </form>
+      </div>
+    
+  </div>
+</nav>
+
+
+    <main>
+      
+
+  <header class="header bg-image " style="background-image: url('/assets/images/backgrounds/training_page.jpg')">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-lg-8 position-relative mx-auto">
+        <h1>SITAR</h1>
+        
+        <div class="lead">
+</div>
+        
+        
+
+        <div class="tags">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</header>
+
+
+      <div class="container content">
+          
+        <div class="row">
+  
+  <div class="col-md-10 col-lg-8 order-lg-first mx-auto">
+
+    <p><strong>SITAR</strong> (SuperImposition by Translation And Rotation) is a growth curve model that summarises a whole population of growth trajectories with a single <strong>mean curve</strong>, and describes each individual with just three parameters that transform that curve: <strong>size</strong> shifts it up or down, <strong>timing</strong> shifts it earlier or later, and <strong>intensity</strong> stretches or compresses its timescale. Fitted as a nonlinear mixed effects model, SITAR can explain up to 99% of the variance in pubertal growth.</p>
+
+<h2 id="see-how-it-works">See how it works</h2>
+
+<p>Watch how each of the three SITAR random effects transforms the population mean growth curve (dark). Then use the sliders to build your own individual’s curve.</p>
+
+<div id="sitar-playground" class="sitar-playground">
+  <canvas height="280" aria-hidden="true"></canvas>
+  <p class="visually-hidden">Interactive chart: a mean growth curve with a pubertal spurt. The size, timing and velocity sliders below transform it into an individual's growth curve.</p>
+
+  <p id="sitar-caption" class="sitar-caption">The mean growth curve for the population.</p>
+
+  <div class="sitar-legend" aria-hidden="true">
+    <span class="sitar-legend-item"><span class="sitar-swatch sitar-swatch-size"></span> Size (α)</span>
+    <span class="sitar-legend-item"><span class="sitar-swatch sitar-swatch-tempo"></span> Timing (β)</span>
+    <span class="sitar-legend-item"><span class="sitar-swatch sitar-swatch-intensity"></span> Intensity (γ)</span>
+  </div>
+
+  <div class="sitar-controls">
+    <div class="sitar-control sitar-control-size">
+      <label for="sitar-size">Size <span class="sitar-hint">(α — up / down)</span></label>
+      <input type="range" id="sitar-size" min="-0.25" max="0.25" step="0.01" value="0" />
+      <output id="sitar-size-value" for="sitar-size">+0.00</output>
+    </div>
+    <div class="sitar-control sitar-control-tempo">
+      <label for="sitar-tempo">Timing <span class="sitar-hint">(β — earlier / later)</span></label>
+      <input type="range" id="sitar-tempo" min="-0.15" max="0.15" step="0.01" value="0" />
+      <output id="sitar-tempo-value" for="sitar-tempo">+0.00</output>
+    </div>
+    <div class="sitar-control sitar-control-intensity">
+      <label for="sitar-intensity">Intensity <span class="sitar-hint">(γ — faster / slower)</span></label>
+      <input type="range" id="sitar-intensity" min="-0.6" max="0.6" step="0.01" value="0" />
+      <output id="sitar-intensity-value" for="sitar-intensity">+0.00</output>
+    </div>
+    <div class="sitar-buttons">
+      <button type="button" id="sitar-replay" class="btn btn-sm sitar-replay-button">↻ Replay</button>
+      <button type="button" id="sitar-reset" class="btn btn-sm sitar-reset-button">Reset</button>
+    </div>
+  </div>
+
+</div>
+
+<script defer="" src="/assets/theme/js/sitar-playground.js"></script>
+
+<h2 id="learn-more">Learn more</h2>
+
+<p>The full explanatory guide is in preparation. In the meantime, see the <a href="https://cran.r-project.org/web/packages/sitar/vignettes/Fitting_models_with_SITAR.html">sitar R package</a> and our <a href="/software/">software page</a> for tools to fit SITAR models to your own data.</p>
+
+
+    
+  </div>
+</div>
+
+
+      </div>
+    </main>
+
+    <footer class="d-print-none">
+  <div class="container">
+    <div class="row align-items-start">
+      <div class="col-lg-3">
+        
+          <ul class="list-inline">
+            
+              <li class="list-inline-item me-1">
+                <a href="mailto:grp-lmod@groups.bristol.ac.uk" title="Email">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa-solid fa-circle fa-stack-2x"></i>
+                    <i class="fa-regular fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            
+            
+              <li class="list-inline-item me-1">
+                <a href="https://github.com/LongitudinalModelling" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa-solid fa-circle fa-stack-2x"></i>
+                    <i class="fa-brands fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            
+            
+              <li class="list-inline-item me-1">
+                <a href="https://www.youtube.com/@LongModel" title="YouTube">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa-solid fa-circle fa-stack-2x"></i>
+                    <i class="fa-brands fa-youtube fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            
+          </ul>
+        
+      </div>
+
+      <div class="col-lg-7">
+        <h5 class="text-white mb-2">Quick Links</h5>
+        <ul class="list-inline">
+          
+            <li class="list-inline-item me-3"><a href="/" class="text-white">Home</a></li>
+          
+            <li class="list-inline-item me-3"><a href="/research/" class="text-white">Research</a></li>
+          
+            <li class="list-inline-item me-3"><a href="/publications/" class="text-white">Publications</a></li>
+          
+            <li class="list-inline-item me-3"><a href="/software/" class="text-white">Software</a></li>
+          
+            <li class="list-inline-item me-3"><a href="/seminars/" class="text-white">Seminars</a></li>
+          
+            <li class="list-inline-item me-3"><a href="/training/" class="text-white">Learn</a></li>
+          
+            <li class="list-inline-item me-3"><a href="/people/" class="text-white">People</a></li>
+          
+            <li class="list-inline-item me-3"><a href="/contact/" class="text-white">Join</a></li>
+          
+            <li class="list-inline-item me-3"><a href="/blog/" class="text-white">News</a></li>
+          
+        </ul>
+      </div>
+
+      <div class="col-lg-2 text-end">
+        
+          
+            
+              
+                <a href="">
+                  <img src="/assets/images/uob.png" alt="UOB" style="height: 60px; max-width: 100%;" loading="lazy" decoding="async">
+                </a>
+              
+            
+          
+        
+      </div>
+    </div>
+
+    <div class="small mt-2">
+      
+        <p>&copy; Longitudinal Modelling Group 2025 (<a href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>)</p>
+      
+      
+      
+        
+        <p>
+          <a href="https://github.com/longitudinalmodelling/longitudinalmodelling.github.io/edit/master/training/expl_guides/sitar.md">
+            <i class="fa-solid fa-pen-to-square"></i> Edit this page
+          </a>
+        </p>
+      
+    </div>
+  </div>
+</footer>
+
+
+  </body>
+</html>

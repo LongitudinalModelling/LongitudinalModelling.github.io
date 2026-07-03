@@ -689,30 +689,90 @@ $sitar-intensity: #00b050;
 }
 
 
-// --- Latest publications box (publications page) ---
+// --- Publications page ---
 
-.latest-publications-box {
-  height: 260px;
-  overflow-y: scroll;
-  padding: 15px 15px 15px 25px;
-  border-left: 5px solid $purple-dark;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-  transition: box-shadow 0.3s ease;
+// Featured publication cards
+.publication-card {
+  border: none;
+  border-top: 4px solid $purple;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important;
+  }
+}
+
+.publication-card-img-wrap {
+  position: relative;
+}
+
+.publication-card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.publication-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+  &.publication-badge-methods {
+    background-color: $purple;
   }
 
-  ul {
-    list-style-type: none;
-    margin-left: 0;
-    padding-left: 0;
+  &.publication-badge-applied {
+    background-color: $purple-dark;
   }
+}
+
+.publication-card-footer {
+  background-color: transparent;
+  border-top: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+// Outline purple button for secondary links (Editorial / News)
+.btn-outline-purple {
+  color: $purple;
+  border: 1px solid $purple;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+    background-color: $purple;
+    border-color: $purple;
+  }
+}
+
+// Full "All Publications" list, grouped by year
+.publication-year-heading {
+  margin-top: 2rem;
+  color: $purple-dark;
+  border-bottom: 2px solid rgba($purple, 0.25);
+  padding-bottom: 0.25rem;
+}
+
+.publication-list {
+  list-style: none;
+  padding-left: 0;
 
   li {
-    margin-bottom: 10px;
-    line-height: 1.4;
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+    margin-bottom: 0.6em;
+    line-height: 1.45;
   }
 
   a {
@@ -723,14 +783,4 @@ $sitar-intensity: #00b050;
       text-decoration: underline;
     }
   }
-
-  li:not(:last-child) {
-    border-bottom: 1px solid $purple-dark;
-    padding-bottom: 10px;
-  }
-}
-
-#latest-publications {
-  margin-top: 4rem;
-  color: $purple-dark;
 }

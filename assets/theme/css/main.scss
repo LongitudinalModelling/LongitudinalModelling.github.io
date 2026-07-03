@@ -56,11 +56,3 @@ $enable-rounded: {% if site.rounded_corners != false %}true{% else %}false{% end
   @import "_team";            // Team members
 @import "_footer";            // Footer
 @import "_custom";            // Custom styling
-
-/* Custom styles for publications page images */
-.publication-thumbnail {
-  max-width: 150px; /* This is the key change: limits the image width */
-  height: 150px; /* Keep this height if desired for consistency */
-  object-fit: cover; /* This crops the image to fit without stretching */
-  object-position: center; /* Centers the cropped image */
-}
