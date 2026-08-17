@@ -16,6 +16,12 @@
 #   news: https://...          # optional extra link
 # ------------------------------------------------------------------
 
+- authors: "Hernandez MA, Parker RMA, Cole TJ, et al."
+  title: "Birth weight percentiles and infant and child growth dynamics"
+  journal: "JAMA Network Open"
+  link: https://doi.org/10.1001/jamanetworkopen.2026.22218
+  date: 2026-08-01
+  
 - authors: "Hernandez MA, Li Z, Cole TJ, et al."
   title: "Capturing infant and child growth dynamics with P-splines mixed effects models"
   journal: "International Journal of Obesity"
@@ -81,6 +87,12 @@
   journal: "British Journal of Psychiatry"
   link: https://doi.org/10.1192/bjp.2025.88
   date: 2025-08-12
+
+- authors: "Wright N, Kounali D, Paul E, et al."
+  title: "Trajectories of child emotional and behavioural difficulties before and during the COVID-19 pandemic in a longitudinal UK cohort"
+  journal: "JCPP Advances"
+  link: https://doi.org/10.1002/jcv2.70068
+  date: 2025-08-05
 
 - authors: "Zheng Y, Baxter-Jones ADG, Elhakeem A, et al."
   title: "Site and sex specific bone mineral content and density trajectories from adolescence through to 15 years post peak bone mass"

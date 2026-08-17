@@ -1,5 +1,4 @@
-# Collaborating institutions shown on the contact page map.
-# lat/lng are the institution's city; home marks the group's own base.
+# Collaborating institutions shown on the contact page map; home marks our own base.
 
 - name: "University of Bristol"
   city: "Bristol, UK"

@@ -117,14 +117,12 @@ $card-backgrounds: (
 }
 
 // Purple colour scheme for the seminars page cards
-// NOTE: intentionally a different shade than the brand $purple (#670267)
-// defined in _custom.scss; unifying them would visibly change the page.
 $seminar-purple: #5c005c;
 $seminar-purple-hover: #4d004d;
 
 .bg-purple {
   background-color: $seminar-purple !important;
-  color: white; // Ensures text is white on the purple background
+  color: white;
 }
 
 .border-purple {
@@ -148,7 +146,7 @@ $seminar-purple-hover: #4d004d;
 }
 
 .team-member-image {
-  width: 200px;  /* Adjust this value as needed */
-  height: 200px; /* Adjust this value as needed */
+  width: 200px;
+  height: 200px;
   object-fit: cover;
 }

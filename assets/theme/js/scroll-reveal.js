@@ -1,9 +1,3 @@
-/*
- * Subtle reveal-on-scroll for cards across the site.
- * Elements below the initial viewport fade/slide in as they scroll into view.
- * Does nothing (content stays fully visible) with reduced motion, without
- * IntersectionObserver support, or without JavaScript.
- */
 (function () {
   'use strict';
 
@@ -28,11 +22,9 @@
     }, { threshold: 0.1 });
 
     document.querySelectorAll(SELECTORS).forEach(function (el) {
-      // Leave anything already (partly) on screen alone so nothing flashes
       var top = el.getBoundingClientRect().top;
       if (top < viewportBottom) return;
 
-      // Stagger elements that sit at (nearly) the same height, e.g. a card row
       if (batchStart === null || Math.abs(top - batchStart) > 40) {
         batchStart = top;
         batchIndex = 0;

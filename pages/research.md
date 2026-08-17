@@ -18,7 +18,7 @@ permalink: /research/
 
 ## Our Work
 
-#### Methods Research and Training
+<h3 class="h4">Methods Research and Training</h3>
 
 Our methods research focuses on developing and improving trajectory modelling methods and creating easy-to-use software and guides to help researchers analyse how things change over time.
 
@@ -36,7 +36,7 @@ Example of our ongoing areas of research include:
 
 <hr class="purple-line-small">
 
-#### Applied Research
+<h3 class="h4">Applied Research</h3>
 
 Our ongoing applied research uses trajectory modelling and multinational cohort studies to understand how health evolves and to find answers that can improve life course health.
 
@@ -48,7 +48,7 @@ Some of our current research areas and interests include:
 
 * **Adolescent mental health:** We study mental health trajectories and their determinants.
 
-##### Data
+<h4 class="h5">Data</h4>
 
 The data we use come from various studies, including those shown below.
 
@@ -56,6 +56,6 @@ The data we use come from various studies, including those shown below.
 
 <hr class="purple-line-small">
 
-#### Funding
+<h3 class="h4">Funding</h3>
 
 Our work is supported by funding from different sources, including the University of Bristol, MRC, Wellcome Trust, European Research Council, and Horizon Europe.

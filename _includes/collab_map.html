@@ -1,10 +1,6 @@
 {% comment %}
-  Interactive collaboration map (contact page).
-  Markers come from _data/collaborators.yml; positions use an equirectangular
-  projection onto a 1000x500 canvas: x = (lng+180)/360*1000, y = (90-lat)/180*500.
-  The viewBox crops to the inhabited band covering all markers.
-  Land outline: Natural Earth 1:110m "land" (public domain), converted to a
-  single SVG path with the same projection.
+  Marker positions on a 1000x500 equirectangular canvas: x = (lng+180)/360*1000, y = (90-lat)/180*500.
+  Land outline: Natural Earth 1:110m (public domain), same projection.
 {% endcomment %}
 {% assign home = site.data.collaborators | where: "home", true | first %}
 {% assign home_x = home.lng | plus: 180.0 | divided_by: 360.0 | times: 1000 | round: 1 %}

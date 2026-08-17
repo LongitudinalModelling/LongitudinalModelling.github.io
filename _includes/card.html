@@ -14,12 +14,12 @@
   </a>
 
   <div class="card-body position-relative">
-    <h5 class="card-title">
+    <h2 class="h5 card-title">
       <a class="stretched-link" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-    </h5>
+    </h2>
 
     {% if item.collection == 'posts' %}
-      <h6 class="card-subtitle">{{ item.date | date: '%B %d, %Y' }}</h6>
+      <h3 class="h6 card-subtitle">{{ item.date | date: '%B %d, %Y' }}</h3>
     {% endif %}
 
     <div class="card-text">

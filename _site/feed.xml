@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-07-03T23:05:15+01:00</updated><id>http://localhost:4000/feed.xml</id><author><name>Longitudinal Modelling Group 2025</name></author><entry><title type="html">SITAR at RSS 2026</title><link href="http://localhost:4000/blog/2026/rss/" rel="alternate" type="text/html" title="SITAR at RSS 2026" /><published>2026-04-14T00:00:00+01:00</published><updated>2026-04-14T00:00:00+01:00</updated><id>http://localhost:4000/blog/2026/rss</id><content type="html" xml:base="http://localhost:4000/blog/2026/rss/"><![CDATA[<div class="container my-5">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2026-08-17T21:19:47+01:00</updated><id>http://localhost:4000/feed.xml</id><author><name>Longitudinal Modelling Group 2025</name></author><entry><title type="html">SITAR at RSS 2026</title><link href="http://localhost:4000/blog/2026/rss/" rel="alternate" type="text/html" title="SITAR at RSS 2026" /><published>2026-04-14T00:00:00+01:00</published><updated>2026-04-14T00:00:00+01:00</updated><id>http://localhost:4000/blog/2026/rss</id><content type="html" xml:base="http://localhost:4000/blog/2026/rss/"><![CDATA[<div class="container my-5">
   <img src="/assets/images/blog/rss_blog.jpg" alt="infographic" class="img-fluid" />
 </div>
 
 <p>We’re excited to share that we will be presenting an invited topic session on <strong>Bayesian SITAR growth curve analysis</strong> at the <a href="https://rss.org.uk/training-events/conference2026/">RSS International Conference 2026</a>.</p>
 
-<h4 id="about-the-session">About the session</h4>
+<h2 class="h4">About the session</h2>
 
 <p>The <a href="https://doi.org/10.1093/ije/dyq115">SITAR (SuperImposition by Translation And Rotation)</a> model, developed by Professor Tim Cole CBE, is a powerful tool for summarising human height growth during puberty, typically explaining up to 99% of population variance. The model estimates a mean growth curve and characterises individual growth patterns using three random effects (<em>size</em>, <em>timing</em>, and <em>intensity</em>) which can then be related to earlier exposures or later health outcomes, making SITAR particularly valuable for translational medicine and life course epidemiology.</p>
 
 <p>This session presents exciting new extensions to the classical SITAR model developed within a Bayesian framework, offering greater modelling flexibility. The session will run for approximately 90 minutes and include a short introduction from the session chair, followed by three talks and time for questions and discussion.</p>
 
-<h4 id="speakers-and-provisional-titles">Speakers and provisional titles</h4>
+<h2 class="h4">Speakers and provisional titles</h2>
 
 <p><strong>Tim Cole</strong>
 <em>A brief history of SITAR</em></p>
@@ -39,7 +39,7 @@
 
 <p>In a <a href="https://doi.org/10.1093/jnci/djag014">new study</a> in the Journal of the National Cancer Institute, Marisa da Silva and colleagues find that adulthood weight gain was associated with reduced survival among those with a prostate cancer diagnosis. The researchers also found that adulthood weight gain appeared to reduce the risk of a prostate cancer diagnosis but that this was likely due to detection bias.</p>
 
-<h4 id="what-the-researchers-did-and-found">What the researchers did and found</h4>
+<h2 class="h4">What the researchers did and found</h2>
 
 <p>The researchers followed-up 258,494 men in Sweden for up to 25 years tracking new cases of prostate cancer, including disease aggressiveness, and death. Longitudinal modelling was used to estimate individual weight trajectories between age 17 and 60 years.</p>
 
@@ -51,7 +51,7 @@
 
 <p>While the study benefits from a large sample size and trajectory analysis, notable limitations include the lack of data on some potential confounding factors, and the use of a predominantly ethnic Swedish sample in the study which limits how well the findings can be generalised to other populations globally.</p>
 
-<h4 id="what-are-the-implications">What are the implications</h4>
+<h2 class="h4">What are the implications</h2>
 
 <p>This study shows that the timing of weight gain matters just as much as the amount, and points to weight gain during late middle adulthood as a distinct and actionable risk factor for disease survival, independent of how aggressive the tumour is at diagnosis.</p>
 
@@ -61,13 +61,13 @@
 
 <p>More research is needed to understand the biological mechanisms that make late-onset obesity particularly detrimental to prostate cancer survival.</p>
 
-<h4 id="key-takeaway">Key takeaway</h4>
+<h2 class="h4">Key takeaway</h2>
 
 <p>While screening biases complicated the study of how weight gain might affect the chances of being diagnosed with prostate cancer, weight gain in late middle adulthood appears to increase the risk of dying from the disease. Clinical and public health guidelines should therefore explicitly acknowledge the importance of weight management and stability during the late midlife age window to help improve long-term prostate cancer outcomes.</p>
 
 <hr />
 
-<h5 id="resources">Resources</h5>
+<h2 class="h5">Resources</h2>
 
 <ul>
   <li>
@@ -81,7 +81,7 @@
 <p>We are looking for researchers and stakeholders that are <strong>working or interested in longitudinal data analysis methods and applications</strong> to join the project’s UAG. Your feedback will be sought when developing our methods, tools, and disseminating results and resources to ensure that the project’s outputs are made widely accessible and impactful.</p>
 
 <div class="card p-4 my-5 bg-light">
-  <h3 class="card-title text-center">Join the UAG</h3>
+  <h2 class="h3 card-title text-center">Join the UAG</h2>
 
   <form action="https://formspree.io/f/xblapjyr" method="POST">
     <div class="form-group">
@@ -98,7 +98,7 @@
     </div>
     <button type="submit" class="btn btn-dark btn-lg mt-3">Sign up here</button>
   </form>
-</div>]]></content><author><name>[&quot;Ahmed Elhakeem&quot;]</name></author><category term="SITAR" /><summary type="html"><![CDATA[Help us to improve SITAR by joining the User Advisory Group]]></summary></entry><entry><title type="html">Assisted Reproductive Technology Health Partnership</title><link href="http://localhost:4000/blog/2025/art-health/" rel="alternate" type="text/html" title="Assisted Reproductive Technology Health Partnership" /><published>2025-08-15T00:00:00+01:00</published><updated>2025-08-15T00:00:00+01:00</updated><id>http://localhost:4000/blog/2025/art-health</id><content type="html" xml:base="http://localhost:4000/blog/2025/art-health/"><![CDATA[<h3 id="does-your-study-have-data-on-fertility-treatment"><strong>Does your study have data on fertility treatment?</strong></h3>
+</div>]]></content><author><name>[&quot;Ahmed Elhakeem&quot;]</name></author><category term="SITAR" /><summary type="html"><![CDATA[Help us to improve SITAR by joining the User Advisory Group]]></summary></entry><entry><title type="html">Assisted Reproductive Technology Health Partnership</title><link href="http://localhost:4000/blog/2025/art-health/" rel="alternate" type="text/html" title="Assisted Reproductive Technology Health Partnership" /><published>2025-08-15T00:00:00+01:00</published><updated>2025-08-15T00:00:00+01:00</updated><id>http://localhost:4000/blog/2025/art-health</id><content type="html" xml:base="http://localhost:4000/blog/2025/art-health/"><![CDATA[<h2 class="h3"><strong>Does your study have data on fertility treatment?</strong></h2>
 
 <h2 id="what-is-the-art-healthpartnership">What is the A.R.T-HEALTH<sub>Partnership</sub>?</h2>
 

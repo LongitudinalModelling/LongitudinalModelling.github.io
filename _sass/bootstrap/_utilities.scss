@@ -130,14 +130,14 @@ $utilities: map-merge(
       property: border,
       values: (
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
-        0: 0,
+        "0": 0,
       )
     ),
     "border-top": (
       property: border-top,
       values: (
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
-        0: 0,
+        "0": 0,
       )
     ),
     "border-end": (
@@ -145,14 +145,14 @@ $utilities: map-merge(
       class: border-end,
       values: (
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
-        0: 0,
+        "0": 0,
       )
     ),
     "border-bottom": (
       property: border-bottom,
       values: (
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
-        0: 0,
+        "0": 0,
       )
     ),
     "border-start": (
@@ -160,7 +160,7 @@ $utilities: map-merge(
       class: border-start,
       values: (
         null: var(--#{$prefix}border-width) var(--#{$prefix}border-style) var(--#{$prefix}border-color),
-        0: 0,
+        "0": 0,
       )
     ),
     "border-color": (
@@ -199,10 +199,10 @@ $utilities: map-merge(
       property: width,
       class: w,
       values: (
-        25: 25%,
-        50: 50%,
-        75: 75%,
-        100: 100%,
+        "25": 25%,
+        "50": 50%,
+        "75": 75%,
+        "100": 100%,
         auto: auto
       )
     ),
@@ -225,10 +225,10 @@ $utilities: map-merge(
       property: height,
       class: h,
       values: (
-        25: 25%,
-        50: 50%,
-        75: 75%,
-        100: 100%,
+        "25": 25%,
+        "50": 50%,
+        "75": 75%,
+        "100": 100%,
         auto: auto
       )
     ),
@@ -337,12 +337,12 @@ $utilities: map-merge(
       property: order,
       values: (
         first: -1,
-        0: 0,
-        1: 1,
-        2: 2,
-        3: 3,
-        4: 4,
-        5: 5,
+        "0": 0,
+        "1": 1,
+        "2": 2,
+        "3": 3,
+        "4": 4,
+        "5": 5,
         last: 6,
       ),
     ),
@@ -532,7 +532,7 @@ $utilities: map-merge(
       property: line-height,
       class: lh,
       values: (
-        1: 1,
+        "1": 1,
         sm: $line-height-sm,
         base: $line-height-base,
         lg: $line-height-lg,
@@ -713,12 +713,12 @@ $utilities: map-merge(
       class: rounded,
       values: (
         null: var(--#{$prefix}border-radius),
-        0: 0,
-        1: var(--#{$prefix}border-radius-sm),
-        2: var(--#{$prefix}border-radius),
-        3: var(--#{$prefix}border-radius-lg),
-        4: var(--#{$prefix}border-radius-xl),
-        5: var(--#{$prefix}border-radius-xxl),
+        "0": 0,
+        "1": var(--#{$prefix}border-radius-sm),
+        "2": var(--#{$prefix}border-radius),
+        "3": var(--#{$prefix}border-radius-lg),
+        "4": var(--#{$prefix}border-radius-xl),
+        "5": var(--#{$prefix}border-radius-xxl),
         circle: 50%,
         pill: var(--#{$prefix}border-radius-pill)
       )
@@ -728,12 +728,12 @@ $utilities: map-merge(
       class: rounded-top,
       values: (
         null: var(--#{$prefix}border-radius),
-        0: 0,
-        1: var(--#{$prefix}border-radius-sm),
-        2: var(--#{$prefix}border-radius),
-        3: var(--#{$prefix}border-radius-lg),
-        4: var(--#{$prefix}border-radius-xl),
-        5: var(--#{$prefix}border-radius-xxl),
+        "0": 0,
+        "1": var(--#{$prefix}border-radius-sm),
+        "2": var(--#{$prefix}border-radius),
+        "3": var(--#{$prefix}border-radius-lg),
+        "4": var(--#{$prefix}border-radius-xl),
+        "5": var(--#{$prefix}border-radius-xxl),
         circle: 50%,
         pill: var(--#{$prefix}border-radius-pill)
       )
@@ -743,12 +743,12 @@ $utilities: map-merge(
       class: rounded-end,
       values: (
         null: var(--#{$prefix}border-radius),
-        0: 0,
-        1: var(--#{$prefix}border-radius-sm),
-        2: var(--#{$prefix}border-radius),
-        3: var(--#{$prefix}border-radius-lg),
-        4: var(--#{$prefix}border-radius-xl),
-        5: var(--#{$prefix}border-radius-xxl),
+        "0": 0,
+        "1": var(--#{$prefix}border-radius-sm),
+        "2": var(--#{$prefix}border-radius),
+        "3": var(--#{$prefix}border-radius-lg),
+        "4": var(--#{$prefix}border-radius-xl),
+        "5": var(--#{$prefix}border-radius-xxl),
         circle: 50%,
         pill: var(--#{$prefix}border-radius-pill)
       )
@@ -758,12 +758,12 @@ $utilities: map-merge(
       class: rounded-bottom,
       values: (
         null: var(--#{$prefix}border-radius),
-        0: 0,
-        1: var(--#{$prefix}border-radius-sm),
-        2: var(--#{$prefix}border-radius),
-        3: var(--#{$prefix}border-radius-lg),
-        4: var(--#{$prefix}border-radius-xl),
-        5: var(--#{$prefix}border-radius-xxl),
+        "0": 0,
+        "1": var(--#{$prefix}border-radius-sm),
+        "2": var(--#{$prefix}border-radius),
+        "3": var(--#{$prefix}border-radius-lg),
+        "4": var(--#{$prefix}border-radius-xl),
+        "5": var(--#{$prefix}border-radius-xxl),
         circle: 50%,
         pill: var(--#{$prefix}border-radius-pill)
       )
@@ -773,12 +773,12 @@ $utilities: map-merge(
       class: rounded-start,
       values: (
         null: var(--#{$prefix}border-radius),
-        0: 0,
-        1: var(--#{$prefix}border-radius-sm),
-        2: var(--#{$prefix}border-radius),
-        3: var(--#{$prefix}border-radius-lg),
-        4: var(--#{$prefix}border-radius-xl),
-        5: var(--#{$prefix}border-radius-xxl),
+        "0": 0,
+        "1": var(--#{$prefix}border-radius-sm),
+        "2": var(--#{$prefix}border-radius),
+        "3": var(--#{$prefix}border-radius-lg),
+        "4": var(--#{$prefix}border-radius-xl),
+        "5": var(--#{$prefix}border-radius-xxl),
         circle: 50%,
         pill: var(--#{$prefix}border-radius-pill)
       )

@@ -7,7 +7,7 @@ author: [Ahmed Elhakeem]
 tags: [ART, Infertility]
 ---
 
-### **Does your study have data on fertility treatment?**
+<h2 class="h3"><strong>Does your study have data on fertility treatment?</strong></h2>
 
 ## What is the A.R.T-HEALTH<sub>Partnership</sub>?
 

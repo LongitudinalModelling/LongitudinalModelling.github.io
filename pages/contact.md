@@ -8,15 +8,15 @@ permalink: /contact/
 
 We are always seeking highly motivated individuals who are interested in joining our group. 
 
-##### Current vacancies
+<h3 class="h5">Current vacancies</h3>
 
 There are no vacancies available at this moment.
 
-##### PhD scholarships
+<h3 class="h5">PhD scholarships</h3>
 
 There are no Scholarships available at this moment.
 
-##### Visiting scholars
+<h3 class="h5">Visiting scholars</h3>
 
 We regularly host visiting researchers. Please <a href="mailto:grp-lmod@groups.bristol.ac.uk">get in touch</a> to discuss opportunities. 
 

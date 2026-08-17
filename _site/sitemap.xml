@@ -77,6 +77,9 @@
 <loc>http://localhost:4000/training/expl_guides/splines/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/handoff.html</loc>
+</url>
+<url>
 <loc>http://localhost:4000/training/tutorials/natural_spline_lme_tutorial/ns_lme4.html</loc>
 </url>
 </urlset>

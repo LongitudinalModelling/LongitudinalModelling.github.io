@@ -42,7 +42,7 @@ sitemap: false
         } else if (text.indexOf(t) !== -1) {
           total += 1;
         } else {
-          return 0; // every term must match somewhere
+          return 0;
         }
       }
       return total;

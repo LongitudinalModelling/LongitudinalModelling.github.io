@@ -41,7 +41,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
   
-  <!-- Javascript: deferred so it doesn't block first paint -->
+  <!-- Javascript -->
   <script defer src="/assets/theme/js/jquery.min.js"></script>
   <script defer src="/assets/theme/js/popper.min.js"></script>
   <script defer src="/assets/theme/js/bootstrap.min.js"></script>
@@ -517,7 +517,7 @@ In this tutorial we fitted natural cubic spline LME models to characterise the m
           
             
               
-                <a href="">
+                <a href="https://www.bristol.ac.uk/" target="_blank">
                   <img src="/assets/images/uob.png" alt="UOB" style="height: 60px; max-width: 100%;" loading="lazy" decoding="async">
                 </a>
               
@@ -529,7 +529,7 @@ In this tutorial we fitted natural cubic spline LME models to characterise the m
 
     <div class="small mt-2">
       
-        <p>&copy; Longitudinal Modelling Group 2025 (<a href="http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>)</p>
+        <p>&copy; Longitudinal Modelling Group 2025 (<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>)</p>
       
       
       

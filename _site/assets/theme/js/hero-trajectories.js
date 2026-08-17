@@ -1,9 +1,3 @@
-/*
- * Animated growth-trajectory banner for the homepage header.
- * Draws a chart frame (x/y axes with ticks), then a family of SITAR-style
- * growth curves (a shared mean curve, with per-individual shifts in size,
- * timing, and velocity). Animates once over ~4s, then stops.
- */
 (function () {
   'use strict';
 
@@ -18,8 +12,6 @@
   var Y_BASE = 0.90;  // x-axis position
   var Y_TOP = 0.08;   // top of y-axis
 
-  // Pastel strokes that read on the purple gradient; white/lavender are
-  // repeated to weight the palette toward cohesion over rainbow
   var PALETTE = [
     [255, 255, 255], [255, 255, 255], [255, 255, 255],
     [216, 180, 226], [216, 180, 226], [216, 180, 226],
@@ -29,7 +21,6 @@
     [155, 209, 255]
   ];
 
-  // Deterministic RNG (mulberry32) so the banner looks identical on every visit
   function mulberry32(seed) {
     return function () {
       seed |= 0;
@@ -40,8 +31,6 @@
     };
   }
 
-  // Mean growth curve on t in [0,1]: rapid early growth that decelerates,
-  // plus a logistic "pubertal" spurt. Returns a value in roughly [0,1].
   function meanCurve(t) {
     var infancy = 1 - Math.exp(-3.2 * t);
     var spurt = 0.25 / (1 + Math.exp(-12 * (t - 0.62)));
@@ -69,7 +58,6 @@
       var rand = mulberry32(SEED);
       curves = [];
       for (var i = 0; i < N_CURVES; i++) {
-        // SITAR-style individual effects: size (vertical), tempo (horizontal), velocity (scale)
         var size = (rand() - 0.5) * 0.34;
         var tempo = (rand() - 0.5) * 0.16;
         var velocity = 0.82 + rand() * 0.42;
@@ -80,7 +68,6 @@
         for (var s = 0; s <= steps; s++) {
           var t = s / steps;
           var y = meanCurve(Math.min(1, Math.max(0, t * velocity + tempo))) + size;
-          // Keep every point above the x-axis baseline
           y = Math.max(0.02, y);
           points.push({
             x: width * (X_LEFT + (X_RIGHT - X_LEFT) * t),
@@ -92,7 +79,7 @@
           color: color,
           alpha: alpha,
           lineWidth: 1.75 + rand() * 1.25,
-          delay: AXIS_DURATION - 100 + i * 90, // curves start as the axes finish
+          delay: AXIS_DURATION - 100 + i * 90,
           hasDots: rand() < 0.4,
           dotEvery: 12 + Math.floor(rand() * 8)
         });
@@ -119,19 +106,16 @@
       ctx.lineWidth = 1.5;
       ctx.lineCap = 'round';
 
-      // y-axis grows upward from the origin
       ctx.beginPath();
       ctx.moveTo(x0, yBase);
       ctx.lineTo(x0, yBase - (yBase - yTop) * local);
       ctx.stroke();
 
-      // x-axis grows rightward from the origin
       ctx.beginPath();
       ctx.moveTo(x0, yBase);
       ctx.lineTo(x0 + (x1 - x0) * local, yBase);
       ctx.stroke();
 
-      // Tick marks fade in with the axes
       ctx.strokeStyle = 'rgba(255, 255, 255, ' + 0.55 * local + ')';
       n = 6;
       for (i = 1; i <= n; i++) {
@@ -149,7 +133,6 @@
       }
     }
 
-    // Draw axes, then each curve up to `progress` (0..1), staggered per curve
     function draw(progress) {
       ctx.clearRect(0, 0, width, height);
 
@@ -217,7 +200,7 @@
       resizeTimer = setTimeout(function () {
         sizeCanvas();
         buildCurves();
-        if (finished) draw(1); // animation already played; just redraw static
+        if (finished) draw(1);
       }, 200);
     });
 

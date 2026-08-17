@@ -1,10 +1,3 @@
-// Custom styling
-//
-// Site-specific components on top of the Petridish theme.
-// Sections: brand variables, shared elements, software page, call-to-action
-// buttons, training cards, tutorial links, animated hero, site search, news
-// tag filter, latest publications box.
-
 // Brand colours
 $purple: #670267;
 $purple-dark: #360353;
@@ -14,9 +7,8 @@ $text-dark: #333;
 $muted-gray: #6c757d;
 
 
-// --- Shared elements ---
+// Shared elements
 
-// Heading with a purple underline (homepage sections, training page)
 .home-section-heading {
   position: relative;
   display: inline-block;
@@ -33,7 +25,6 @@ $muted-gray: #6c757d;
   }
 }
 
-// Contact page: map image beside the postal address
 .location-details {
   display: flex;
   align-items: center;
@@ -52,7 +43,6 @@ $muted-gray: #6c757d;
   line-height: 1.6;
 }
 
-// Purple horizontal rules (full-width and centred half-width)
 .purple-line {
   border: none;
   border-top: 5px solid $purple;
@@ -67,7 +57,7 @@ $muted-gray: #6c757d;
 }
 
 
-// --- Software page ---
+// Software page
 
 .software-grid {
   display: grid;
@@ -125,7 +115,7 @@ $muted-gray: #6c757d;
   }
 }
 
-// Restyle Bootstrap's .btn-info (software "Methodology" buttons) in brand purple
+// Bootstrap .btn-info restyled in brand purple
 .btn-info {
   color: white;
   background-color: $purple;
@@ -156,7 +146,7 @@ $muted-gray: #6c757d;
 }
 
 
-// --- Call-to-action buttons ---
+// Call-to-action buttons
 
 .call-to-action {
   text-align: center;
@@ -190,7 +180,6 @@ $muted-gray: #6c757d;
   }
 }
 
-// Panel of purple-tab-buttons
 .button-panel-section {
   text-align: center;
   margin-top: 40px;
@@ -230,7 +219,7 @@ $muted-gray: #6c757d;
 }
 
 
-// --- Inline style replacements ---
+// Inline style replacements
 
 .img-float-right {
   width: 260px;
@@ -250,7 +239,7 @@ $muted-gray: #6c757d;
 }
 
 
-// --- Training cards (explanatory guide tiles on the training page) ---
+// Training cards
 
 .training-card {
   position: relative;
@@ -313,7 +302,7 @@ $muted-gray: #6c757d;
 }
 
 
-// --- Tutorial links (analysis tutorial list on the training page) ---
+// Tutorial links
 
 .tutorial-link {
   font-size: 1.25em;
@@ -357,7 +346,7 @@ $muted-gray: #6c757d;
 }
 
 
-// --- Animated trajectory hero (homepage banner) ---
+// Animated trajectory hero
 
 .header-animated {
   background: linear-gradient(135deg, lighten($purple-dark, 10%), lighten($purple, 10%));
@@ -379,7 +368,7 @@ $muted-gray: #6c757d;
 }
 
 
-// --- Site search ---
+// Site search
 
 .navbar-search-input {
   max-width: 140px;
@@ -421,9 +410,7 @@ $muted-gray: #6c757d;
 }
 
 
-// --- Scroll-reveal micro-interactions ---
-// scroll-reveal.js adds .sr-hidden to below-fold cards, then .sr-visible on
-// intersection. Without JS (or with reduced motion) neither class is applied.
+// Scroll-reveal
 
 .sr-hidden {
   opacity: 0;
@@ -437,7 +424,7 @@ $muted-gray: #6c757d;
 }
 
 
-// --- SITAR playground (SITAR explanatory guide page) ---
+// SITAR playground
 
 .sitar-playground {
   border: 1px solid rgba($purple, 0.25);
@@ -580,10 +567,9 @@ $sitar-intensity: #00b050;
 
 
 
-// --- Collaboration map (contact page) ---
+// Collaboration map
 
 .collab-map {
-  // Break out of the narrow content column so the map is large and legible
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -625,7 +611,6 @@ $sitar-intensity: #00b050;
     font-size: 12px;
     font-weight: 600;
     fill: $purple-dark;
-    // White halo so the name stays legible over the map and other dots
     paint-order: stroke;
     stroke: #fff;
     stroke-width: 3px;
@@ -635,7 +620,6 @@ $sitar-intensity: #00b050;
     pointer-events: none;
   }
 
-  // Leader line from the dot up to its name callout
   .collab-leader {
     stroke: $purple-dark;
     stroke-width: 1;
@@ -679,9 +663,8 @@ $sitar-intensity: #00b050;
 }
 
 
-// --- News page ---
+// News page
 
-// Notice shown when filtering posts by tag
 #tag-filter-notice {
   border: 1px solid $purple;
   color: $purple-dark;
@@ -689,9 +672,8 @@ $sitar-intensity: #00b050;
 }
 
 
-// --- Publications page ---
+// Publications page
 
-// Featured publication cards
 .publication-card {
   border: none;
   border-top: 4px solid $purple;
@@ -742,7 +724,6 @@ $sitar-intensity: #00b050;
   gap: 0.4rem;
 }
 
-// Outline purple button for secondary links (Editorial / News)
 .btn-outline-purple {
   color: $purple;
   border: 1px solid $purple;
@@ -756,7 +737,6 @@ $sitar-intensity: #00b050;
   }
 }
 
-// Full "All Publications" list, grouped by year
 .publication-year-heading {
   margin-top: 2rem;
   color: $purple-dark;

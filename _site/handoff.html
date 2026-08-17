@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  
+    <title>Handoff — Publications Page Revamp + README/License - </title>
+  
+
+   
+  
+  
+  
+
+  
+  
+  
+  
+    <meta name="author" content="Longitudinal Modelling Group 2025">
+  
+  
+
+  <meta property="og:url" content="http://localhost:4000/handoff.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Handoff — Publications Page Revamp + README/License">
+  
+  
+  
+
+  <link rel="icon" type="image/x-icon" href="http://localhost:4000/favicon.ico">
+  <link rel="alternate" type="application/rss+xml" title=" - RSS feed" href="http://localhost:4000/feed.xml" >
+  <!-- CSS: Bootstrap CSS is included in main.css -->
+  <link rel="stylesheet" href="/assets/theme/css/main.css">
+  <link rel="stylesheet" href="/assets/theme/css/pygments.css">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="/assets/theme/css/fontawesome-all.min.css">
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+  
+  <!-- Javascript -->
+  <script defer src="/assets/theme/js/jquery.min.js"></script>
+  <script defer src="/assets/theme/js/popper.min.js"></script>
+  <script defer src="/assets/theme/js/bootstrap.min.js"></script>
+  <script defer src="/assets/theme/js/scroll-reveal.js"></script>
+  <script data-goatcounter="https://lmg.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+</head>
+
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light d-print-none" id="main-nav">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="/">
+      
+        <img class="me-3" src="/assets/images/lmg_logo.jpg" alt="">
+      
+      
+    </a>
+    
+    
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+        Menu <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-menu">
+        <ul class="navbar-nav ms-auto">
+          
+            
+              <li class="navbar-item">
+                
+                <a class="nav-link" href="/">Home</a>
+              </li>
+            
+          
+            
+              <li class="navbar-item">
+                
+                <a class="nav-link" href="/research/">Research</a>
+              </li>
+            
+          
+            
+              <li class="navbar-item">
+                
+                <a class="nav-link" href="/publications/">Publications</a>
+              </li>
+            
+          
+            
+              <li class="navbar-item">
+                
+                <a class="nav-link" href="/software/">Software</a>
+              </li>
+            
+          
+            
+              <li class="navbar-item">
+                
+                <a class="nav-link" href="/seminars/">Seminars</a>
+              </li>
+            
+          
+            
+              <li class="navbar-item">
+                
+                <a class="nav-link" href="/training/">Learn</a>
+              </li>
+            
+          
+            
+              <li class="navbar-item">
+                
+                <a class="nav-link" href="/people/">People</a>
+              </li>
+            
+          
+            
+              <li class="navbar-item">
+                
+                <a class="nav-link" href="/contact/">Join</a>
+              </li>
+            
+          
+            
+              <li class="navbar-item">
+                
+                <a class="nav-link" href="/blog/">News</a>
+              </li>
+            
+          
+        </ul>
+        <form class="d-flex navbar-search ms-lg-3 my-2 my-lg-0" action="/search/" method="get" role="search">
+          <input class="form-control form-control-sm navbar-search-input" type="search" name="q" placeholder="Search" aria-label="Search the site">
+          <button class="btn btn-sm navbar-search-button" type="submit" aria-label="Submit search">
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          </button>
+        </form>
+      </div>
+    
+  </div>
+</nav>
+
+
+    <main>
+      
+
+  <header class="header bg-no-image ">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-lg-8 position-relative mx-auto">
+        <h1>Handoff — Publications Page Revamp + README/License</h1>
+        
+        <div class="lead">
+</div>
+        
+        
+
+        <div class="tags">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</header>
+
+
+      <div class="container content">
+          
+        <div class="row">
+  
+  <div class="col-md-10 col-lg-8 order-lg-first mx-auto">
+
+    <h1 id="handoff--publications-page-revamp--readmelicense">Handoff — Publications Page Revamp + README/License</h1>
+
+<h2 id="goal">Goal</h2>
+
+<p>Improve the Longitudinal Modelling Group website’s <strong>publications page</strong> and supporting docs:</p>
+<ol>
+  <li>Richer, more visual <strong>featured publication cards</strong>.</li>
+  <li>Move the full publication list out of the cramped sidebar box into the <strong>main page body, grouped by year</strong>.</li>
+  <li>Make adding/featuring a paper a <strong>single-file edit</strong> (previously required editing two YAML files with different schemas).</li>
+  <li>Improve the <strong>README</strong> for new contributors.</li>
+  <li>Document <strong>licensing</strong> (content CC BY 4.0, code MIT).</li>
+</ol>
+
+<h2 id="current-state">Current State</h2>
+
+<p>All work is <strong>complete and verified</strong> via <code class="language-plaintext highlighter-rouge">bundle exec jekyll build</code> (clean build, no Liquid warnings). <strong>Nothing has been committed yet</strong> — all changes are in the working tree on branch <code class="language-plaintext highlighter-rouge">master</code>.</p>
+
+<h2 id="files-changed">Files Changed</h2>
+
+<p><strong>Publications page</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">_data/publications.yml</code> — <strong>NEW</strong> single unified data file (38 papers, newest first). Header comment has a copy-paste template. <code class="language-plaintext highlighter-rouge">featured: true</code> + <code class="language-plaintext highlighter-rouge">category</code>/<code class="language-plaintext highlighter-rouge">image</code>/<code class="language-plaintext highlighter-rouge">description</code> promotes a paper to a card.</li>
+  <li><code class="language-plaintext highlighter-rouge">_data/publications_featured.yml</code> — <strong>DELETED</strong> (merged into unified file).</li>
+  <li><code class="language-plaintext highlighter-rouge">_data/publications_latest.yml</code> — <strong>DELETED</strong> (merged into unified file).</li>
+  <li><code class="language-plaintext highlighter-rouge">_layouts/publications.html</code> — rewritten: Bootstrap <code class="language-plaintext highlighter-rouge">row-cols</code> card grid with category badges + hover lift; new “All Publications” section grouped by year via <code class="language-plaintext highlighter-rouge">group_by_exp</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">_layouts/publications-sidebar.html</code> — removed the <code class="language-plaintext highlighter-rouge">.latest-publications-box</code>; sidebar now shows only the table of contents (auto-populates from the new h2/h3 anchors).</li>
+  <li><code class="language-plaintext highlighter-rouge">_sass/_custom.scss</code> — replaced <code class="language-plaintext highlighter-rouge">.latest-publications-box</code>/<code class="language-plaintext highlighter-rouge">#latest-publications</code> styles with a <code class="language-plaintext highlighter-rouge">// --- Publications page ---</code> block (<code class="language-plaintext highlighter-rouge">.publication-card</code>, <code class="language-plaintext highlighter-rouge">.publication-badge-*</code>, <code class="language-plaintext highlighter-rouge">.btn-outline-purple</code>, <code class="language-plaintext highlighter-rouge">.publication-year-heading</code>, <code class="language-plaintext highlighter-rouge">.publication-list</code>).</li>
+  <li><code class="language-plaintext highlighter-rouge">assets/theme/css/main.scss</code> — removed the now-unused <code class="language-plaintext highlighter-rouge">.publication-thumbnail</code> rule.</li>
+  <li><code class="language-plaintext highlighter-rouge">search.json</code> — <code class="language-plaintext highlighter-rouge">site.data.publications_latest</code> → <code class="language-plaintext highlighter-rouge">site.data.publications</code> (all 38 papers now searchable).</li>
+  <li><code class="language-plaintext highlighter-rouge">pages/publications.md</code> — page title <code class="language-plaintext highlighter-rouge">"Featured Publications"</code> → <code class="language-plaintext highlighter-rouge">"Publications"</code>.</li>
+</ul>
+
+<p><strong>Docs / license</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">README.md</code> — added: table of contents, “Running the Site Locally”, “How the Site is Deployed”, “Repository Structure” table, “Software” content subsection, “License” section; updated the Publications add-a-paper instructions for the unified file (dates must be <strong>unquoted</strong>); fixed stale Publications description.</li>
+  <li><code class="language-plaintext highlighter-rouge">LICENSE</code> — <strong>NEW</strong> MIT License, <code class="language-plaintext highlighter-rouge">Copyright (c) 2025 Longitudinal Modelling Group</code>. (<code class="language-plaintext highlighter-rouge">_config.yml:36</code> already excludes it from the built site.)</li>
+</ul>
+
+<h2 id="what-changed-conceptually">What Changed Conceptually</h2>
+
+<ul>
+  <li>Featured cards: image-topped with a purple <strong>Methods</strong> / dark-purple <strong>Applied</strong> badge, hover lift matching the site’s existing <code class="language-plaintext highlighter-rouge">.training-card</code> aesthetic, footer with a journal button + optional Editorial/News outline buttons.</li>
+  <li>Full list: <strong>All Publications</strong> heading with year subheadings (2026→2021 descending, newest-first within year); each year is a TOC anchor (<code class="language-plaintext highlighter-rouge">#pubs-YYYY</code>).</li>
+  <li>Licensing split: <strong>content = CC BY 4.0</strong> (already in footer via <code class="language-plaintext highlighter-rouge">site.author</code>), <strong>code = MIT</strong> (new <code class="language-plaintext highlighter-rouge">LICENSE</code> + README section). Footer intentionally left showing only CC BY 4.0 — that’s the correct notice for site visitors; the code license lives in the repo for developers.</li>
+</ul>
+
+<h2 id="what-i-tried-that-failed-and-the-workaround">What I Tried That Failed (and the workaround)</h2>
+
+<ul>
+  <li>The 8 featured papers had <strong>no publication dates</strong>. I fetched them from <strong>Crossref</strong> by DOI. Parsing the JSON with <code class="language-plaintext highlighter-rouge">python</code> failed — on this Windows machine <code class="language-plaintext highlighter-rouge">python</code>/<code class="language-plaintext highlighter-rouge">python3</code> are the <strong>Microsoft Store stub</strong> (no real interpreter), and no <code class="language-plaintext highlighter-rouge">jq</code> is installed. <strong>Workaround:</strong> parsed the Crossref responses with <code class="language-plaintext highlighter-rouge">curl</code> + <code class="language-plaintext highlighter-rouge">grep</code>, taking <code class="language-plaintext highlighter-rouge">published-print</code> (falling back to <code class="language-plaintext highlighter-rouge">published-online</code>). Dates are correct; where only a month was available, the day defaults to <code class="language-plaintext highlighter-rouge">01</code> (only affects within-year ordering).</li>
+  <li>Note: <code class="language-plaintext highlighter-rouge">node</code> is <strong>also not available</strong> on this machine — used <code class="language-plaintext highlighter-rouge">ruby -rjson</code> to validate <code class="language-plaintext highlighter-rouge">search.json</code>.</li>
+</ul>
+
+<h2 id="what-to-do-next">What To Do Next</h2>
+
+<ol>
+  <li><strong>Review</strong> the publications page visually: <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code> → http://localhost:4000/publications/. Check card layout (2-col desktop / 1-col mobile), badges, hover lift, and the year-grouped list + sidebar TOC.</li>
+  <li><strong>Commit</strong> the changes (all currently uncommitted on <code class="language-plaintext highlighter-rouge">master</code>). Suggested grouping: (a) publications revamp, (b) README improvements, (c) LICENSE. Repo convention is to branch off <code class="language-plaintext highlighter-rouge">master</code> and open a PR rather than commit directly.</li>
+  <li><strong>Optional / declined so far:</strong>
+    <ul>
+      <li>Adding an MIT line to the footer was discussed and <strong>left out</strong> (footer’s CC BY 4.0 is the right notice for visitors). To add it later, set <code class="language-plaintext highlighter-rouge">license:</code> in <code class="language-plaintext highlighter-rouge">_data/footer.yml</code> — <code class="language-plaintext highlighter-rouge">_includes/footer.html:69-71</code> already renders it.</li>
+      <li>Verify the featured papers’ exact publication days if precise within-year ordering matters (some default to <code class="language-plaintext highlighter-rouge">-01</code>).</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h1 id="handoff-later-session--website-stand-out-enhancements-polish-performance-search-interactive-features">Handoff (later session) — Website “stand-out” enhancements (polish, performance, search, interactive features)</h1>
+
+<blockquote>
+  <p>Separate, later effort layered on top of the publications revamp above. Both sets of changes are uncommitted together on <code class="language-plaintext highlighter-rouge">master</code>.</p>
+</blockquote>
+
+<h2 id="goal-1">Goal</h2>
+
+<p>Elevate the site (Jekyll + Petridish theme, deploys via GitHub Pages) from a clean template into something distinctive, without external runtime services. Delivered in rounds: visual/brand polish → performance &amp; accessibility → site search → animated homepage hero → SASS code-quality refactor → three “stand-out” interactive features (SITAR playground, scroll-reveal, collaboration map), then heavy iteration on the SITAR playground and the collaboration map.</p>
+
+<h2 id="current-state-1">Current State</h2>
+
+<p>All work is <strong>uncommitted on <code class="language-plaintext highlighter-rouge">master</code></strong> and verified via <code class="language-plaintext highlighter-rouge">bundle exec jekyll build</code> (clean builds). Nothing committed — the user commits separately. Most-recently-iterated pieces: the <strong>SITAR playground</strong> (<code class="language-plaintext highlighter-rouge">/training/expl_guides/sitar/</code>) and the <strong>collaboration map</strong> (<code class="language-plaintext highlighter-rouge">/contact/</code>).</p>
+
+<h2 id="environment--build-notes-important">Environment / build notes (important)</h2>
+
+<ul>
+  <li><strong>Ruby/Jekyll not on PATH by default.</strong> Prefix: <code class="language-plaintext highlighter-rouge">$env:Path = "C:\Ruby33-x64\bin;$env:Path"; bundle exec jekyll build</code>.</li>
+  <li><strong>Transient Windows file-lock</strong>: <code class="language-plaintext highlighter-rouge">jekyll build</code> intermittently exits 1 with a bundler stack trace <strong>without regenerating <code class="language-plaintext highlighter-rouge">_site</code></strong>. Not a real error — <strong>re-run</strong> and confirm <code class="language-plaintext highlighter-rouge">exit: 0</code> / that output actually changed.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">node</code> and <code class="language-plaintext highlighter-rouge">python</code> unavailable</strong> — can’t <code class="language-plaintext highlighter-rouge">node --check</code> JS. Simulate math in PowerShell; validate JSON with <code class="language-plaintext highlighter-rouge">ConvertFrom-Json</code>.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">_includes/collab_map.html</code> is ~59 KB</strong> (embeds the Natural Earth 1:110m world outline as one giant SVG <code class="language-plaintext highlighter-rouge">&lt;path d="…"&gt;</code>). Read tool <strong>cannot read it whole</strong> — use <code class="language-plaintext highlighter-rouge">offset</code>/<code class="language-plaintext highlighter-rouge">limit</code> or Grep, and only Edit the small marker/script sections (never rewrite the file).</li>
+</ul>
+
+<h2 id="files-being-worked-on-key-ones">Files Being Worked On (key ones)</h2>
+
+<p><strong>Interactive features (newest, most-iterated):</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">assets/theme/js/sitar-playground.js</code> — SITAR growth-curve widget logic.</li>
+  <li><code class="language-plaintext highlighter-rouge">training/expl_guides/sitar.md</code> — SITAR guide page (widget markup, sliders, legend, replay/reset).</li>
+  <li><code class="language-plaintext highlighter-rouge">_includes/collab_map.html</code> — inline-SVG collaboration map (Liquid over <code class="language-plaintext highlighter-rouge">_data/collaborators.yml</code>; embedded world path; raise-to-front <code class="language-plaintext highlighter-rouge">&lt;script&gt;</code>).</li>
+  <li><code class="language-plaintext highlighter-rouge">_data/collaborators.yml</code> — institution list (name/city/lat/lng; <code class="language-plaintext highlighter-rouge">home: true</code> marks Bristol).</li>
+  <li><code class="language-plaintext highlighter-rouge">assets/theme/js/hero-trajectories.js</code> — animated homepage banner canvas.</li>
+  <li><code class="language-plaintext highlighter-rouge">assets/theme/js/scroll-reveal.js</code> — fade-in-on-scroll for cards.</li>
+  <li><code class="language-plaintext highlighter-rouge">_sass/_custom.scss</code> — all custom styles (playground, collab map, hero, search, etc.).</li>
+</ul>
+
+<p><strong>Also touched earlier:</strong> <code class="language-plaintext highlighter-rouge">_config.yml</code>, <code class="language-plaintext highlighter-rouge">_includes/{head,navbar,header,card,footer}.html</code>, <code class="language-plaintext highlighter-rouge">_layouts/{people,publications}.html</code>, <code class="language-plaintext highlighter-rouge">_sass/_main.scss</code>, <code class="language-plaintext highlighter-rouge">pages/{home,research,contact,software,blog,404,search}.md</code>, <code class="language-plaintext highlighter-rouge">search.json</code> (NEW), <code class="language-plaintext highlighter-rouge">pages/search.md</code> (NEW).</p>
+
+<h2 id="what-has-changed-by-feature">What Has Changed (by feature)</h2>
+
+<ul>
+  <li><strong>Brand polish</strong>: links/banner → brand purple <code class="language-plaintext highlighter-rouge">#670267</code>, footer <code class="language-plaintext highlighter-rouge">#360353</code> (<code class="language-plaintext highlighter-rouge">_config.yml</code>); removed “cutting-edge” buzzwords; British spelling; navbar/dropdown aria; friendlier <code class="language-plaintext highlighter-rouge">404.md</code>; deleted shipped JS source-maps.</li>
+  <li><strong>Performance &amp; a11y</strong>: <code class="language-plaintext highlighter-rouge">defer</code> on jQuery/Popper/Bootstrap + font <code class="language-plaintext highlighter-rouge">preconnect</code> (<code class="language-plaintext highlighter-rouge">head.html</code>); <code class="language-plaintext highlighter-rouge">loading="lazy" decoding="async"</code> on below-the-fold images site-wide.</li>
+  <li><strong>Blog tag filtering</strong>: <code class="language-plaintext highlighter-rouge">archive_permalink: /blog/</code> activates theme tag badges; vanilla-JS filter + notice in <code class="language-plaintext highlighter-rouge">pages/blog.md</code>.</li>
+  <li><strong>Site search</strong>: <code class="language-plaintext highlighter-rouge">search.json</code> Liquid index + <code class="language-plaintext highlighter-rouge">/search/</code> page (debounced vanilla JS) + navbar search form. (<code class="language-plaintext highlighter-rouge">search.json</code> reads <code class="language-plaintext highlighter-rouge">site.data.publications</code> — the unified file from the effort above; leave as-is.)</li>
+  <li><strong>Animated hero</strong>: homepage banner = purple gradient with self-drawing SITAR-style growth curves + axes (<code class="language-plaintext highlighter-rouge">hero-trajectories.js</code>); <code class="language-plaintext highlighter-rouge">home.md</code> has <code class="language-plaintext highlighter-rouge">animated_hero: true</code>; branch in <code class="language-plaintext highlighter-rouge">header.html</code>.</li>
+  <li><strong>SASS refactor</strong> (zero visual change, diff-verified): nesting, shared vars, dead-code removal, <code class="language-plaintext highlighter-rouge">$seminar-purple</code>, <code class="language-plaintext highlighter-rouge">@each</code> for <code class="language-plaintext highlighter-rouge">.card-bg-*</code> in <code class="language-plaintext highlighter-rouge">_main.scss</code>.</li>
+  <li><strong>SITAR playground</strong>: reproduces the Cole teaching diagram — thick dark mean <strong>S-curve with a pubertal spurt that flattens to an adult-height plateau</strong>. Guided animation plays each effect <strong>one at a time</strong>, sliding deviation curves <strong>out from the mean and back</strong> (size = red vertical shift, timing = blue <strong>horizontal translation of the whole curve</strong>, intensity = green age-scale stretch); then interactive α/β/γ sliders + Replay/Reset. Curves drawn <strong>parametrically as (x,y) points</strong> so timing truly slides sideways; a plot <strong>clip region</strong> stops curves below the x-axis and <code class="language-plaintext highlighter-rouge">V_MAX</code> gives headroom so raised curves aren’t cut. Card sized for laptops (canvas 280px, card max-width 680px). Pacing = timing constants at top of the JS (<code class="language-plaintext highlighter-rouge">MEAN_DRAW_MS</code>/<code class="language-plaintext highlighter-rouge">SLIDE_MS</code>/<code class="language-plaintext highlighter-rouge">HOLD_MS</code>/<code class="language-plaintext highlighter-rouge">RETRACT_MS</code>).</li>
+  <li><strong>Scroll-reveal</strong>: <code class="language-plaintext highlighter-rouge">scroll-reveal.js</code> (deferred from <code class="language-plaintext highlighter-rouge">head.html</code>); reduced-motion/no-JS safe.</li>
+  <li><strong>Collaboration map</strong> (<code class="language-plaintext highlighter-rouge">/contact/</code>): replaced static <code class="language-plaintext highlighter-rouge">collabs.jpg</code> with an interactive SVG world map. Bristol is the hub (lines radiate from it) <strong>but its own dot/label are not drawn</strong>. Hover/focus shows the <strong>institution name</strong> (not city) on a <strong>leader line with white halo</strong>, edge-aware <code class="language-plaintext highlighter-rouge">text-anchor</code> by longitude, and a raise-to-front script. Full-bleed width (<code class="language-plaintext highlighter-rouge">94vw</code>, max 1150px). viewBox <code class="language-plaintext highlighter-rouge">139 40 775 350</code> (widened east for Japan, south for Melbourne). <strong>Currently 23 dots / 23 connection lines</strong>; accessible name list is <code class="language-plaintext highlighter-rouge">visually-hidden</code>. Dots r=2.5.</li>
+</ul>
+
+<h2 id="what-i-tried-that-failed-and-the-workaround-1">What I Tried That Failed (and the workaround)</h2>
+
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">node --check</code> on JS</strong> — node unavailable → simulated curve/geometry math in PowerShell (verified mean monotonic, timing is a rigid horizontal translation, raised curves fit <code class="language-plaintext highlighter-rouge">V_MAX</code>, all markers inside viewBox).</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">jekyll build</code> exit-1 file lock</strong> (twice) — reported failure but <code class="language-plaintext highlighter-rouge">_site</code> unchanged → re-run and verify.</li>
+  <li><strong>SITAR timing looked like a vertical fan, not a slide</strong> — value-of-x re-sampled a fixed width, so a monotonic curve’s horizontal shift read as vertical → switched all drawing to <strong>parametric points</strong>, translating x for timing.</li>
+  <li><strong>Flat kinks / clipping</strong> — old hard <code class="language-plaintext highlighter-rouge">Math.min/max</code> clamps → replaced with a <strong>plot clip region</strong> + continuous mean function (smooth everywhere).</li>
+  <li><strong>Tohoku (Japan) / Melbourne off the map</strong> — coords outside original viewBox → widened viewBox east and south.</li>
+</ul>
+
+<h2 id="what-to-do-next-1">What To Do Next</h2>
+
+<ol>
+  <li><strong>Visual review</strong> (<code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code>, PATH prefix): SITAR guide (guided animation then sliders; timing must read as a clear left/right slide); <code class="language-plaintext highlighter-rouge">/contact/</code> (hover names readable in the European cluster; all 23 institutions placed sensibly, none clipped at edges); homepage hero; scroll-reveal; <code class="language-plaintext highlighter-rouge">/search/</code> + navbar search.</li>
+  <li><strong>Commit</strong> (all uncommitted on <code class="language-plaintext highlighter-rouge">master</code>; branch + PR per repo convention). Suggested grouping: (a) polish/perf/a11y, (b) search, (c) hero + scroll-reveal, (d) SITAR playground, (e) collaboration map — plus the separate publications revamp above.</li>
+  <li><strong>Optional polish</strong>: SITAR pacing / plateau decay; European map leader offset (<code class="language-plaintext highlighter-rouge">cy | minus: 12/16</code> in <code class="language-plaintext highlighter-rouge">collab_map.html</code>).</li>
+  <li><strong>Out of scope / declined by user</strong>: unfinished training guides &amp; tutorial links (user authoring — do not touch), image recompression, site <code class="language-plaintext highlighter-rouge">title</code> change, SEO/JSON-LD, People-page role grouping.</li>
+</ol>
+
+
+    
+  </div>
+</div>
+
+
+      </div>
+    </main>
+
+    <footer class="d-print-none">
+  <div class="container">
+    <div class="row align-items-start">
+      <div class="col-lg-3">
+        
+          <ul class="list-inline">
+            
+              <li class="list-inline-item me-1">
+                <a href="mailto:grp-lmod@groups.bristol.ac.uk" title="Email">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa-solid fa-circle fa-stack-2x"></i>
+                    <i class="fa-regular fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            
+            
+              <li class="list-inline-item me-1">
+                <a href="https://github.com/LongitudinalModelling" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa-solid fa-circle fa-stack-2x"></i>
+                    <i class="fa-brands fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            
+            
+              <li class="list-inline-item me-1">
+                <a href="https://www.youtube.com/@LongModel" title="YouTube">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa-solid fa-circle fa-stack-2x"></i>
+                    <i class="fa-brands fa-youtube fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+            
+          </ul>
+        
+      </div>
+
+      <div class="col-lg-7">
+        <h5 class="text-white mb-2">Quick Links</h5>
+        <ul class="list-inline">
+          
+            <li class="list-inline-item me-3"><a href="/" class="text-white">Home</a></li>
+          
+            <li class="list-inline-item me-3"><a href="/research/" class="text-white">Research</a></li>
+          
+            <li class="list-inline-item me-3"><a href="/publications/" class="text-white">Publications</a></li>
+          
+            <li class="list-inline-item me-3"><a href="/software/" class="text-white">Software</a></li>
+          
+            <li class="list-inline-item me-3"><a href="/seminars/" class="text-white">Seminars</a></li>
+          
+            <li class="list-inline-item me-3"><a href="/training/" class="text-white">Learn</a></li>
+          
+            <li class="list-inline-item me-3"><a href="/people/" class="text-white">People</a></li>
+          
+            <li class="list-inline-item me-3"><a href="/contact/" class="text-white">Join</a></li>
+          
+            <li class="list-inline-item me-3"><a href="/blog/" class="text-white">News</a></li>
+          
+        </ul>
+      </div>
+
+      <div class="col-lg-2 text-end">
+        
+          
+            
+              
+                <a href="https://www.bristol.ac.uk/" target="_blank">
+                  <img src="/assets/images/uob.png" alt="UOB" style="height: 60px; max-width: 100%;" loading="lazy" decoding="async">
+                </a>
+              
+            
+          
+        
+      </div>
+    </div>
+
+    <div class="small mt-2">
+      
+        <p>&copy; Longitudinal Modelling Group 2025 (<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>)</p>
+      
+      
+      
+        
+        <p>
+          <a href="https://github.com/longitudinalmodelling/longitudinalmodelling.github.io/edit/master/handoff.md">
+            <i class="fa-solid fa-pen-to-square"></i> Edit this page
+          </a>
+        </p>
+      
+    </div>
+  </div>
+</footer>
+
+
+  </body>
+</html>

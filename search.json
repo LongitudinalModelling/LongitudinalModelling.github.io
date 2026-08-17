@@ -8,12 +8,17 @@ sitemap: false
 {%- for p in site.pages -%}
   {%- if p.title and p.exclude_from_search != true and p.permalink != "/404.html" -%}
     {%- if sep -%},{%- endif -%}{%- assign sep = true -%}
-    {"title": {{ p.title | jsonify }}, "url": {{ p.url | relative_url | jsonify }}, "type": "Page", "text": {{ p.content | strip_html | normalize_whitespace | truncatewords: 80 | jsonify }}}
+    {%- if p.search_text -%}
+      {%- assign page_text = p.search_text -%}
+    {%- else -%}
+      {%- assign page_text = p.content | strip_html | normalize_whitespace | truncatewords: 200 -%}
+    {%- endif -%}
+    {"title": {{ p.title | jsonify }}, "url": {{ p.url | relative_url | jsonify }}, "type": "Page", "text": {{ page_text | jsonify }}}
   {%- endif -%}
 {%- endfor -%}
 {%- for post in site.posts -%}
   {%- if sep -%},{%- endif -%}{%- assign sep = true -%}
-  {"title": {{ post.title | jsonify }}, "url": {{ post.url | relative_url | jsonify }}, "type": "News", "text": {{ post.content | strip_html | normalize_whitespace | truncatewords: 80 | jsonify }}}
+  {"title": {{ post.title | jsonify }}, "url": {{ post.url | relative_url | jsonify }}, "type": "News", "text": {{ post.content | strip_html | normalize_whitespace | truncatewords: 200 | jsonify }}}
 {%- endfor -%}
 {%- for pub in site.data.publications -%}
   {%- if sep -%},{%- endif -%}{%- assign sep = true -%}
@@ -23,5 +28,14 @@ sitemap: false
 {%- for sw in site.data.software -%}
   {%- if sep -%},{%- endif -%}{%- assign sep = true -%}
   {"title": {{ sw.name | strip_html | jsonify }}, "url": {{ "/software/" | relative_url | jsonify }}, "type": "Software", "text": {{ sw.name | strip_html | jsonify }}}
+{%- endfor -%}
+{%- for person in site.data.people.current_members -%}
+  {%- if sep -%},{%- endif -%}{%- assign sep = true -%}
+  {"title": {{ person.name | jsonify }}, "url": {{ "/people/" | relative_url | jsonify }}, "type": "Person", "text": {{ "Longitudinal Modelling Group member" | jsonify }}}
+{%- endfor -%}
+{%- for seminar in site.data.seminars -%}
+  {%- if sep -%},{%- endif -%}{%- assign sep = true -%}
+  {%- assign sem_text = seminar.speaker | append: " (" | append: seminar.affiliation | append: "). " | append: seminar.summary -%}
+  {"title": {{ seminar.title | jsonify }}, "url": {{ "/seminars/" | relative_url | jsonify }}, "type": "Seminar", "text": {{ sem_text | jsonify }}}
 {%- endfor -%}
 ]

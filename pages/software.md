@@ -2,6 +2,7 @@
 title: "Software"
 background: /assets/images/backgrounds/software_page.jpg
 permalink: /software/
+search_text: "R packages and tools developed and used by the group: bsitar, GLU, midoc, psme, R2MLwiN, sitar, and tidal. Each entry links to its manual, methodology paper, and tutorial."
 ---
 
 <div class="software-grid">

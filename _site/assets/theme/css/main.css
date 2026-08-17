@@ -3523,7 +3523,7 @@ body > main { min-height: calc(100vh - 54px); padding-bottom: 1.5rem; }
 
 .btn-purple:hover { color: #fff; background-color: #4d004d; border-color: #4d004d; }
 
-.team-member-image { width: 200px; /* Adjust this value as needed */ height: 200px; /* Adjust this value as needed */ object-fit: cover; }
+.team-member-image { width: 200px; height: 200px; object-fit: cover; }
 
 .header { background-position: center; background-repeat: no-repeat; background-size: cover; border-radius: 0; color: #fff; margin-bottom: 2rem; padding: 2rem 1rem; position: relative; text-align: center; }
 @media (min-width: 768px) { .header { padding: 4rem 2rem; } }
@@ -3542,7 +3542,6 @@ body > main { min-height: calc(100vh - 54px); padding-bottom: 1.5rem; }
 .header .caption { bottom: 0; color: #bfbfbf; font-size: 80%; padding: 0 0.5rem; position: absolute; right: 0; }
 .header .caption a { color: #bfbfbf; text-decoration: none; }
 
-/* --- Custom Homepage Header Height --- */
 .header-homepage { padding: 2rem 1rem; }
 @media (min-width: 768px) { .header-homepage { padding: 3rem 2rem; }
   .header-homepage .lead { margin-top: 1rem; } }
