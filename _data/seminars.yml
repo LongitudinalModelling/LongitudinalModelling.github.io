@@ -12,6 +12,13 @@
 # The next talk is the first entry with a date in the future.
 # ------------------------------------------------------------------
 
+- date: 2026-09-17
+  title: "Separating Algorithms From Questions and Causal Inference With Unmeasured Exposures: An Application to Birth Cohort Studies"
+  speaker: "Izzuddin Aris"
+  affiliation: "Harvard Pilgrim Health Care Institute and Harvard Medical School"
+  summary: "Observational studies have shown strong associations between BMI metrics in childhood (e.g., early age at BMI rebound, overweight/obesity) and subsequent cardiometabolic outcomes including type 2 diabetes and metabolic syndrome in adolescence and adulthood. Despite adjustment for covariates, these studies have not explicitly considered causal inference, including causal effect definitions and assumptions sufficient for unbiasedly estimating that effect with available data. In this presentation, we consider the problem of using existing observational data from a pre-birth cohort in USA (Project Viva) to estimate effects of stochastic interventions on a chosen subset of modifiable (but unmeasured) exposures, expected to be associated with BMI metrics (a proxy exposure), on adolescent cardiometabolic and respiratory outcomes in early adolescence."
+  calendar: seminar_091726.ics
+
 - date: 2026-01-22
   title: "Synthetic cohorts for life course etiologic research"
   speaker: "Katrina Kezios"
@@ -22,30 +29,30 @@
   title: "Functional Principal Component Analysis (FPCA) to describe longitudinal data"
   speaker: "Corentin Segalas"
   affiliation: "Bordeaux Population Health"
-  summary: "In this talk, the functional data analysis framework will be introduced and we will see how FPCA - one of its central tools - may be used to describe biomedical longitudinal data. Finally, a simulation study that investigates FPCA robustness to various missing data scenarios will be discussed"
+  summary: "In this talk, the functional data analysis framework will be introduced and we will see how FPCA - one of its central tools - may be used to describe biomedical longitudinal data. Finally, a simulation study that investigates FPCA robustness to various missing data scenarios will be discussed."
 
 - date: 2025-02-06
   title: "SITAR enhancements to support state-of-the-art analysis of individual growth curves and their correlates"
   speaker: "Ahmed Elhakeem"
-  affiliation: "UOB"
-  summary: "I will present the aims and objectives for my New Investigator Research Grant, which are to develop and test methodology for a) SITAR to model post-peak growth, b) a Bayesian SITAR model, c) joint SITAR and outcome/exposure models, and to develop and test R (& DataSHIELD) packages to implement these methods and develop resources and guidance for researchers"
+  affiliation: "University of Bristol"
+  summary: "I will present the aims and objectives for my New Investigator Research Grant, which are to develop and test methodology for a) SITAR to model post-peak growth, b) a Bayesian SITAR model, c) joint SITAR and outcome/exposure models, and to develop and test R (& DataSHIELD) packages to implement these methods and develop resources and guidance for researchers."
 
 - date: 2025-02-06
   title: "Bayesian Implementation of Superimposition by Translation and Rotation (SITAR) Growth Model: An Introduction to the 'bsitar' R Package"
   speaker: "Satpal Sandhu"
-  affiliation: "UOB"
-  summary: "To enhance the utility of the SITAR model, we have developed the 'bsitar' R package, which implements the Bayesian version of the SITAR model. The objective of this presentation is to provide an overview of the 'bsitar' package and demonstrate some of its capabilities"
+  affiliation: "University of Bristol"
+  summary: "To enhance the utility of the SITAR model, we have developed the 'bsitar' R package, which implements the Bayesian version of the SITAR model. The objective of this presentation is to provide an overview of the 'bsitar' package and demonstrate some of its capabilities."
 
 - date: 2024-10-31
   title: "Joint modelling of non-time to event longitudinal data: a systematic review and case-study on height and weight"
   speaker: "Rehema Ouko"
-  affiliation: "LSHTM"
-  summary: "Joint Bayesian modelling approach is feasible for modelling growth data and incorporates correlation between measurements. In longitudinal studies, it can be used in the case of missing data for two or more correlated variables of interest. Therefore, there is a potential benefit of using joint modelling of repeated measurements leveraging its advantages"
+  affiliation: "London School of Hygiene & Tropical Medicine"
+  summary: "Joint Bayesian modelling approach is feasible for modelling growth data and incorporates correlation between measurements. In longitudinal studies, it can be used in the case of missing data for two or more correlated variables of interest. Therefore, there is a potential benefit of using joint modelling of repeated measurements leveraging its advantages."
 
 - date: 2024-03-06
   title: "Derivative curve estimation in longitudinal studies using P-splines"
   speaker: "Marìa Alejandra Hernàndez Velandia"
-  affiliation: "BCAM"
+  affiliation: "Basque Center for Applied Mathematics"
   summary: "In this presentation, we will explore the use of P-spline models for estimating derivatives within the framework of longitudinal data analysis. The main contribution lies in adding an extra penalty on the coefficients of both the population curves and the individual deviations of the model. This integration focuses on issues of under-smoothing and boundary problems in derivative estimation. The problem is interesting because derivative estimation is valuable for describing individuals' biological features or identifying change regions of interest. As an illustration, we will showcase an application involving longitudinal height measurements in teenagers to analyze their growth and maturity patterns over time."
 
 - date: 2024-01-31

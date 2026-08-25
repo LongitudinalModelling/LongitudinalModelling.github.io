@@ -50,7 +50,7 @@ search_text: "Our online seminar series on longitudinal modelling, with speakers
               {% for talk in group.items %}
                 <h3 class="h5 text-purple">
                 {{ group.name | date: '%d %B %Y' }}
-                {% if talk.calendar %}<small style="font-weight: normal;">(<a href="{{ site.baseurl }}/assets/calendar/{{ talk.calendar }}">Add to calendar</a>)</small>{% endif %}
+                {% if talk.calendar %}<small style="font-weight: normal;">(<a style="font-weight: bold;" href="{{ site.baseurl }}/assets/calendar/{{ talk.calendar }}">Add to calendar</a>)</small>{% endif %}
                 </h3>
                 <dl class="row mb-0">
                   <dt class="col-sm-3"><strong>Title:</strong></dt>

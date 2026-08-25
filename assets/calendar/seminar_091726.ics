@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Longitudinal Modelling Group//Seminar Series//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:lmg-seminar-20260917-aris@longitudinalmodelling.github.io
+DTSTAMP:20260825T170448Z
+DTSTART:20260917T140000Z
+DTEND:20260917T150000Z
+SUMMARY:LMG seminar: Izzuddin Aris - Separating Algorithms From Questions 
+ and Causal Inference With Unmeasured Exposures
+LOCATION:Microsoft Teams / AUGC - G.07
+DESCRIPTION:Longitudinal Modelling Group seminar\n\nSpeaker: Izzuddin Aris
+  (Harvard Pilgrim Health Care Institute and Harvard Medical School)\n\nTi
+ tle: Separating Algorithms From Questions and Causal Inference With Unmea
+ sured Exposures: An Application to Birth Cohort Studies\n\nSummary: Obser
+ vational studies have shown strong associations between BMI metrics in ch
+ ildhood (e.g.\, early age at BMI rebound\, overweight/obesity) and subseq
+ uent cardiometabolic outcomes including type 2 diabetes and metabolic syn
+ drome in adolescence and adulthood. Despite adjustment for covariates\, t
+ hese studies have not explicitly considered causal inference\, including 
+ causal effect definitions and assumptions sufficient for unbiasedly estim
+ ating that effect with available data. In this presentation\, we consider
+  the problem of using existing observational data from a pre-birth cohort
+  in USA (Project Viva) to estimate effects of stochastic interventions on
+  a chosen subset of modifiable (but unmeasured) exposures\, expected to b
+ e associated with BMI metrics (a proxy exposure)\, on adolescent cardiome
+ tabolic and respiratory outcomes in early adolescence.\n\nJoin on Microso
+ ft Teams: https://teams.microsoft.com/meet/34023039642214?p=qAf7nRZ0pRow8
+ kwp5H\nMeeting ID: 340 230 396 422 14\nPasscode: 4VT7sv6g\n\nIn person: A
+ UGC - G.07\n\nhttps://longitudinalmodelling.github.io/seminars/
+URL:https://longitudinalmodelling.github.io/seminars/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+SEQUENCE:0
+END:VEVENT
+END:VCALENDAR
