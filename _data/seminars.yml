@@ -13,7 +13,7 @@
 # ------------------------------------------------------------------
 
 - date: 2026-09-17
-  title: "Separating Algorithms From Questions and Causal Inference With Unmeasured Exposures: An Application to Birth Cohort Studies"
+  title: "Causal inference with unmeasured exposures in birth cohort studies: aligning questions with algorithms"
   speaker: "Izzuddin Aris"
   affiliation: "Harvard Pilgrim Health Care Institute and Harvard Medical School"
   summary: "Observational studies have shown strong associations between BMI metrics in childhood (e.g., early age at BMI rebound, overweight/obesity) and subsequent cardiometabolic outcomes including type 2 diabetes and metabolic syndrome in adolescence and adulthood. Despite adjustment for covariates, these studies have not explicitly considered causal inference, including causal effect definitions and assumptions sufficient for unbiasedly estimating that effect with available data. In this presentation, we consider the problem of using existing observational data from a pre-birth cohort in USA (Project Viva) to estimate effects of stochastic interventions on a chosen subset of modifiable (but unmeasured) exposures, expected to be associated with BMI metrics (a proxy exposure), on adolescent cardiometabolic and respiratory outcomes in early adolescence."

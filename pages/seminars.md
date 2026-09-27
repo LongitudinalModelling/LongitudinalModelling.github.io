@@ -82,13 +82,28 @@ search_text: "Our online seminar series on longitudinal modelling, with speakers
 <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
   <iframe 
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-    src="https://www.youtube.com/embed/videoseries?list=PLSs04oY8Hg3Qq85SMwtAuxVIqz83CDCzm" 
-    title="Longitudinal Modelling Group Seminar Recordings Playlist" 
+    src="https://www.youtube.com/embed/1shJJsJy3uU" 
+    title="Seminar recording: Izzuddin Aris, 17 September 2026" 
     frameborder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
     allowfullscreen>
   </iframe>
 </div>
+
+<hr class="purple-line-small" style="margin: 2rem auto;">
+
+<div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+  <iframe 
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+    src="https://www.youtube.com/embed/CCWBo3yJ-yQ" 
+    title="Seminar recording: Corentin Segalas, 26 September 2025" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+</div>
+
+<hr class="purple-line-small" style="margin: 2rem auto;">
 
 {% for group in by_date %}
   {% assign group_day = group.name | date: '%Y%m%d' | plus: 0 %}
