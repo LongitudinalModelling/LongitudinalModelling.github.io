@@ -3709,11 +3709,14 @@ body > footer .small.mt-2 p + p:before { content: " — "; }
 
 .sitar-swatch-intensity { background-color: #00b050; }
 
-.sitar-controls { display: flex; flex-wrap: wrap; align-items: end; gap: 20px; margin-top: 15px; }
+.sitar-swatch-postgrowth { background-color: #ed7d31; }
 
-.sitar-control { flex: 1 1 180px; }
+.sitar-controls { display: grid; grid-template-columns: repeat(4, 1fr); align-items: end; gap: 20px; margin-top: 15px; }
+
+@media (max-width: 576px) { .sitar-controls { grid-template-columns: repeat(2, 1fr); } }
+.sitar-control { min-width: 0; }
 .sitar-control label { display: block; font-weight: 600; color: #360353; margin-bottom: 2px; }
-.sitar-control .sitar-hint { font-weight: normal; font-size: 0.85em; color: #6c757d; }
+.sitar-control .sitar-hint { display: block; font-weight: normal; font-size: 0.85em; color: #6c757d; }
 .sitar-control input[type='range'] { width: 100%; accent-color: #670267; }
 .sitar-control output { font-family: Consolas, 'Liberation Mono', Courier, monospace; font-size: 0.9em; color: #360353; }
 
@@ -3723,13 +3726,15 @@ body > footer .small.mt-2 p + p:before { content: " — "; }
 
 .sitar-control-intensity input[type='range'] { accent-color: #00b050; }
 
-.sitar-buttons { display: flex; gap: 8px; align-self: center; }
+.sitar-control-postgrowth input[type='range'] { accent-color: #ed7d31; }
+
+.sitar-buttons { grid-column: 1 / -1; display: flex; gap: 8px; }
 
 .sitar-reset-button { background-color: #670267; border-color: #670267; color: #fff; }
 .sitar-reset-button:hover { background-color: #3f013f; border-color: #3f013f; color: #fff; }
 
-.sitar-replay-button { background-color: transparent; border: 1px solid #670267; color: #670267; }
-.sitar-replay-button:hover { background-color: #670267; color: #fff; }
+.sitar-replay-button, .sitar-pause-button { background-color: transparent; border: 1px solid #670267; color: #670267; }
+.sitar-replay-button:hover, .sitar-pause-button:hover { background-color: #670267; color: #fff; }
 
 .collab-map { position: relative; left: 50%; transform: translateX(-50%); width: 94vw; max-width: 1150px; margin: 20px 0; }
 .collab-map svg { width: 100%; height: auto; display: block; }

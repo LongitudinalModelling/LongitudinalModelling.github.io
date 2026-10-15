@@ -446,6 +446,7 @@ $muted-gray: #6c757d;
 $sitar-size: #ff0000;
 $sitar-tempo: #0070c0;
 $sitar-intensity: #00b050;
+$sitar-postgrowth: #ed7d31;
 
 .sitar-caption {
   min-height: 2.8em;
@@ -488,16 +489,26 @@ $sitar-intensity: #00b050;
   background-color: $sitar-intensity;
 }
 
+.sitar-swatch-postgrowth {
+  background-color: $sitar-postgrowth;
+}
+
 .sitar-controls {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   align-items: end;
   gap: 20px;
   margin-top: 15px;
 }
 
+@media (max-width: 576px) {
+  .sitar-controls {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .sitar-control {
-  flex: 1 1 180px;
+  min-width: 0;
 
   label {
     display: block;
@@ -507,6 +518,7 @@ $sitar-intensity: #00b050;
   }
 
   .sitar-hint {
+    display: block;
     font-weight: normal;
     font-size: 0.85em;
     color: $muted-gray;
@@ -536,10 +548,14 @@ $sitar-intensity: #00b050;
   accent-color: $sitar-intensity;
 }
 
+.sitar-control-postgrowth input[type='range'] {
+  accent-color: $sitar-postgrowth;
+}
+
 .sitar-buttons {
+  grid-column: 1 / -1;
   display: flex;
   gap: 8px;
-  align-self: center;
 }
 
 .sitar-reset-button {
@@ -554,7 +570,8 @@ $sitar-intensity: #00b050;
   }
 }
 
-.sitar-replay-button {
+.sitar-replay-button,
+.sitar-pause-button {
   background-color: transparent;
   border: 1px solid $purple;
   color: $purple;

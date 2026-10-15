@@ -5,15 +5,15 @@ permalink: /training/expl_guides/sitar/
 background: /assets/images/backgrounds/training_page.jpg
 ---
 
-**SITAR** (SuperImposition by Translation And Rotation) is a growth curve model that summarises a whole population of growth trajectories with a single **mean curve**, and describes each individual with just three parameters that transform that curve: **size** shifts it up or down, **timing** shifts it earlier or later, and **intensity** stretches or compresses its timescale. Fitted as a nonlinear mixed effects model, SITAR can explain up to 99% of the variance in pubertal growth.
+**SITAR** (SuperImposition by Translation And Rotation) is a growth curve model that summarises a whole population of growth trajectories with a single **mean curve**, and describes each individual with just three parameters that transform that curve: **size** shifts it up or down, **timing** shifts it earlier or later, and **intensity** stretches or compresses its timescale. Fitted as a nonlinear mixed effects model, SITAR can explain up to 99% of the variance in pubertal growth. An extension, [**SITAR-d**](https://doi.org/10.1080/03014460.2026.2627918), adds a fourth random effect, **post-growth**, that adds a straight-line slope in age to the curve, allowing post-pubertal velocity to vary between individuals.
 
 ## See how it works
 
-Watch how each of the three SITAR random effects transforms the population mean growth curve (dark). Then use the sliders to build your own individual's curve.
+Watch how each of the four SITAR random effects transforms the population mean growth curve (dark). Then use the sliders to build your own individual's curve.
 
 <div id="sitar-playground" class="sitar-playground">
   <canvas height="280" aria-hidden="true"></canvas>
-  <p class="visually-hidden">Interactive chart: a mean growth curve with a pubertal spurt. The size, timing and velocity sliders below transform it into an individual's growth curve.</p>
+  <p class="visually-hidden">Interactive chart: a mean growth curve with a pubertal spurt. The size, timing, intensity and post-growth sliders below transform it into an individual's growth curve.</p>
 
   <p id="sitar-caption" class="sitar-caption">The mean growth curve for the population.</p>
 
@@ -21,6 +21,7 @@ Watch how each of the three SITAR random effects transforms the population mean 
     <span class="sitar-legend-item"><span class="sitar-swatch sitar-swatch-size"></span> Size (α)</span>
     <span class="sitar-legend-item"><span class="sitar-swatch sitar-swatch-tempo"></span> Timing (β)</span>
     <span class="sitar-legend-item"><span class="sitar-swatch sitar-swatch-intensity"></span> Intensity (γ)</span>
+    <span class="sitar-legend-item"><span class="sitar-swatch sitar-swatch-postgrowth"></span> Post-growth (δ)</span>
   </div>
 
   <div class="sitar-controls">
@@ -36,12 +37,18 @@ Watch how each of the three SITAR random effects transforms the population mean 
     </div>
     <div class="sitar-control sitar-control-intensity">
       <label for="sitar-intensity">Intensity <span class="sitar-hint">(γ — faster / slower)</span></label>
-      <input type="range" id="sitar-intensity" min="-0.6" max="0.6" step="0.01" value="0">
+      <input type="range" id="sitar-intensity" min="-0.5" max="0.5" step="0.01" value="0">
       <output id="sitar-intensity-value" for="sitar-intensity">+0.00</output>
+    </div>
+    <div class="sitar-control sitar-control-postgrowth">
+      <label for="sitar-postgrowth">Post-growth <span class="sitar-hint">(δ — more / less)</span></label>
+      <input type="range" id="sitar-postgrowth" min="-0.3" max="0.3" step="0.01" value="0">
+      <output id="sitar-postgrowth-value" for="sitar-postgrowth">+0.00</output>
     </div>
     <div class="sitar-buttons">
       <button type="button" id="sitar-replay" class="btn btn-sm sitar-replay-button">↻ Replay</button>
       <button type="button" id="sitar-reset" class="btn btn-sm sitar-reset-button">Reset</button>
+      <button type="button" id="sitar-pause" class="btn btn-sm sitar-pause-button" disabled>❚❚ Pause</button>
     </div>
   </div>
 
