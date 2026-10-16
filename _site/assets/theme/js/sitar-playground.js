@@ -37,11 +37,12 @@
   var PRE_VELOCITY = 0.5;
   var PRE_STOP = 0.62;
   var PRE_STOP_WIDTH = 0.08;
+  var PRE_RESIDUAL = 0.3;
   function softplus(x) {
     return x > 30 ? x : Math.log(1 + Math.exp(x));
   }
   function rawCurve(t) {
-    return PRE_VELOCITY * (t - PRE_STOP_WIDTH * softplus((t - PRE_STOP) / PRE_STOP_WIDTH)) + 0.55 / (1 + Math.exp(-(t - SPURT_CENTRE) / SPURT_WIDTH));
+    return PRE_VELOCITY * (t - (1 - PRE_RESIDUAL) * PRE_STOP_WIDTH * softplus((t - PRE_STOP) / PRE_STOP_WIDTH)) + 0.55 / (1 + Math.exp(-(t - SPURT_CENTRE) / SPURT_WIDTH));
   }
   var RAW0 = rawCurve(0);
   var RAW1 = rawCurve(1);
