@@ -108,17 +108,20 @@ current_members:
     profile_link: https://research-information.bris.ac.uk/en/persons/zoe-e-reed
 
 visitors:
-  - name: "Siyu Zhou"
-    image: "assets/images/people/siyu_zhou.jpg"
-    
-  - name: "Geng Chen"
-    image: "assets/images/people/geng_chen.jpg"
-
   - name: "Anna Dieberger"
     image: "assets/images/people/anna_dieberger.jpg"
+
+  - name: "Eduarda Lopes"
+    image: "assets/images/people/eduarda_lopes.jpg"
+
+  - name: "Geng Chen"
+    image: "assets/images/people/geng_chen.jpg"
 
   - name: Naixue Cui
     image: "assets/images/people/naixue_cui.jpg"
 
+  - name: "Siyu Zhou"
+    image: "assets/images/people/siyu_zhou.jpg"
+    
   - name: Zheyuan Li
     image: assets/images/people/zheyuan_li.jpg
